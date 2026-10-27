@@ -32,6 +32,9 @@ test('sesión caducada vuelve al acceso; un corte de red conserva el acceso para
 test('un navegador que bloquea almacenamiento permite login y canje confirmados',async()=>{
  const f=fixture();const a=A.create({config,storage:{getItem(){throw Error();},setItem(){throw Error();},removeItem(){throw Error();}},fetch:async(url,o)=>({ok:true,json:async()=>({ok:true,token,kind:'capture',bioforma:'B002',progreso:{jugador:'Ada',capturadas:JSON.parse(o.body).action==='redeem'?['B002']:[]}})})});await a.login('Ada','123456');await a.redeem(G[0].rewards[0].code);assert.deepEqual(a.progress.capturadas,['B002']);assert.equal(f.calls.length,0);
 });
+test('un servidor ocupado no borra una sesión recuperable de BioDex',async()=>{
+ const s=storage();s.setItem(A.SESSION_KEY,JSON.stringify({token,name:'Ada'}));const a=A.create({config,storage:s,fetch:async()=>({ok:true,json:async()=>({ok:false,error:'El archivo está ocupado. Intenta nuevamente.'})})});await assert.rejects(a.restore(),/ocupado/);assert.ok(s.getItem(A.SESSION_KEY));
+});
 test('cuatro premios se canjean en serie y solo quedan acreditados con confirmación del servidor',async()=>{
  const f=fixture(),gym=G[0];await f.account.login('Ada','123456');const updates=[];
  const r=R.create({account:f.account,gym,bank:published(gym),won:true,demo:false,onUpdate:s=>updates.push(s)});const promise=r.claim();assert.equal(r.snapshot()[gym.rewards[0].id].status,'saving');assert.equal(f.account.progress.capturadas.length,0);const states=await promise;

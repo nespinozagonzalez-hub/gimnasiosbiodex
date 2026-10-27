@@ -17,7 +17,7 @@
    try{
     const response=await send(config.endpoint,{method:'POST',redirect:'follow',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({...fields,action,...(action!=='login'?{token:session.token}:{})}),signal:controller.signal});
     if(!response.ok)throw Error('BioDex no pudo responder. Vuelve a intentar.');
-    const data=await response.json();if(!data.ok){const error=Error(data.error||'No fue posible completar la operación.');error.server=true;throw error;}
+    const data=await response.json();if(!data.ok){const error=Error(data.error||'No fue posible completar la operación.');error.sessionExpired=/sesi[oó]n (?:no v[aá]lida|venci[oó])|cuenta no disponible/i.test(error.message);throw error;}
     return data;
    }catch(error){
     if(error.name==='AbortError')throw Error('La confirmación tardó demasiado. Reintenta: las capturas no se duplican.');
@@ -28,7 +28,7 @@
   }
   return {
    get session(){return session?{...session}:null;},get progress(){return progress;},
-   async restore(){session=remembered();if(!session)return null;try{return accept(await request('load'));}catch(error){session=null;progress=null;if(error.server)remember();throw error;}},
+   async restore(){session=remembered();if(!session)return null;try{return accept(await request('load'));}catch(error){session=null;progress=null;if(error.sessionExpired)remember();throw error;}},
    async login(name,pin){const data=await request('login',{name,pin});if(typeof data.token!=='string'||data.token.length<50)throw Error('No se recibió una sesión válida.');session={token:data.token,name};try{return accept(data);}catch(error){session=null;throw error;}},
    async load(){return accept(await request('load'));},
    async redeem(code){return accept(await request('redeem',{code}));},
