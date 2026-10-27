@@ -7,6 +7,21 @@
   let quiz=null,renderer=null,storyIndex=0,typingTimer=null,fullStory='',questionOrigin=null;
   const M=window.BioDexMission,STORY=M.story,IS_LEAGUE=Boolean(M.slug),BANK=M.bank||null;
   let clockTimer=null,untimed=false;
+  const account=window.BioDexAccount.create({config:window.BIODEX_CONFIG,fetch:window.fetch.bind(window),storage:{getItem:k=>sessionStorage.getItem(k),setItem:(k,v)=>sessionStorage.setItem(k,v),removeItem:k=>sessionStorage.removeItem(k)}});
+  const access=IS_LEAGUE?window.BioDexAccess.create({storage:{getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},gyms:window.BioDexGyms.GYMS}):null;
+  const canEnter=()=>!IS_LEAGUE||M.preview||(leagueCheck.ready&&session&&access.isUnlocked(session.name,M.slug));
+  function enterWithAccount(){
+    if(IS_LEAGUE&&!canEnter()){
+      $('loginForm').hidden=true;$('gymGate').hidden=false;$('gateAccount').textContent='Colección conectada · '+session.name;
+      const unlocked=access.isUnlocked(session.name,M.slug);
+      $('gateStatus').textContent=!unlocked?'Activa este destino con el código de tu docente.':!leagueCheck.ready?'Gimnasio activado. Tu docente anunciará la apertura de la actividad.':'';
+      $('gymCodeForm').hidden=unlocked;setView('access');return;
+    }
+    if($('gymGate'))$('gymGate').hidden=true;renderTeam();setView('team');tone();
+  }
+  $('gymCodeForm')?.addEventListener('submit',event=>{
+    event.preventDefault();try{const {gym}=access.activate(session?.name,$('gymCode').value);if(gym.slug!==M.slug)throw Error('Este código activa '+gym.title+'. Puedes encontrarlo en la liga.');$('gymCode').value='';$('gateError').textContent='';enterWithAccount();}catch(error){$('gateError').textContent=error.message;}
+  });
   const leagueCheck=IS_LEAGUE?window.BioDexLeague.validateBank(BANK,M.slug):null;
   const DEMO_IDS=Array.from({length:33},(_,i)=>'B'+String(i+1).padStart(3,'0'));
   const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -41,23 +56,11 @@
   $('soundButton').addEventListener('click',()=>{sound=!sound;$('soundButton').setAttribute('aria-pressed',String(sound));$('soundButton').title=sound?'Desactivar sonido':'Activar sonido';$('soundButton').setAttribute('aria-label',$('soundButton').title);tone('tap');});
   $('fullButton').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else if(document.documentElement.requestFullscreen)await document.documentElement.requestFullscreen();else toast('Para ampliar la misión, ábrela en una pestaña independiente y gira el teléfono.');}catch(_){toast('El navegador no permitió ampliar la pantalla. Puedes abrir la misión en una pestaña independiente.');}});
 
-  // El módulo solo permite las tres operaciones del acceso existente. No canjea
-  // códigos, no registra cuentas y nunca envía snapshots de progreso.
   async function request(action,fields={}){
-    if(!['login','load','logout'].includes(action))throw new Error('Operación fuera del alcance de esta misión.');
-    const endpoint=window.BIODEX_CONFIG.endpoint;
-    if(!/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(endpoint))throw new Error('La conexión de BioDex no está disponible.');
-    const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),45000);
-    try{
-      const response=await fetch(endpoint,{method:'POST',redirect:'follow',credentials:'omit',referrerPolicy:'no-referrer',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action,...(session?.token?{token:session.token}:{}),...fields}),signal:controller.signal});
-      if(!response.ok)throw new Error('BioDex no pudo responder. Intenta otra vez en unos instantes.');
-      const data=await response.json();if(!data.ok)throw new Error(data.error||'No fue posible consultar tu colección.');return data;
-    }catch(error){
-      if(error.name==='AbortError')throw new Error('La consulta tardó demasiado. Puedes volver a intentar; tu colección se conserva.');
-      if(error instanceof TypeError)throw new Error('No se pudo conectar con BioDex. Revisa tu conexión y vuelve a intentar. También puedes probar el ensayo.');
-      if(error instanceof SyntaxError)throw new Error('La respuesta de BioDex no pudo leerse. Vuelve a intentar más tarde.');
-      throw error;
-    }finally{clearTimeout(timer);}
+    if(action==='login')return account.login(fields.name,fields.pin);
+    if(action==='load')return account.load();
+    if(action==='logout')return account.logout();
+    throw Error('Operación no disponible.');
   }
   function collectionFrom(data){
     if(!data.progreso||!Array.isArray(data.progreso.capturadas))throw new Error('BioDex respondió sin una colección válida. Intenta otra vez.');
@@ -81,11 +84,11 @@
         if(typeof data.token!=='string'||!data.token)throw new Error('No se recibió una sesión válida. Intenta otra vez.');
         session={token:data.token,name:String(data.progreso.jugador||name)};owned=ids;selected=[];demo=false;showAll=false;
       });
-      renderTeam();setView('team');tone();
+      enterWithAccount();
     }catch(error){$('loginError').textContent=error.message;$('playerPin').focus();}
   });
   $('demoButton').addEventListener('click',()=>{
-    if(networkBusy)return;session=null;demo=true;owned=DEMO_IDS.filter(id=>getBio(id));selected=['B001','B008','B014'].filter(id=>owned.includes(id));showAll=false;
+    if(networkBusy||(IS_LEAGUE&&!M.preview))return;session=null;demo=true;owned=DEMO_IDS.filter(id=>getBio(id));selected=['B001','B008','B014'].filter(id=>owned.includes(id));showAll=false;
     $('playerPin').value='';renderTeam();setView('team');tone();
   });
   $('refreshButton').addEventListener('click',async()=>{
@@ -96,8 +99,9 @@
   $('exitButton').addEventListener('click',async()=>{
     if(networkBusy)return;networkBusy=true;$('exitButton').disabled=true;
     try{if(session)await request('logout');}catch(_){/* La sesión local se descarta aunque falle la red. */}
-    finally{session=null;owned=[];selected=[];battle=null;demo=false;networkBusy=false;$('exitButton').disabled=false;setView('access');}
+    finally{session=null;owned=[];selected=[];battle=null;demo=false;networkBusy=false;$('exitButton').disabled=false;if($('gymGate'))$('gymGate').hidden=true;$('loginForm').hidden=false;setView('access');}
   });
+  $('gateLogout')?.addEventListener('click',()=>$('exitButton').click());
   function toggleBio(id){
     if(!owned.includes(id))return;
     if(selected.includes(id))selected=selected.filter(x=>x!==id);
@@ -106,9 +110,10 @@
     tone();renderTeam(false);
   }
   function renderTeam(rebuildGrid=true){
-    $('profileName').textContent=demo?'Explorador de ensayo':session?.name||'Explorador';
-    $('connectionKind').textContent=demo?'PREVIEW / EQUIPO PRESTADO':'BIODEX / COLECCIÓN CONSULTADA';
+    $('profileName').textContent=demo?'Equipo de preparación':session?.name||'Explorador';
+    $('connectionKind').textContent=demo?'EQUIPO PRESTADO':'BIODEX / COLECCIÓN CONSULTADA';
     $('demoBanner').hidden=!demo;$('refreshButton').hidden=demo;
+    const avatar=account.progress?.configuracion?.avatarId;$('profileAvatar').src=!demo&&['aurora','prisma','nexo','terra'].includes(avatar)?'assets/avatars/'+avatar+'.png':'assets/trainer.png';
     $('collectionCount').textContent=owned.length+' / 33 disponibles';
     $('ownedFilter').classList.toggle('selected',!showAll);$('ownedFilter').setAttribute('aria-pressed',String(!showAll));$('allFilter').classList.toggle('selected',showAll);$('allFilter').setAttribute('aria-pressed',String(showAll));
     const list=showAll?catalog:catalog.filter(b=>owned.includes(b.id));
@@ -122,15 +127,15 @@
     $('teamSlots').innerHTML=Array.from({length:3},(_,i)=>{const b=getBio(selected[i]);return b?`<button class="team-slot filled" data-remove="${b.id}" aria-label="Retirar a ${escape(b.name)}"><span class="remove">×</span><canvas data-pixel-id="${b.id}" width="64" height="64" aria-hidden="true"></canvas><small>${escape(b.name)}</small></button>`:`<div class="team-slot" aria-label="Espacio ${i+1} vacío"><span>+</span></div>`;}).join('');
     $('teamSlots').querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click',()=>toggleBio(b.dataset.remove)));
     $('startButton').disabled=selected.length===0;$('quickStartButton').disabled=selected.length===0;$('dockCount').textContent=selected.length+' / 3 elegidas';$('startHint').textContent=selected.length?selected.length+' de 3 compañeros listos. La primera elección entra al combate.':'Elige de 1 a 3 bioformas para comenzar.';
-    $('rosterMessage').textContent=owned.length===0?'También puedes salir y probar la misión con el equipo de ensayo.':'';
+    $('rosterMessage').textContent=owned.length===0?'Abre tu BioDex para registrar tu primera bioforma y luego actualiza la colección.':'';
     window.PixelArt.paintAll($('teamView'));
     $('teamAdvice').textContent=selected.length?selected.map(id=>{const b=getBio(id);return b.name+': '+E.matchup(b,{type:M.phases[0].type}).label;}).join(' · '):'Combina afinidad, curación y protección ante '+M.phases[0].type+'.';
   }
   $('ownedFilter').addEventListener('click',()=>{showAll=false;renderTeam();});$('allFilter').addEventListener('click',()=>{showAll=true;renderTeam();});
   function startMission(){
-    if(!selected.length||selected.some(id=>!owned.includes(id)))return;
-    battle=E.create(selected.map(getBio),{id:M.id,phases:M.phases});quiz=IS_LEAGUE?Q.create(undefined,BANK.questions,{repeat:false}):Q.create();untimed=IS_LEAGUE&&!leagueCheck.ready&&Boolean($('untimedPractice')?.checked);displayState=E.clone(battle);$('battleLog').replaceChildren();resetQuestion();
-    log(M.leader+' te da la bienvenida. '+M.phases[0].intro,1);if($('battleTimeHint'))$('battleTimeHint').textContent=untimed?'Ensayo sin reloj':M.questionSeconds+' s por pregunta';renderBattle(battle);storyIndex=0;renderStory();setView('story');tone('skill');
+    if(!canEnter()||!selected.length||selected.some(id=>!owned.includes(id)))return;
+    battle=E.create(selected.map(getBio),{id:M.id,phases:M.phases});quiz=IS_LEAGUE?Q.create(undefined,BANK.questions,{repeat:false}):Q.create();untimed=IS_LEAGUE&&M.preview&&Boolean($('untimedPractice')?.checked);displayState=E.clone(battle);$('battleLog').replaceChildren();resetQuestion();
+    log(M.leader+' te da la bienvenida. '+M.phases[0].intro,1);if($('battleTimeHint'))$('battleTimeHint').textContent=untimed?'Sin reloj':M.questionSeconds+' s por pregunta';renderBattle(battle);storyIndex=0;renderStory();setView('story');tone('skill');
   }
   $('startButton').addEventListener('click',startMission);$('quickStartButton').addEventListener('click',startMission);
   function finishStory(){clearInterval(typingTimer);typingTimer=null;if($('storyText'))$('storyText').textContent=fullStory;}
@@ -257,7 +262,7 @@
     else if(q.figure?.src){const img=document.createElement('img');img.src=q.figure.src;img.alt=q.figure.alt;img.style.cssText='max-width:100%;max-height:220px;object-fit:contain';$('questionFigure').append(img);}
     $('questionOptions').innerHTML=q.options.map((option,i)=>`<button class="question-option ${q.selected===i?'selected':''} ${q.graded&&q.answer===i?'correct':''} ${q.graded&&!q.correct&&q.selected===i?'incorrect':''}" data-option="${i}" aria-pressed="${q.selected===i}" ${q.graded?'disabled':''}><span>${String.fromCharCode(65+i)}</span><b>${escape(option)}</b>${q.graded&&q.answer===i?'<i>✓</i>':''}</button>`).join('');
     $('questionOptions').querySelectorAll('[data-option]').forEach(button=>button.addEventListener('click',()=>{if(Q.choose(quiz,Number(button.dataset.option))){renderQuestion();$('questionOptions').querySelector('[data-option="'+button.dataset.option+'"]').focus({preventScroll:true});tone();}}));
-    if(IS_LEAGUE){let watermark=$('questionWatermark');if(!watermark){watermark=document.createElement('small');watermark.id='questionWatermark';watermark.className='question-watermark';$('questionPanel').querySelector('.question-content').append(watermark);}watermark.textContent=(demo?'ENSAYO':session?.name||'BioDex')+' · '+M.title+' · '+q.id;}
+    if(IS_LEAGUE){let watermark=$('questionWatermark');if(!watermark){watermark=document.createElement('small');watermark.id='questionWatermark';watermark.className='question-watermark';$('questionPanel').querySelector('.question-content').append(watermark);}watermark.textContent=(demo?'PREPARACIÓN DOCENTE':session?.name||'BioDex')+' · '+M.title+' · '+q.id;}
     $('confirmAnswer').hidden=q.graded;$('confirmAnswer').disabled=q.selected===null||q.graded;
     $('answerFeedback').hidden=!q.graded;
     if(q.graded){
@@ -298,13 +303,27 @@
   function renderResult(){
     if(!IS_LEAGUE){renderLegacyResult();return;}
     stopClock();const won=battle.status==='won',standing=battle.team.filter(m=>m.hp>0).length;
-    const eligible=window.BioDexLeague.rewardEligible({won,demo,bank:BANK,slug:M.slug});
+    const eligible=!M.preview&&window.BioDexLeague.rewardEligible({won,demo,bank:BANK,slug:M.slug});
     let saved=false;if(won)try{saved=window.BioDexLeague.markWin(localStorage,demo?'ensayo':session?.name,M.slug,BANK.version,eligible?'challenge':'trial');}catch(_){}
-    const rewardCards=won?'<div class="reward-codes">'+M.rewards.map(r=>'<article class="reward-code"><img src="assets/cutouts/'+r.id+'.png" alt=""><b>'+escape(r.name)+'</b><code>'+escape(eligible?r.code:'ENSAYO · '+r.name.toLocaleUpperCase('es'))+'</code><small>'+escape(eligible?'Canjea este código en el escáner de BioDex.':'Recompensa simulada. No se añade a la colección.')+'</small>'+(eligible?'<button class="text-button copy-reward" data-code="'+escape(r.code)+'">Copiar código</button>':'')+'</article>').join('')+'</div>':'';
+    const rewardCards=won?'<div class="reward-codes">'+M.rewards.map(r=>'<article class="reward-code" id="reward-'+r.id+'"><img src="assets/cutouts/'+r.id+'.png" alt=""><b>'+escape(r.name)+'</b><small class="reward-status" role="status">'+(eligible?'Preparando el canje…':'Recompensa de este encuentro. No se guarda durante la preparación docente.')+'</small>'+(eligible?'<button class="text-button claim-bio" data-reward="'+r.id+'">Canjear '+escape(r.name)+'</button>':'')+'</article>').join('')+'</div>':'';
     const missed=[...new Set(quiz.history.filter(x=>!x.correct).map(x=>x.id))];
-    $('resultView').innerHTML='<div class="result-wrap"><div class="result-emblem"><span>'+(won?'✦':'◇')+'</span></div><div class="eyebrow gold">'+escape(M.sector)+'</div><h2>'+escape(won?M.emblem+' conseguido.':'El territorio te espera.')+'</h2><p>'+escape(won?M.leader+' reconoce la estrategia de tu equipo. El siguiente camino queda abierto.':'Tu equipo necesita descansar. Revisa las explicaciones y prepara otra combinación.')+'</p><div class="result-stats"><span><b>'+quiz.history.filter(x=>x.correct).length+' / '+quiz.history.length+'</b>ACIERTOS</span><span><b>'+quiz.history.filter(x=>x.timedOut).length+'</b>TIEMPOS AGOTADOS</span><span><b>'+standing+' / '+battle.team.length+'</b>EN PIE</span></div>'+(won&&!eligible?'<p class="draft-results">'+(demo?'Equipo prestado: esta victoria es un ensayo.':'Este banco todavía usa preguntas de ensayo.')+' Los cuatro premios se muestran como simulación.</p>':'')+rewardCards+(eligible?'<p class="result-note">Los códigos se canjean uno por uno en BioDex. Una bioforma que ya tienes se reconoce como duplicada. No se registra una segunda copia.</p>':'')+(saved?'<p class="result-note">El sello quedó registrado en este navegador.</p>':'')+'<section class="learning-review"><div class="eyebrow">EL REGISTRO DEL ENCUENTRO</div><h3>Decisiones que puedes revisar.</h3>'+missed.map(id=>{const q=quiz.bank.find(x=>x.id===id);return '<details><summary>'+escape(q.topic)+'</summary><p>'+escape(q.stem)+'</p><b>'+escape(q.options[q.answer])+'</b><p>'+escape(q.explain)+'</p></details>';}).join('')+(missed.length?'':'<p>Todas tus respuestas estuvieron bien fundamentadas.</p>')+'</section><div class="result-actions"><button class="button primary" id="retryButton">Preparar otro equipo →</button><a class="button secondary" href="index.html">Volver a la liga →</a></div><a class="league-result-link" href="https://nespinozagonzalez-hub.github.io/biodex/" target="_blank" rel="noopener">Abrir mi BioDex para canjear ↗</a></div>';
-    $('retryButton').addEventListener('click',()=>{battle=null;displayState=null;resetQuestion();quiz=null;renderTeam();setView('team');});
-    document.querySelectorAll('.copy-reward').forEach(button=>button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.dataset.code);button.textContent='✓ Código copiado';}catch(_){toast('Selecciona el código para copiarlo.');}}));
+    $('resultView').innerHTML='<div class="result-wrap"><div class="result-emblem"><span>'+(won?'✦':'◇')+'</span></div><div class="eyebrow gold">'+escape(M.sector)+'</div><h2>'+escape(won?M.emblem+' conseguido.':'El territorio te espera.')+'</h2><p>'+escape(won?M.leader+' reconoce la estrategia de tu equipo. El siguiente camino queda abierto.':'Tu equipo necesita descansar. Revisa las explicaciones y prepara otra combinación.')+'</p><div class="result-stats"><span><b>'+quiz.history.filter(x=>x.correct).length+' / '+quiz.history.length+'</b>ACIERTOS</span><span><b>'+quiz.history.filter(x=>x.timedOut).length+'</b>TIEMPOS AGOTADOS</span><span><b>'+standing+' / '+battle.team.length+'</b>EN PIE</span></div>'+rewardCards+(eligible?'<div class="reward-claim-summary"><p id="rewardSummary" role="status" aria-live="polite">Guardando tus cuatro recompensas en BioDex…</p><button class="button primary" id="claimAll">Canjear las cuatro bioformas →</button></div>':'')+(saved?'<p class="result-note">El sello quedó registrado en este navegador.</p>':'')+'<section class="learning-review"><div class="eyebrow">EL REGISTRO DEL ENCUENTRO</div><h3>Decisiones que puedes revisar.</h3>'+missed.map(id=>{const q=quiz.bank.find(x=>x.id===id);return '<details><summary>'+escape(q.topic)+'</summary><p>'+escape(q.stem)+'</p><b>'+escape(q.options[q.answer])+'</b><p>'+escape(q.explain)+'</p></details>';}).join('')+(missed.length?'':'<p>Todas tus respuestas estuvieron bien fundamentadas.</p>')+'</section><div class="result-actions"><button class="button primary" id="retryButton">Preparar otro equipo →</button><a class="button secondary" id="returnLeague" href="index.html">Volver a la liga →</a></div><a id="viewCollection" class="league-result-link" href="'+escape(window.BIODEX_CONFIG.homeUrl)+'">Ver mis bioformas en BioDex →</a></div>';
+    let claiming=false;
+    $('retryButton').addEventListener('click',()=>{if(claiming)return;battle=null;displayState=null;resetQuestion();quiz=null;renderTeam();setView('team');});
+    if(!eligible)return;
+    function paintClaims(states){
+      let confirmed=0;for(const reward of M.rewards){const state=states[reward.id],card=$('reward-'+reward.id);card.dataset.status=state.status;card.querySelector('.reward-status').textContent=state.message;const button=card.querySelector('button');button.disabled=claiming||state.status==='claimed';button.textContent=state.status==='claimed'?'✓ En tu BioDex':state.status==='error'?'Reintentar canje':'Canjear '+reward.name;if(state.status==='claimed')confirmed++;}
+      $('claimAll').disabled=claiming||confirmed===4;$('claimAll').textContent=confirmed===4?'✓ Cuatro bioformas en tu BioDex':'Reintentar premios pendientes →';
+      $('rewardSummary').textContent=confirmed===4?'¡Tus cuatro recompensas están guardadas en BioDex!':claiming?'Guardando recompensas en BioDex… '+confirmed+' / 4 confirmadas.':confirmed+' / 4 confirmadas. Reintenta las pendientes antes de salir.';
+      $('retryButton').disabled=claiming;for(const id of ['returnLeague','viewCollection']){$(id).setAttribute('aria-disabled',String(claiming));$(id).classList.toggle('claim-wait',claiming);}
+    }
+    const rewards=window.BioDexRewards.create({account,gym:M,bank:BANK,won,demo,onUpdate:paintClaims});
+    async function claimRewards(id){if(claiming)return;claiming=true;paintClaims(rewards.snapshot());try{await rewards.claim(id);owned=collectionFrom({progreso:account.progress});}catch(error){toast(error.message);}finally{claiming=false;paintClaims(rewards.snapshot());}}
+    document.querySelectorAll('[data-reward]').forEach(button=>button.addEventListener('click',()=>claimRewards(button.dataset.reward)));
+    $('claimAll').addEventListener('click',()=>claimRewards());
+    for(const id of ['returnLeague','viewCollection'])$(id).addEventListener('click',event=>{if(claiming){event.preventDefault();toast('Espera la confirmación de tus capturas.');}});
+    // Solo se inicia tras una victoria real con las 30 preguntas publicadas.
+    claimRewards();
   }
   function renderGuide(){
     const query=$('guideSearch').value.trim().toLocaleLowerCase('es'),type=$('guideOpponent').value;
@@ -318,7 +337,9 @@
   async function init(){
     renderer=new window.PixelBattleRenderer($('battleCanvas'));window.PixelArt.paintAll();
     $('loginButton').disabled=true;$('demoButton').disabled=true;
-    try{const response=await fetch('catalog.json');if(!response.ok)throw new Error();catalog=await response.json();if(!Array.isArray(catalog)||catalog.length!==33)throw new Error();$('loginButton').disabled=false;$('demoButton').disabled=false;}
+    try{const response=await fetch('catalog.json');if(!response.ok)throw new Error();catalog=await response.json();if(!Array.isArray(catalog)||catalog.length!==33)throw new Error();$('loginButton').disabled=false;$('demoButton').disabled=false;
+      if(IS_LEAGUE&&!M.preview){try{const data=await withLoading(()=>account.restore());if(data){session=account.session;owned=collectionFrom(data);selected=[];demo=false;enterWithAccount();}}catch(error){$('loginError').textContent=error.message;}}
+    }
     catch(_){$('loginError').textContent='No se pudo preparar el catálogo de la misión. Recarga la página.';}
   }
   init();

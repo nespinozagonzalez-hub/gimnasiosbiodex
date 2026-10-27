@@ -6,7 +6,7 @@ Mesa de preparación: https://nespinozagonzalez-hub.github.io/gimnasiosbiodex/re
 
 ## Estado
 
-Cinco gimnasios jugables con líderes, escenarios, tres escenas de historia y dos fases. Cada banco contiene exactamente 30 espacios de ensayo (`draft`, `placeholder: true`). Estos espacios prueban las reglas del combate, no son 150 preguntas curriculares. No se entregan códigos reales mientras existan preguntas de ensayo.
+Cinco gimnasios con líderes, escenarios, tres escenas de historia y dos fases. Cada banco contiene exactamente 30 espacios pendientes (`draft`, `placeholder: true`). La vista estudiantil no presenta rótulos de maqueta ni ofrece preguntas provisionales: permite conectar la colección y activar destinos, que muestran «Actividad próximamente» hasta publicar sus 30 preguntas. La preparación docente se conserva en `revision.html`, con enlace `preview=1` y premios desactivados.
 
 ## Ruta y recompensas
 
@@ -18,7 +18,7 @@ Cinco gimnasios jugables con líderes, escenarios, tres escenas de historia y do
 | 4 | Muralla Nova (S04) | Horno Cylar | Brann | Zephor, Spirel, Embera, Cylar |
 | 5 | Laboratorio Bruma (S05) | Fosa Velion | Mara | Altor, Dravik, Velion, Umbrin |
 
-Las cuatro recompensas de cada gimnasio pertenecen al sector que muestra el atlas actual; son 20 IDs distintos. Nimbel queda disponible como criatura inicial del recorrido. Los premios no sustituyen capturas anteriores ni reservan exclusividad: si el alumno ya tiene una bioforma, BioDex reconoce el código como duplicado. Las tres mega legendarias no forman parte de esta ruta.
+Las cuatro recompensas de cada gimnasio pertenecen al sector que muestra el atlas actual; son 20 IDs distintos. Nimbel se conserva como criatura inicial del recorrido si ya está capturado en la cuenta; no se entrega automáticamente al ingresar. Los premios no sustituyen capturas anteriores ni reservan exclusividad: si el alumno ya tiene una bioforma, BioDex reconoce el código como duplicado. Las tres mega legendarias no forman parte de esta ruta.
 
 ### Códigos existentes
 
@@ -65,7 +65,7 @@ Las cuatro recompensas de cada gimnasio pertenecen al sector que muestra el atla
 - Cambiar de estrategia conserva la misma pregunta, el orden de alternativas, la selección y la fecha límite.
 - Cambiar de pestaña no pausa el reloj. Al regresar se comprueba la fecha límite, incluso si el navegador suspendió temporalmente sus callbacks.
 - Después de confirmar, el reloj se detiene y se puede leer la explicación sin presión.
-- Solo los bancos en borrador ofrecen ensayo sin reloj. Un banco publicado siempre usa su tiempo configurado.
+- Solo la preparación docente ofrece la opción sin reloj. El acceso estudiantil siempre usa el tiempo configurado.
 - El banco se baraja sin repeticiones dentro del intento. La victoria puede llegar antes de usar las 30 preguntas; si se agotan sin vencer, finaliza el intento.
 
 ## Qué falta para publicar contenido real
@@ -80,15 +80,17 @@ Para pasarme preguntas basta con: enunciado, alternativas A–D, correcta y expl
 
 ## Recompensas y datos
 
-Una victoria muestra códigos reales solo cuando el banco está publicado y el jugador usó una cuenta real. El equipo prestado siempre recibe simulaciones. El alumno copia los cuatro códigos y los canjea en el escáner habitual de BioDex, que registra las capturas mediante el servicio existente.
+Una victoria permite capturas reales solo cuando el banco está publicado y el jugador usó su cuenta. Las cuatro recompensas se canjean automáticamente, en serie, mediante el servicio existente. Cada bioforma necesita confirmación del servidor antes de mostrarse como recibida. Ante un fallo de conexión hay reintento individual o de premios pendientes; los duplicados se reconocen sin añadir otra copia. El equipo prestado de preparación nunca recibe capturas reales.
 
-El motor solo usa `login`, `load` y `logout`. No cambia el script, sus tablas, el endpoint ni los snapshots del progreso de colección. El PIN se borra y el token solo vive en memoria. Los sellos del recorrido se guardan localmente por nombre de cuenta; son un registro orientativo en ese navegador, no una acreditación del servidor.
+La conexión usa `login`, `load`, `redeem` y `logout`. No cambia el script, sus tablas, el endpoint ni sube snapshots del navegador. El PIN se borra. La sesión se comparte con BioDex mediante la clave existente de `sessionStorage` y siempre se valida con `load` al entrar. Los enlaces a BioDex navegan en la misma pestaña para recuperar esa sesión y consultar la colección recién guardada.
+
+Cada destino tiene un código `LIGA-*`, documentado en README y distinto de los códigos GYM del gestor. Las activaciones y los sellos se recuerdan por nombre en este navegador. Desde otro equipo se vuelve a introducir el código. Este registro local no es una acreditación del servidor.
 
 ## Alcance de las medidas contra ayuda externa
 
 El tiempo, las preguntas/alternativas aleatorias, el bloqueo de copiar/seleccionar/arrastrar dentro de la pregunta, la restricción de impresión y la marca de explorador dificultan sacar contenido rápidamente. Se conservan los botones, el teclado y el texto accesible para lectores de pantalla. Una web no puede impedir capturas del sistema, fotografías, lectura con otra herramienta ni colaboración externa. Tampoco se bloquean herramientas de accesibilidad.
 
-Esta implementación no verifica victorias en el servidor. Los códigos de captura son compartidos y están en un repositorio público; pueden reenviarse o encontrarse en el código. Para acreditación fiable, recompensas individuales o evaluación formal se necesitaría un servicio que valide intentos y emita premios, ampliación que esta maqueta no incorpora.
+Esta implementación no verifica victorias en el servidor. Los códigos de captura son compartidos y están en un repositorio público; pueden reenviarse o encontrarse en el código. Para acreditación fiable, recompensas individuales o evaluación formal se necesitaría un servicio que valide intentos y emita premios, ampliación que este proyecto no incorpora.
 
 ## Archivos
 
@@ -97,6 +99,9 @@ Esta implementación no verifica victorias en el servidor. Los códigos de captu
 - `liga-config.js`: ruta, líderes, fases y recompensas.
 - `league-loader.js`: carga y valida el banco antes de iniciar el motor.
 - `motor/league.js`: reglas de publicación, premios y registro local.
+- `account.js`: sesión y operaciones del servicio BioDex.
+- `motor/access.js`: activación de los cinco destinos por código.
+- `motor/rewards.js`: canje confirmado, duplicados y reintentos.
 - `revision.html`, `revision.js`: mesa de preparación e importación/exportación.
 - `ensayo.html`: se conserva el ensayo original del Umbral, con enlace a la nueva liga.
 
@@ -104,4 +109,4 @@ Esta implementación no verifica victorias en el servidor. Los códigos de captu
 
 `node --test tests/*.test.cjs`
 
-Las pruebas comprueban reloj estricto, consumo único, 30 preguntas sin repetición, publicación y premios, correspondencia de los 20 códigos con el backend original, pertenencia al sector y victoria posible en los cinco gimnasios con el equipo de ensayo.
+Las pruebas comprueban reloj estricto, consumo único, 30 preguntas sin repetición, publicación y premios, correspondencia de los 20 códigos con el backend original, pertenencia al sector y victoria posible en los cinco gimnasios, sesiones compartidas, accesos por código, canjes en serie, fallos parciales y recuperación de respuestas perdidas.

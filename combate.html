@@ -11,17 +11,20 @@
   <link rel="stylesheet" href="rpg.css?v=2">
   <link rel="stylesheet" href="tactics.css?v=1">
   <link rel="stylesheet" href="ux.css?v=4">
-  <link rel="stylesheet" href="liga.css?v=1">
-  <script defer src="config.js"></script>
-  <script defer src="liga-config.js?v=1"></script>
-  <script defer src="motor/league.js?v=1"></script>
+  <link rel="stylesheet" href="liga.css?v=4">
+  <script defer src="config.js?v=4"></script>
+  <script defer src="account.js?v=4"></script>
+  <script defer src="motor/access.js?v=4"></script>
+  <script defer src="liga-config.js?v=4"></script>
+  <script defer src="motor/league.js?v=4"></script>
+  <script defer src="motor/rewards.js?v=4"></script>
   <script defer src="bancos/umbral.js?v=1"></script>
   <script defer src="motor/roster.js?v=1"></script>
   <script defer src="motor/combat.js?v=1"></script>
   <script defer src="motor/questions.js?v=2"></script>
   <script defer src="assets/bioformas/manifest.js?v=1"></script>
   <script defer src="motor/renderer.js?v=1"></script>
-  <script defer src="league-loader.js?v=1"></script>
+  <script defer src="league-loader.js?v=4"></script>
 </head>
 <body data-view="access">
   <a class="skip" href="#main">Ir a la misión</a>
@@ -45,7 +48,7 @@
           <div class="eyebrow gold">LIGA DE LOS SIETE TERRITORIOS</div>
           <h1>El guardián<br>del <em>Umbral.</em></h1>
           <p class="intro">Al otro lado del lago, una puerta permanece sellada.<br class="desktop"> Su guardián espera a un equipo capaz de leer las mareas.</p>
-          <div id="missionStatus" class="league-status">MAQUETA · preguntas y premios de ensayo</div><div class="mission-chips"><span>◆ Preguntas + estrategia</span><span>◇ Hasta 3 bioformas</span><span>◷ A tu ritmo</span></div>
+          <div id="missionStatus" class="league-status">Preparando el gimnasio…</div><div class="mission-chips"><span>◆ Preguntas + estrategia</span><span>◇ Hasta 3 bioformas</span><span>◷ A tu ritmo</span></div>
           <div class="hero-creature"><div class="hero-orbit"></div><canvas data-pixel-id="B023" width="160" height="160" role="img" aria-label="Caelix, bioforma del guardián del Umbral"></canvas><div class="creature-caption"><b>CAELIX</b><span>VIGÍA DEL LAGO · FASE I</span></div></div>
           <div class="leader-quote"><span class="leader-portrait" aria-hidden="true"></span><div><b>Iria · guardiana del Umbral</b><p>«Una buena decisión ilumina el camino.»</p></div></div>
         </div>
@@ -61,10 +64,11 @@
             <p id="loginError" class="error" role="alert"></p>
             <button type="submit" class="button primary" id="loginButton">Conectar mi BioDex <span>→</span></button>
           </form>
-          <label class="practice-setting"><input id="untimedPractice" type="checkbox"> Ensayo sin reloj <small>Solo para revisar la maqueta</small></label><p class="connection-note"><i class="live-dot"></i> Se consulta tu colección. Tus capturas se conservan.</p>
-          <div class="divider"><span>O EXPLORA LA PREVIEW</span></div>
-          <button class="button secondary" id="demoButton">Probar con equipo de ensayo <span>↗</span></button>
-          <small class="trial-note">Equipo prestado para probar la batalla. El ensayo no se añade a tu cuenta.</small>
+          <section id="gymGate" class="gym-gate" hidden><p id="gateAccount"></p><p id="gateStatus" role="status"></p><form id="gymCodeForm"><label for="gymCode">Código del gimnasio</label><input id="gymCode" maxlength="80" autocomplete="off" placeholder="El código de tu docente" required><button class="button primary" type="submit">Activar gimnasio →</button></form><p id="gateError" class="error" role="alert"></p><button id="gateLogout" class="text-button" type="button">Cambiar de cuenta</button><a class="text-button" href="index.html">Volver a la liga →</a></section>
+          <label class="practice-setting" hidden><input id="untimedPractice" type="checkbox"> Sin reloj <small>Solo durante la preparación docente</small></label><p class="connection-note"><i class="live-dot"></i> Se consulta tu colección. Tus capturas se conservan.</p>
+          <div class="divider" id="previewDivider" hidden><span>PREPARACIÓN DOCENTE</span></div>
+          <button class="button secondary" id="demoButton" hidden>Explorar el combate <span>↗</span></button>
+          <small class="trial-note" id="previewNote" hidden>Equipo prestado. Las recompensas no se guardan en la cuenta.</small>
         </aside>
       </div>
       <div class="intro-footer"><span>01 <b>CONECTA TU COLECCIÓN</b></span><span>02 <b>ELIGE TU ESTRATEGIA</b></span><span>03 <b>DESAFÍA AL GUARDIÁN</b></span></div>
@@ -72,7 +76,7 @@
 
     <section id="teamView" class="view" hidden>
       <div class="player-ribbon"><div><img id="profileAvatar" src="assets/trainer.png" alt=""><span><small id="connectionKind">COLECCIÓN CONECTADA</small><b id="profileName"></b></span></div><div class="ribbon-actions"><button class="text-button" id="refreshButton">↻ Actualizar colección</button><button class="text-button" id="exitButton">Salir</button></div></div>
-      <div id="demoBanner" class="demo-banner" hidden><span>◇ MODO ENSAYO</span> Las 33 bioformas están disponibles para ensayar. Son prestadas. Conecta tu cuenta para combatir con tu colección.</div>
+      <div id="demoBanner" class="demo-banner" hidden><span>◇ PREPARACIÓN DOCENTE</span> Las 33 bioformas están disponibles con un equipo prestado. Conecta tu cuenta para combatir con tu colección.</div>
       <div class="team-layout">
         <div class="collection-area">
           <div class="eyebrow">PREPARACIÓN / MISIÓN 01</div>
@@ -84,7 +88,7 @@
         <aside class="preparation-panel">
           <div class="mission-map"><span>DESTINO / UMBRAL</span><div class="map-pin">◆</div></div>
           <div class="prep-body"><div class="prep-team"><div class="eyebrow gold">TU EQUIPO DE EXPEDICIÓN</div><h3>Un vínculo. Tres caminos.</h3><div id="teamSlots" class="team-slots"></div></div><div class="prep-actions"><button id="startButton" class="button primary" disabled>Entrar al gimnasio <span>→</span></button><p id="startHint" class="trial-note">Elige de 1 a 3 bioformas para comenzar.</p></div><div class="prep-details">
-          <div class="enemy-intel"><span class="tiny-label">INFORME DEL GUARDIÁN</span><h4>Decide. Responde. Actúa.</h4><p>Elige tu estrategia y responde una pregunta para ejecutarla. El rival anuncia su próximo movimiento.</p><div class="intel-facts"><span>2 fases</span><span>Lectura crítica y evidencias</span></div><p class="bank-note">Banco de ensayo transversal. El contenido definitivo se elegirá al crear la misión.</p></div>
+          <div class="enemy-intel"><span class="tiny-label">INFORME DEL GUARDIÁN</span><h4>Decide. Responde. Actúa.</h4><p>Elige tu estrategia y responde una pregunta para ejecutarla. El rival anuncia su próximo movimiento.</p><div class="intel-facts"><span>2 fases</span><span>Lectura crítica y evidencias</span></div><p class="bank-note">Responde las preguntas del gimnasio para activar tus movimientos.</p></div>
           <p id="teamAdvice" class="team-advice"></p></div></div>
         </aside>
       </div>
@@ -126,11 +130,11 @@
 
     <section id="resultView" class="view" hidden></section>
   </main>
-  <footer class="site-footer"><span>BioDex <b>×</b> LIGA BIONOVA</span><span>LIGA DE LOS CINCO SELLOS · MAQUETA</span><a href="https://nespinozagonzalez-hub.github.io/biodex/" target="_blank" rel="noopener noreferrer">Abrir mi BioDex ↗</a></footer>
+  <footer class="site-footer"><span>BioDex <b>×</b> LIGA BIONOVA</span><span>LIGA DE LOS CINCO SELLOS</span><a href="https://nespinozagonzalez-hub.github.io/biodex/">Abrir mi BioDex ↗</a></footer>
   <div id="toast" class="toast" role="status" hidden></div>
   <dialog id="loadingDialog" class="modal loading-modal" aria-labelledby="loadingTitle"><div class="radar" aria-hidden="true"><span>✦</span></div><div class="eyebrow gold">ENLACE CON BIONOVA</div><h2 id="loadingTitle">Recuperando tu colección…</h2><p id="loadingText" aria-live="polite">Verificando tu pasaporte y buscando tus bioformas.</p><div class="loading-bar" aria-hidden="true"><i></i></div><p class="trial-note">Tu equipo se prepara con las capturas de tu cuenta.</p></dialog>
-  <dialog id="infoDialog" class="modal" aria-labelledby="infoTitle"><button class="modal-close" data-close="infoDialog" aria-label="Cerrar">×</button><div class="eyebrow gold">GUÍA DE CAMPO</div><h2 id="infoTitle">Lee al rival. Cuida a tu equipo.</h2><div class="help-grid"><div><b>↗ Atacar</b><p>Una respuesta acertada activa el golpe. El intento recupera 1 de energía.</p></div><div><b>✦ Habilidad</b><p>Requiere acertar y consume 2 de energía. Su efecto depende de la bioforma.</p></div><div><b>⬡ Defender</b><p>Si aciertas, reduce un 75 % el próximo golpe recibido y recupera energía.</p></div><div><b>⇄ Cambiar</b><p>Consume el turno. Si tu bioforma cae, el relevo entra sin gastar otro turno.</p></div></div><p>Cada bioforma tiene una habilidad y un efecto pasivo. La afinidad otorga ×1,25 de daño con ventaja o ×0,85 ante resistencia. Las protecciones duran hasta recibir un golpe. Las habilidades requieren acertar; un error no consume su energía. El gimnasio tiene dos fases y adapta la vida del rival al tamaño de tu equipo. Puedes volver a intentarlo con otra combinación.</p><div class="help-note"><b>Sobre esta preview</b><p>El acceso real consulta tus bioformas mediante el servicio actual de BioDex. El combate y sus recompensas de ensayo ocurren en esta partida. El código de captura que entregue tu docente se canjea en BioDex.</p></div><button class="button primary" data-close="infoDialog">Entendido <span>→</span></button></dialog>
-  <dialog id="guideDialog" class="modal guide-modal" aria-labelledby="guideTitle"><button class="modal-close" data-close="guideDialog" aria-label="Cerrar atlas">×</button><div class="eyebrow gold">MANUAL DE LA LIGA / MOTOR 1.0</div><h2 id="guideTitle">Tu equipo tiene una estrategia.</h2><p>Una respuesta correcta activa la acción; la afinidad, la habilidad y el efecto pasivo deciden cómo se resuelve. Abre una ficha para consultar sus efectos y su pose de combate.</p><div class="guide-rules"><span>Ventaja <b>×1,25</b></span><span>Neutral <b>×1</b></span><span>Resistencia <b>×0,85</b></span><span>Habilidad <b>2 energía</b></span></div><p class="trial-note">Astral usa afinidades de Prisma; Abisal, de Umbral; Primordial, de Arcana. Sus estadísticas están acotadas para este ensayo.</p><div class="guide-toolbar"><label>Buscar bioforma, tipo o rol<input id="guideSearch" type="search" placeholder="Por ejemplo: Nimbel o apoyo"></label><label>Comparar contra<select id="guideOpponent"><option>Aurora</option><option>Prisma</option><option>Nexo</option><option>Nova</option><option>Bruma</option><option>Lumen</option><option>Vector</option><option selected>Umbral</option><option>Arcana</option><option>Terra</option><option>Astral</option><option>Abisal</option><option>Primordial</option></select></label><span id="guideCount"></span></div><div id="guideCards" class="guide-cards"></div></dialog>
+  <dialog id="infoDialog" class="modal" aria-labelledby="infoTitle"><button class="modal-close" data-close="infoDialog" aria-label="Cerrar">×</button><div class="eyebrow gold">GUÍA DE CAMPO</div><h2 id="infoTitle">Lee al rival. Cuida a tu equipo.</h2><div class="help-grid"><div><b>↗ Atacar</b><p>Una respuesta acertada activa el golpe. El intento recupera 1 de energía.</p></div><div><b>✦ Habilidad</b><p>Requiere acertar y consume 2 de energía. Su efecto depende de la bioforma.</p></div><div><b>⬡ Defender</b><p>Si aciertas, reduce un 75 % el próximo golpe recibido y recupera energía.</p></div><div><b>⇄ Cambiar</b><p>Consume el turno. Si tu bioforma cae, el relevo entra sin gastar otro turno.</p></div></div><p>Cada bioforma tiene una habilidad y un efecto pasivo. La afinidad otorga ×1,25 de daño con ventaja o ×0,85 ante resistencia. Las protecciones duran hasta recibir un golpe. Las habilidades requieren acertar; un error no consume su energía. El gimnasio tiene dos fases y adapta la vida del rival al tamaño de tu equipo. Puedes volver a intentarlo con otra combinación.</p><div class="help-note"><b>Tu cuenta y tus recompensas</b><p>Conecta tu cuenta para traer tu colección. Al vencer, tus cuatro recompensas se canjean y guardan en BioDex.</p></div><button class="button primary" data-close="infoDialog">Entendido <span>→</span></button></dialog>
+  <dialog id="guideDialog" class="modal guide-modal" aria-labelledby="guideTitle"><button class="modal-close" data-close="guideDialog" aria-label="Cerrar atlas">×</button><div class="eyebrow gold">MANUAL DE LA LIGA / MOTOR 1.0</div><h2 id="guideTitle">Tu equipo tiene una estrategia.</h2><p>Una respuesta correcta activa la acción; la afinidad, la habilidad y el efecto pasivo deciden cómo se resuelve. Abre una ficha para consultar sus efectos y su pose de combate.</p><div class="guide-rules"><span>Ventaja <b>×1,25</b></span><span>Neutral <b>×1</b></span><span>Resistencia <b>×0,85</b></span><span>Habilidad <b>2 energía</b></span></div><p class="trial-note">Astral usa afinidades de Prisma; Abisal, de Umbral; Primordial, de Arcana. Sus estadísticas se equilibran para los combates.</p><div class="guide-toolbar"><label>Buscar bioforma, tipo o rol<input id="guideSearch" type="search" placeholder="Por ejemplo: Nimbel o apoyo"></label><label>Comparar contra<select id="guideOpponent"><option>Aurora</option><option>Prisma</option><option>Nexo</option><option>Nova</option><option>Bruma</option><option>Lumen</option><option>Vector</option><option selected>Umbral</option><option>Arcana</option><option>Terra</option><option>Astral</option><option>Abisal</option><option>Primordial</option></select></label><span id="guideCount"></span></div><div id="guideCards" class="guide-cards"></div></dialog>
   <dialog id="switchDialog" class="modal" aria-labelledby="switchTitle"><button id="switchClose" class="modal-close" data-close="switchDialog" aria-label="Cerrar">×</button><div class="eyebrow gold">RELEVO DE EQUIPO</div><h2 id="switchTitle">¿Quién continuará?</h2><p id="switchHint">Cambiar consume tu turno. Elige con cuidado.</p><div id="switchOptions" class="switch-options"></div></dialog>
   <dialog id="retreatDialog" class="modal" aria-labelledby="retreatTitle"><div class="eyebrow gold">PAUSA EN EL CAMINO</div><h2 id="retreatTitle">¿Volver a preparar tu equipo?</h2><p>Esta partida terminará. Puedes iniciar otro intento con todas tus bioformas recuperadas.</p><div class="modal-actions"><button class="button secondary" data-close="retreatDialog">Seguir combatiendo</button><button class="button primary" id="confirmRetreat">Volver al equipo</button></div></dialog>
 </body>

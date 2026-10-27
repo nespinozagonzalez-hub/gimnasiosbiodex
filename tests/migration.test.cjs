@@ -11,8 +11,8 @@ test('los cinco gimnasios tienen retratos y fondos propios en la copia independi
 });
 test('la cuenta y la vuelta a BioDex usan direcciones explícitas',()=>{
  const context={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'config.js'),'utf8'),context);const c=context.window.BIODEX_CONFIG;assert.match(c.endpoint,/^https:\/\/script\.google\.com\/macros\/s\/.+\/exec$/);assert.equal(c.homeUrl,'https://nespinozagonzalez-hub.github.io/biodex/');
- const app=fs.readFileSync(path.join(root,'app.js'),'utf8');assert.ok(app.includes("['login','load','logout']"));assert.ok(!app.includes('href="../"'));
+ const app=fs.readFileSync(path.join(root,'app.js'),'utf8');assert.ok(!app.includes('href="../"'));
 });
-test('la entrada abre la liga y mantiene el ensayo original en su propio enlace',()=>{
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.ok(html.includes('liga-hub.js'));assert.ok(html.includes('href="ensayo.html"'));assert.ok(fs.readFileSync(path.join(root,'ensayo.html'),'utf8').includes('misiones/umbral.js'));
+test('la entrada de estudiantes abre la liga sin ofrecer prototipos ni preparación docente',()=>{
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.ok(html.includes('liga-hub.js'));assert.ok(!html.includes('href="ensayo.html"'));assert.ok(!html.includes('href="revision.html"'));assert.ok(!/maqueta|preview|ensayo|prueba/i.test(html));assert.ok(fs.readFileSync(path.join(root,'ensayo.html'),'utf8').includes('misiones/umbral.js'));
 });
