@@ -1,10 +1,10 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const L=require('../motor/league.js'),Q=require('../motor/questions.js'),E=require('../motor/combat.js'),G=require('../liga-config.js').GYMS,C=require('../catalog.json');
 const bank=g=>require('../bancos/liga/'+g.slug+'.json'),qstate=()=>Q.create(()=>.3,bank(G[0]).questions,{repeat:false});
-test('cinco gimnasios: 30 espacios, cuatro códigos originales por sector, sin megas ni repetidos',()=>{
+test('cinco gimnasios: 30 preguntas publicadas, cuatro códigos originales por sector, sin megas ni repetidos',()=>{
  const reference=require('../reference/biodex.json'),sectors=reference.sectors,catalog=reference.catalog;
  const seen=new Set();assert.equal(G.length,5);
- for(const gym of G){const b=bank(gym);assert.equal(L.validateBank(b,gym.slug).valid,true);assert.equal(L.validateBank(b,gym.slug).ready,false);assert.equal(b.questions.length,30);assert.equal(gym.rewards.length,4);const ids=sectors.find(s=>s.id===gym.sectorId).gimnasios.flatMap(s=>s.bioformas);
+ for(const gym of G){const b=bank(gym);assert.equal(L.validateBank(b,gym.slug).valid,true);assert.equal(L.validateBank(b,gym.slug).ready,true);assert.equal(b.questions.length,30);assert.equal(gym.rewards.length,4);const ids=sectors.find(s=>s.id===gym.sectorId).gimnasios.flatMap(s=>s.bioformas);
   for(const reward of gym.rewards){assert.ok(ids.includes(reward.id));assert.equal(reward.code,catalog.find(x=>x.id===reward.id).codigo);assert.equal(reward.name,C.find(x=>x.id===reward.id).name);assert.equal(seen.has(reward.id),false);assert.ok(Number(reward.id.slice(1))<=30);seen.add(reward.id);}
  }
  assert.equal(seen.size,20);
@@ -22,7 +22,7 @@ test('banco finito: 30 preguntas sin repetición, luego se termina',()=>{
  const s=qstate(),ids=new Set();for(let i=0;i<30;i++){const q=Q.present(s,'attack');ids.add(q.id);Q.choose(s,q.answer);Q.grade(s);Q.consume(s);}assert.equal(ids.size,30);assert.equal(Q.present(s,'attack'),null);assert.equal(s.history.length,30);
 });
 test('publicar exige 30 preguntas completas y definitivas; el ensayo nunca recibe códigos reales',()=>{
- const original=bank(G[0]),b=structuredClone(original);b.status='published';assert.equal(L.validateBank(b,G[0].slug).valid,false);b.questions.forEach(q=>q.placeholder=false);assert.equal(L.validateBank(b,G[0].slug).ready,true);
+ const original=structuredClone(bank(G[0]));original.status='draft';original.questions[0].placeholder=true;const b=structuredClone(original);b.status='published';assert.equal(L.validateBank(b,G[0].slug).valid,false);b.questions.forEach(q=>q.placeholder=false);assert.equal(L.validateBank(b,G[0].slug).ready,true);
  for(const [won,demo,source,expected] of [[true,false,b,true],[false,false,b,false],[true,true,b,false],[true,false,original,false]])assert.equal(L.rewardEligible({won,demo,bank:source,slug:G[0].slug}),expected);
  b.questions[0].answer=4;assert.equal(L.validateBank(b,G[0].slug).valid,false);b.questions[0].answer=0;b.questions[0].seconds=0;assert.equal(L.validateBank(b,G[0].slug).valid,false);assert.equal(L.validateBank(original,'wrong').valid,false);
 });

@@ -1,458 +1,712 @@
 {
   "gym": "nexo",
-  "version": 1,
-  "status": "draft",
-  "title": "Cueva Aegira",
+  "version": 2,
+  "status": "published",
+  "title": "Meiosis y variabilidad",
+  "source": {
+    "file": "Liga_Celular_2doMedio.xlsx",
+    "sheet": "Gimnasio 3"
+  },
   "questions": [
     {
       "id": "NEXO-01",
-      "topic": "Estrategia del encuentro · 01",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Definición",
+      "stem": "La meiosis es un tipo de división celular que tiene como resultado:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "dos células hijas diploides.",
+        "cuatro células hijas haploides.",
+        "dos células hijas haploides.",
+        "cuatro células hijas diploides."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 1,
+      "explain": "La meiosis produce cuatro células haploides (n) a partir de una célula diploide (2n).",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-02",
-      "topic": "Estrategia del encuentro · 02",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Divisiones",
+      "stem": "¿Cuántas divisiones celulares sucesivas ocurren en la meiosis?",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Tres divisiones.",
+        "Cuatro divisiones.",
+        "Una sola división.",
+        "Dos divisiones."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 3,
+      "explain": "La meiosis tiene dos divisiones consecutivas: meiosis I y meiosis II.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-03",
-      "topic": "Estrategia del encuentro · 03",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Gametos",
+      "stem": "En el ser humano, las células que se producen por meiosis son:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "las células de la piel.",
+        "los espermios y óvulos.",
+        "las neuronas del cerebro.",
+        "los glóbulos rojos."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 1,
+      "explain": "La meiosis ocurre en las gónadas y produce los gametos: óvulos y espermatozoides.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-04",
-      "topic": "Estrategia del encuentro · 04",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Reducción",
+      "stem": "¿En cuál de las dos divisiones de la meiosis se reduce el número de cromosomas?",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "En ninguna de las dos.",
+        "En las dos por igual.",
+        "En la meiosis I.",
+        "En la meiosis II."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 2,
+      "explain": "La meiosis I es la división reduccional: separa los cromosomas homólogos y pasa de 2n a n.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-05",
-      "topic": "Estrategia del encuentro · 05",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Crossing over",
+      "stem": "El intercambio de fragmentos entre cromosomas homólogos se denomina:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "replicación.",
+        "entrecruzamiento.",
+        "citocinesis celular.",
+        "no disyunción."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 1,
+      "explain": "El entrecruzamiento o crossing over ocurre en profase I y mezcla la información de los homólogos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-06",
-      "topic": "Estrategia del encuentro · 06",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Crossing over",
+      "stem": "¿En qué etapa de la meiosis ocurre el entrecruzamiento?",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "En la profase I.",
+        "En la anafase I.",
+        "En la profase II.",
+        "En la telofase II."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "explain": "El entrecruzamiento ocurre en la profase I, cuando los homólogos se aparean formando tétradas.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-07",
-      "topic": "Estrategia del encuentro · 07",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Homólogos",
+      "stem": "Los cromosomas homólogos son aquellos que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "provienen del mismo padre.",
+        "tienen distinto tamaño.",
+        "llevan los mismos genes.",
+        "son cromátidas hermanas."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 2,
+      "explain": "Los homólogos son un par de cromosomas con los mismos genes: uno es materno y el otro paterno.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-08",
-      "topic": "Estrategia del encuentro · 08",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Anafase I",
+      "stem": "Durante la anafase I de la meiosis se separan:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "las cromátidas hermanas.",
+        "los cromosomas homólogos.",
+        "los dos núcleos nuevos.",
+        "las células hijas haploides."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 1,
+      "explain": "En anafase I se separan los homólogos; las cromátidas hermanas se separan en anafase II.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-09",
-      "topic": "Estrategia del encuentro · 09",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Anafase II",
+      "stem": "Durante la anafase II de la meiosis se separan:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "las cuatro células hijas.",
+        "los dos husos acromáticos.",
+        "los cromosomas homólogos.",
+        "las cromátidas hermanas."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 3,
+      "explain": "La meiosis II se parece a una mitosis: separa las cromátidas hermanas de cada cromosoma.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-10",
-      "topic": "Estrategia del encuentro · 10",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Variabilidad",
+      "stem": "La principal consecuencia biológica de la meiosis para una especie es que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "duplica el número de genes.",
+        "repara los tejidos del cuerpo.",
+        "genera variabilidad genética.",
+        "produce clones idénticos."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 2,
+      "explain": "La meiosis genera variabilidad por entrecruzamiento y por la distribución al azar de los homólogos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-11",
-      "topic": "Estrategia del encuentro · 11",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Ploidía humana",
+      "stem": "Si una célula humana diploide tiene 46 cromosomas, sus gametos tendrán:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "23 cromosomas.",
+        "46 cromosomas.",
+        "92 cromosomas.",
+        "12 cromosomas."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "explain": "Los gametos humanos son haploides: tienen 23 cromosomas, la mitad de 46.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-12",
-      "topic": "Estrategia del encuentro · 12",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Fecundación",
+      "stem": "Al unirse un óvulo y un espermatozoide humanos, el cigoto resultante tiene:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "23 cromosomas haploides.",
+        "46 cromosomas diploides.",
+        "92 cromosomas diploides.",
+        "46 cromosomas haploides."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 1,
+      "explain": "La unión de dos gametos de 23 cromosomas restituye la condición diploide: 46 cromosomas.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NEXO-13",
-      "topic": "Estrategia del encuentro · 13",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Comparación",
+      "stem": "A diferencia de la mitosis, en la meiosis las células hijas son:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "diploides igual que la madre.",
+        "idénticas a la célula madre.",
+        "distintas entre sí y haploides.",
+        "siempre dos en lugar de cuatro."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "La mitosis produce dos hijas idénticas y diploides; la meiosis, cuatro distintas y haploides.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-14",
-      "topic": "Estrategia del encuentro · 14",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Cuenta cromosómica",
+      "stem": "Un perro tiene 78 cromosomas en sus células somáticas. Sus espermatozoides tendrán:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "39 cromosomas.",
+        "156 cromosomas.",
+        "19 cromosomas.",
+        "78 cromosomas."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Los gametos tienen la mitad: 78 dividido en 2 da 39 cromosomas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-15",
-      "topic": "Estrategia del encuentro · 15",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Cuenta cromosómica",
+      "stem": "El óvulo de una especie tiene 12 cromosomas. Las células somáticas de esa especie tienen:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "6 cromosomas.",
+        "12 cromosomas.",
+        "24 cromosomas.",
+        "48 cromosomas."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Si el gameto es haploide con 12, la célula diploide tiene el doble: 24 cromosomas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-16",
-      "topic": "Estrategia del encuentro · 16",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Meiosis II",
+      "stem": "La meiosis II se parece mucho a una mitosis porque en ella:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "se separan las cromátidas hermanas.",
+        "se reduce a la mitad la ploidía.",
+        "ocurre el entrecruzamiento génico.",
+        "se aparean los cromosomas homólogos."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "La meiosis II separa cromátidas hermanas, igual que una mitosis, pero sin replicar antes el ADN.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-17",
-      "topic": "Estrategia del encuentro · 17",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Sin replicación",
+      "stem": "Entre la meiosis I y la meiosis II no se replica el ADN. Esto explica que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "no ocurra nunca la citocinesis.",
+        "las células finales sean haploides.",
+        "las células finales sean diploides.",
+        "se produzcan solo dos gametos."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Al no replicarse el ADN entre ambas divisiones, el resultado final son cuatro células haploides.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-18",
-      "topic": "Estrategia del encuentro · 18",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Origen de la variabilidad",
+      "stem": "Dos hermanos de los mismos padres son distintos entre sí porque:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "la mitosis mezcla los genes de los padres.",
+        "los padres mutan sus genes al tenerlos.",
+        "cada hermano tiene más cromosomas.",
+        "cada gameto lleva una combinación única."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "Cada gameto se forma con una combinación distinta de genes, por eso los hermanos no son iguales.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-19",
-      "topic": "Estrategia del encuentro · 19",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Dónde ocurre",
+      "stem": "En una mujer, el proceso de meiosis ocurre en:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "los ovarios.",
+        "el útero.",
+        "las trompas.",
+        "la placenta."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "La meiosis femenina ocurre en los ovarios, donde se forman los ovocitos.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-20",
-      "topic": "Estrategia del encuentro · 20",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Reproducción sexual",
+      "stem": "La meiosis es indispensable para la reproducción sexual porque:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "hace que los hijos sean clones del padre.",
+        "aumenta el número de genes del cigoto.",
+        "evita duplicar la dotación cromosómica.",
+        "permite reparar los tejidos del cuerpo."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Si los gametos fueran diploides, cada generación duplicaría los cromosomas; la meiosis lo evita.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NEXO-21",
-      "topic": "Estrategia del encuentro · 21",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Características",
+      "stem": "Respecto de la meiosis como proceso de división celular, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "El I es falso: la meiosis ocurre solo en las células de las gónadas, no en las somáticas.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "ocurre en todas las células del cuerpo.",
+        "produce cuatro células hijas.",
+        "las células hijas son haploides.",
+        "las células hijas son distintas entre sí."
+      ]
     },
     {
       "id": "NEXO-22",
-      "topic": "Estrategia del encuentro · 22",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Variabilidad",
+      "stem": "Respecto de los mecanismos de la meiosis que generan variabilidad genética, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I y II",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El II es falso: justamente por esos mecanismos las cuatro células hijas resultan distintas.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "el entrecruzamiento mezcla los homólogos.",
+        "las cuatro células hijas son idénticas.",
+        "los homólogos se reparten al azar.",
+        "cada gameto recibe una combinación única."
+      ]
     },
     {
       "id": "NEXO-23",
-      "topic": "Estrategia del encuentro · 23",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Meiosis I",
+      "stem": "Respecto de lo que ocurre durante la meiosis I, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "El III es falso: las cromátidas hermanas se separan en la meiosis II, no en la I.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "los cromosomas homólogos se aparean.",
+        "ocurre el entrecruzamiento en profase.",
+        "se separan las cromátidas hermanas.",
+        "se separan los cromosomas homólogos."
+      ]
     },
     {
       "id": "NEXO-24",
-      "topic": "Estrategia del encuentro · 24",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Comparación",
+      "stem": "Se comparan la mitosis y la meiosis en una misma especie. Al respecto, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el III y el IV: las dos divisiones son propias de la meiosis y la mitosis produce dos células hijas, no cuatro.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la mitosis produce células idénticas.",
+        "la meiosis reduce la ploidía a la mitad.",
+        "la mitosis incluye dos divisiones sucesivas.",
+        "ambas producen cuatro células hijas."
+      ]
     },
     {
       "id": "NEXO-25",
-      "topic": "Estrategia del encuentro · 25",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Análisis de caso",
+      "stem": "Una célula vegetal diploide con 20 cromosomas entra en meiosis y la completa sin errores. Respecto del resultado, es correcto afirmar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "Son falsos el I y el IV: la meiosis produce cuatro células hijas y cada una queda con 10 cromosomas, no con 20.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "se obtienen dos células hijas.",
+        "cada célula hija tiene 10 cromosomas.",
+        "las células hijas son haploides.",
+        "cada célula hija tiene 20 cromosomas."
+      ]
     },
     {
       "id": "NEXO-26",
-      "topic": "Estrategia del encuentro · 26",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Entrecruzamiento",
+      "stem": "En la profase I de una célula ocurre un entrecruzamiento entre dos cromosomas homólogos. Respecto de sus consecuencias, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo I y IV",
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "Las cuatro son correctas: el entrecruzamiento mezcla la información y por eso las cuatro células hijas resultan distintas.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "se intercambian fragmentos de ADN.",
+        "aparecen combinaciones génicas nuevas.",
+        "aumenta la variabilidad de los gametos.",
+        "las cuatro células hijas quedan distintas."
+      ]
     },
     {
       "id": "NEXO-27",
-      "topic": "Estrategia del encuentro · 27",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Identificar proceso",
+      "stem": "Un estudiante observa una célula en la que dos cromosomas homólogos están apareados y se intercambian segmentos. Respecto de esta observación, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: en la mitosis los homólogos no se aparean ni intercambian segmentos.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la célula está realizando una mitosis.",
+        "la célula está en profase I.",
+        "la célula está realizando una meiosis.",
+        "ese intercambio se llama entrecruzamiento."
+      ]
     },
     {
       "id": "NEXO-28",
-      "topic": "Estrategia del encuentro · 28",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Error de reducción",
+      "stem": "En una meiosis, un gameto humano se forma con 24 cromosomas en lugar de 23. Respecto de esta situación, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El II es falso: un gameto con 24 cromosomas es producto de un error, no de una meiosis normal.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "hubo un error en el reparto de cromosomas.",
+        "se trata de una meiosis normal y esperada.",
+        "el cigoto podría quedar con 47 cromosomas.",
+        "podría originarse una anomalía cromosómica."
+      ]
     },
     {
       "id": "NEXO-29",
-      "topic": "Estrategia del encuentro · 29",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Meiosis y herencia",
+      "stem": "Un hijo recibe la mitad de su información genética de cada progenitor. Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el II y el IV: el cigoto es diploide y cada progenitor aporta solo la mitad de sus cromosomas.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "cada gameto aporta una dotación haploide.",
+        "el cigoto resulta haploide tras la fecundación.",
+        "la meiosis es la responsable de esa reducción.",
+        "cada progenitor aporta todos sus cromosomas."
+      ]
     },
     {
       "id": "NEXO-30",
-      "topic": "Estrategia del encuentro · 30",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Visión global",
+      "stem": "Una compañera sostiene: «la meiosis y la mitosis hacen lo mismo, solo cambian de nombre». Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El IV es falso: solo la mitosis produce células iguales, la meiosis produce células distintas.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque la meiosis reduce la ploidía.",
+        "la mitosis genera copias y la meiosis, variedad.",
+        "la meiosis forma gametos y la mitosis, células somáticas.",
+        "es correcta, porque ambas producen células iguales."
+      ]
     }
   ]
 }

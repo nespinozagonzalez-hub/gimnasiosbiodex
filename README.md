@@ -18,7 +18,19 @@ Todos los sprites, PNG, fondos, retratos y fuentes que requiere el juego están 
 
 ## Preguntas y recompensas
 
-Cada archivo de `bancos/liga/` tiene 30 espacios pendientes. Para abrir su actividad basta reemplazar las preguntas, marcar cada una con `placeholder: false` y cambiar el banco a `published`. No hay que modificar el motor ni el canje. Antes de esa publicación, el estudiante puede activar su destino pero ve «Actividad próximamente» y no accede a preguntas provisionales.
+Los cinco bancos están publicados: 150 preguntas reales de `Liga_Celular_2doMedio.xlsx`, 30 por gimnasio. Se importaron sin cambiar sus enunciados, alternativas, claves, numerales ni retroalimentaciones. Se conservan 100 preguntas con cuatro alternativas y 50 con cinco; 50 incluyen enunciados I–IV. La procedencia y las firmas de contenido se registran en `reference/cellular-import.json`.
+
+| Gimnasio | Contenido del Excel |
+| --- | --- |
+| Aurora | Ciclo celular |
+| Prisma | Mitosis |
+| Nexo | Meiosis y variabilidad |
+| Nova | Cuando la división falla |
+| Bruma | Biotecnología y edición genética |
+
+El tiempo por pregunta es 45 s para las 12 de entrada, 60 s para las 8 de aplicación simple, 75 s para las 4 de aplicación con numerales y 90 s para las 6 de análisis. La duración real aparece en cada pregunta y no se reinicia al reconsiderar la estrategia. Los bancos se barajan sin repeticiones; una batalla puede terminar antes de usar los 30 ítems. Se conserva el premio de cuatro capturas por victoria; los puntajes por ronda de la hoja no generan capturas adicionales.
+
+Para reemplazar contenido más adelante, se actualiza únicamente el JSON correspondiente. Cada pregunta admite cuatro o cinco alternativas, una clave dentro de ese rango y, opcionalmente, cuatro `statements` para los numerales I–IV. Se mantiene `placeholder: false` en preguntas definitivas y `status: published` cuando las 30 estén listas. La mesa de preparación permite editar la quinta alternativa y los cuatro numerales.
 
 El estudiante conecta su cuenta e introduce un código en la liga o en la entrada del gimnasio. Los códigos personales de esta liga son distintos de los códigos GYM del gestor:
 
@@ -51,3 +63,9 @@ node --test tests/*.test.cjs
 Las pruebas cubren el motor, el reloj, los cinco bancos, los accesos por código, la sesión compartida, canjes en serie, duplicados, fallos parciales, respuestas perdidas y las rutas de recursos. `reference/biodex.json` conserva únicamente la correspondencia pública de sectores, IDs y códigos para comprobar la compatibilidad; no es una conexión a datos de alumnos.
 
 La ruta y sus recompensas están descritas en [LIGA_CINCO_SELLOS.md](LIGA_CINCO_SELLOS.md). El motor original se documenta en [MOTOR.md](MOTOR.md).
+
+## Presentación
+
+El interruptor «Letra retro» alterna VT323 con una tipografía de lectura clara y recuerda la elección en este navegador. Está disponible en la liga, el combate y la preparación docente. Los gimnasios sin activar se muestran desaturados y oscurecidos; al reconocer el código recuperan su color. Las acciones de acceso conservan su contraste y funcionan con teclado.
+
+El fondo de gran arena y el recibimiento del explorador son ilustraciones creadas con ImageGen e integradas en `assets/ui/`. Se codificaron como WebP sin pérdida, conservando sus dimensiones y píxeles. Sus indicaciones de arte se documentan en `assets/ui/README.md`.

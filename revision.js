@@ -7,19 +7,20 @@
  $('reviewGym').innerHTML=G.GYMS.map(g=>'<option value="'+g.slug+'">0'+g.order+' · '+escape(g.title)+'</option>').join('');
  $('reviewSlot').innerHTML=Array.from({length:30},(_,i)=>'<option value="'+i+'">Espacio '+String(i+1).padStart(2,'0')+'</option>').join('');
  const message=text=>$('reviewMessage').textContent=text;
- function render(){if(!bank)return;editingIndex=Number($('reviewSlot').value);const q=bank.questions[editingIndex];$('editingId').textContent=q.id;$('editTopic').value=q.topic;$('editStem').value=q.stem;for(let i=0;i<4;i++)$('editOption'+i).value=q.options[i];$('editAnswer').value=q.answer;$('editSeconds').value=q.seconds||45;$('editExplain').value=q.explain;$('editReady').checked=q.placeholder===false;$('bankStatus').value=bank.status;$('reviewCount').textContent=bank.questions.filter(x=>x.placeholder===false).length+' / 30 definitivas';dirty=false;}
+ function render(){if(!bank)return;editingIndex=Number($('reviewSlot').value);const q=bank.questions[editingIndex];$('editingId').textContent=q.id;$('editTopic').value=q.topic;$('editStem').value=q.stem;for(let i=0;i<5;i++)$('editOption'+i).value=q.options[i]||'';for(let i=0;i<4;i++)$('editStatement'+i).value=q.statements?.[i]||'';$('editAnswer').value=q.answer;$('editSeconds').value=q.seconds||45;$('editExplain').value=q.explain;$('editReady').checked=q.placeholder===false;$('bankStatus').value=bank.status;$('reviewCount').textContent=bank.questions.filter(x=>x.placeholder===false).length+' / 30 definitivas';dirty=false;}
  async function load(){
   const slug=$('reviewGym').value,gym=G.get(slug),requestId=++loadId;
   try{
    const next=cache.has(slug)?cache.get(slug):await(async()=>{const r=await fetch(gym.bankUrl,{cache:'no-store'});if(!r.ok)throw Error('No se pudo abrir el banco.');return r.json();})();
    if(requestId!==loadId)return;
    const check=L.validateBank(next,slug);if(!check.valid)throw Error(check.errors.join(' '));bank=next;loadedSlug=slug;cache.set(slug,bank);$('reviewSlot').value='0';render();message('Banco cargado. Los cambios se conservan durante esta sesión de edición.');$('reviewPlay').href='combate.html?gym='+slug+'&preview=1';
-   $('reviewRewards').innerHTML='<div class="eyebrow gold">'+escape(gym.sector)+'</div><h3>'+escape(gym.emblem)+'</h3><p>Cuatro códigos de captura existentes. Se muestran tras una victoria con cuenta real y banco publicado. El ensayo solo muestra simulaciones.</p><table><thead><tr><th>Bioforma</th><th>Código</th></tr></thead><tbody>'+gym.rewards.map(r=>'<tr><td>'+escape(r.name)+'</td><td><code>'+escape(r.code)+'</code></td></tr>').join('')+'</tbody></table><p>Estos códigos pueden compartirse. Esta página de preparación es pública.</p>';
+   $('reviewRewards').innerHTML='<div class="eyebrow gold">'+escape(gym.sector)+'</div><h3>'+escape(gym.emblem)+'</h3><p>Cuatro bioformas por victoria con cuenta real. El canje se realiza automáticamente dentro del gimnasio; la preparación docente mantiene los premios desactivados.</p><table><thead><tr><th>Bioforma</th><th>Código</th></tr></thead><tbody>'+gym.rewards.map(r=>'<tr><td>'+escape(r.name)+'</td><td><code>'+escape(r.code)+'</code></td></tr>').join('')+'</tbody></table><p>Estos códigos pueden compartirse. Esta página de preparación es pública.</p>';
   }catch(e){message(e.message);}
  }
  function save(redraw=true){
   if(!bank)return false;
-  const i=editingIndex,q={...bank.questions[i],topic:$('editTopic').value.trim(),stem:$('editStem').value.trim(),options:Array.from({length:4},(_,j)=>$('editOption'+j).value.trim()),answer:Number($('editAnswer').value),explain:$('editExplain').value.trim(),seconds:Number($('editSeconds').value),placeholder:!$('editReady').checked};
+  const i=editingIndex,q={...bank.questions[i],topic:$('editTopic').value.trim(),stem:$('editStem').value.trim(),options:Array.from({length:5},(_,j)=>$('editOption'+j).value.trim()).filter((text,i)=>i<4||text),answer:Number($('editAnswer').value),explain:$('editExplain').value.trim(),seconds:Number($('editSeconds').value),placeholder:!$('editReady').checked};
+  const statements=Array.from({length:4},(_,j)=>$('editStatement'+j).value.trim());if(statements.some(Boolean))q.statements=statements;else delete q.statements;
   const candidate={...bank,status:'draft',questions:bank.questions.map((x,j)=>j===i?q:x)},check=L.validateBank(candidate,bank.gym);
   if(!check.valid){message(check.errors.join(' '));return false;}
   bank.questions[i]=q;if(bank.questions.some(x=>x.placeholder!==false))bank.status='draft';dirty=false;if(redraw)render();message('Espacio guardado. Descarga el banco para conservar estos cambios.');return true;

@@ -2,6 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const A=require('../account.js'),R=require('../motor/rewards.js'),X=require('../motor/access.js'),G=require('../liga-config.js').GYMS;
 const token='a'.repeat(72),config={endpoint:'https://script.google.com/macros/s/fixture/exec'};
 const storage=()=>{const m=new Map();return{getItem:k=>m.get(k)||null,setItem:(k,v)=>m.set(k,v),removeItem:k=>m.delete(k)};};
+const draft=g=>{const b=structuredClone(require('../bancos/liga/'+g.slug+'.json'));b.status='draft';b.questions[0].placeholder=true;return b;};
 const published=g=>{const b=structuredClone(require('../bancos/liga/'+g.slug+'.json'));b.status='published';b.questions.forEach(q=>q.placeholder=false);return b;};
 function fixture({captured=[],failures={},lost=[]}={}){
  const saved=new Set(captured),calls=[],s=storage();let active=0,maxActive=0;
@@ -50,7 +51,7 @@ test('doble clic comparte el mismo canje y las bioformas ya obtenidas no se dupl
  const f=fixture({captured:['B002']}),gym=G[0];await f.account.login('Ada','123456');const r=R.create({account:f.account,gym,bank:published(gym),won:true,demo:false});const one=r.claim(),two=r.claim();assert.equal(one,two);await one;assert.equal(f.saved.size,4);assert.equal(f.calls.filter(c=>c.action==='redeem').length,4);assert.match(r.snapshot().B002.message,/Ya estaba/);
 });
 test('derrotas, equipos prestados, bancos pendientes y otra cuenta no pueden iniciar canjes',async()=>{
- const f=fixture(),gym=G[0];await f.account.login('Ada','123456');for(const extra of [{won:false},{demo:true},{bank:require('../bancos/liga/aurora.json')}]){const r=R.create({account:f.account,gym,bank:published(gym),won:true,demo:false,...extra});await assert.rejects(r.claim());}const r=R.create({account:f.account,gym,bank:published(gym),won:true,demo:false});await f.account.logout();await assert.rejects(r.claim());assert.equal(f.calls.filter(c=>c.action==='redeem').length,0);
+ const f=fixture(),gym=G[0];await f.account.login('Ada','123456');for(const extra of [{won:false},{demo:true},{bank:draft(gym)}]){const r=R.create({account:f.account,gym,bank:published(gym),won:true,demo:false,...extra});await assert.rejects(r.claim());}const r=R.create({account:f.account,gym,bank:published(gym),won:true,demo:false});await f.account.logout();await assert.rejects(r.claim());assert.equal(f.calls.filter(c=>c.action==='redeem').length,0);
 });
 test('una respuesta de otro premio no acredita la recompensa solicitada',async()=>{
  const gym=G[0],account={session:{name:'Ada'},redeem:async()=>({kind:'capture',bioforma:'B003',progreso:{capturadas:['B003']}})};const r=R.create({account,gym,bank:published(gym),won:true,demo:false});await r.claim('B002');assert.equal(r.snapshot().B002.status,'error');

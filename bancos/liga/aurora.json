@@ -1,458 +1,712 @@
 {
   "gym": "aurora",
-  "version": 1,
-  "status": "draft",
-  "title": "Estación Prismara",
+  "version": 2,
+  "status": "published",
+  "title": "Ciclo celular",
+  "source": {
+    "file": "Liga_Celular_2doMedio.xlsx",
+    "sheet": "Gimnasio 1"
+  },
   "questions": [
     {
       "id": "AURORA-01",
-      "topic": "Estrategia del encuentro · 01",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Etapas del ciclo",
+      "stem": "¿Cuáles son las dos grandes etapas en que se divide el ciclo celular?",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "La interfase y la fase M.",
+        "Las fases G1 y G2 del ciclo.",
+        "La mitosis y la meiosis.",
+        "La profase y la anafase."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "explain": "El ciclo celular se divide en interfase (G1, S y G2) y fase M, donde ocurre la división.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-02",
-      "topic": "Estrategia del encuentro · 02",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Interfase",
+      "stem": "La interfase está formada por tres etapas, que son:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "profase, metafase y anafase.",
+        "G1, S y G2.",
+        "mitosis, meiosis y citocinesis.",
+        "S, M y G0."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 1,
+      "explain": "La interfase comprende G1 (crecimiento), S (replicación del ADN) y G2 (preparación).",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-03",
-      "topic": "Estrategia del encuentro · 03",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Fase S",
+      "stem": "¿Qué proceso ocurre durante la fase S del ciclo celular?",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "La replicación del ADN.",
+        "La división del citoplasma.",
+        "La formación del huso.",
+        "La separación de las cromátidas."
       ],
       "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "explain": "En la fase S se replica el ADN: cada cromosoma pasa a tener dos cromátidas hermanas.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-04",
-      "topic": "Estrategia del encuentro · 04",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Fase G1",
+      "stem": "Durante la fase G1 la célula principalmente:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "divide su citoplasma.",
+        "duplica su material genético.",
+        "reparte sus cromosomas.",
+        "crece y fabrica proteínas."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 3,
+      "explain": "En G1 la célula crece, aumenta su tamaño y sintetiza proteínas y organelos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-05",
-      "topic": "Estrategia del encuentro · 05",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Fase G2",
+      "stem": "¿Cuál es la función principal de la fase G2?",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Preparar la división celular.",
+        "Copiar la molécula de ADN.",
+        "Separar los cromosomas homólogos.",
+        "Formar dos células hijas."
       ],
       "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "explain": "En G2 la célula verifica la copia del ADN y prepara las estructuras necesarias para dividirse.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-06",
-      "topic": "Estrategia del encuentro · 06",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Fase M",
+      "stem": "La fase M del ciclo celular corresponde al momento en que la célula:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "replica todo su material genético.",
+        "se divide y reparte su contenido.",
+        "entra en reposo prolongado.",
+        "crece y acumula nutrientes."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 1,
+      "explain": "La fase M incluye la mitosis (reparto del núcleo) y la citocinesis (división del citoplasma).",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-07",
-      "topic": "Estrategia del encuentro · 07",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Duración",
+      "stem": "En un ciclo celular típico, la etapa que ocupa la mayor parte del tiempo es:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "la anafase.",
+        "la fase M.",
+        "la interfase.",
+        "la citocinesis."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 2,
+      "explain": "La interfase ocupa cerca del 90 % del ciclo; la fase M es comparativamente muy breve.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-08",
-      "topic": "Estrategia del encuentro · 08",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Cromatina",
+      "stem": "Antes de dividirse, el material genético de la célula se encuentra como:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "cromosomas, muy compactados.",
+        "gametos, ya separados.",
+        "ribosomas, en el citoplasma.",
+        "cromatina, poco compactada."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 3,
+      "explain": "Durante la interfase el ADN está como cromatina laxa; solo se compacta en cromosomas al dividirse.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-09",
-      "topic": "Estrategia del encuentro · 09",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Cromátidas",
+      "stem": "Las dos copias idénticas de un cromosoma duplicado, unidas por el centrómero, se llaman:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "cromosomas homólogos.",
+        "cromátidas hermanas.",
+        "gametos haploides.",
+        "nucleosomas dobles."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 1,
+      "explain": "Tras la fase S, cada cromosoma queda formado por dos cromátidas hermanas idénticas.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-10",
-      "topic": "Estrategia del encuentro · 10",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Centrómero",
+      "stem": "¿Qué estructura mantiene unidas a las dos cromátidas hermanas?",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "El nucleolo central.",
+        "El huso acromático.",
+        "La membrana nuclear.",
+        "El centrómero."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 3,
+      "explain": "El centrómero es la región que une a las cromátidas hermanas hasta que se separan en anafase.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-11",
-      "topic": "Estrategia del encuentro · 11",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Fase G0",
+      "stem": "Una célula que deja de dividirse y permanece cumpliendo su función se encuentra en:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "la profase.",
+        "la citocinesis.",
+        "la fase G0.",
+        "la fase S."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 2,
+      "explain": "G0 es un estado de reposo del ciclo: la célula vive y funciona, pero no se divide.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-12",
-      "topic": "Estrategia del encuentro · 12",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Función del ciclo",
+      "stem": "¿Por qué es necesario que las células de tu cuerpo se dividan?",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Para envejecer más lentamente.",
+        "Para crecer y reparar tejidos.",
+        "Para producir solo gametos.",
+        "Para eliminar el ADN viejo."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 1,
+      "explain": "La división celular permite el crecimiento del organismo y la reparación de tejidos dañados.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "AURORA-13",
-      "topic": "Estrategia del encuentro · 13",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Orden del ciclo",
+      "stem": "Una célula acaba de terminar su fase S. ¿Cuál es la etapa que sigue inmediatamente?",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "La fase G0.",
+        "La fase G1.",
+        "La fase G2.",
+        "La fase M."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El orden es G1 → S → G2 → M. Después de replicar el ADN en S, la célula entra a G2.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-14",
-      "topic": "Estrategia del encuentro · 14",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Cantidad de ADN",
+      "stem": "Si una célula tiene una cantidad X de ADN al inicio de G1, ¿cuánta tendrá al terminar la fase S?",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "La misma cantidad X.",
+        "El doble de X.",
+        "El cuádruple de X.",
+        "La mitad de X."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "En la fase S se replica todo el ADN, por lo que la cantidad se duplica.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-15",
-      "topic": "Estrategia del encuentro · 15",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Puntos de control",
+      "stem": "Los puntos de control del ciclo celular cumplen la función de:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "eliminar todas las células viejas.",
+        "acelerar siempre la división celular.",
+        "verificar que cada etapa salió bien.",
+        "duplicar el ADN una segunda vez."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Los puntos de control revisan el estado de la célula y detienen el ciclo si algo salió mal.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-16",
-      "topic": "Estrategia del encuentro · 16",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Falla de control",
+      "stem": "Si los puntos de control de una célula dejaran de funcionar, lo más probable es que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "se divida sin control alguno.",
+        "pase directamente a formar gametos.",
+        "duplique su ADN cada vez más lento.",
+        "la célula deje de crecer por completo."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Sin puntos de control la célula se divide con el ADN dañado, lo que origina proliferación descontrolada.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-17",
-      "topic": "Estrategia del encuentro · 17",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Cromosomas humanos",
+      "stem": "Una célula somática humana en fase G1 tiene 46 cromosomas. Al finalizar la fase S tendrá:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "92 cromosomas con dos cromátidas.",
+        "23 cromosomas con una cromátida.",
+        "46 cromosomas con dos cromátidas.",
+        "92 cromosomas con una cromátida."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "La replicación duplica el ADN pero no el número de cromosomas: siguen siendo 46, ahora con dos cromátidas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-18",
-      "topic": "Estrategia del encuentro · 18",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Células de G0",
+      "stem": "Las neuronas de una persona adulta prácticamente no se dividen. Esto se explica porque:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "repiten la fase S muchas veces.",
+        "están siempre en plena mitosis.",
+        "carecen por completo de ADN.",
+        "permanecen detenidas en G0."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "Las neuronas entran en G0, un estado donde cumplen su función sin volver a dividirse.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-19",
-      "topic": "Estrategia del encuentro · 19",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Tejidos que se renuevan",
+      "stem": "La piel y el revestimiento del intestino se renuevan constantemente. Esto indica que sus células:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "cumplen ciclos celulares frecuentes.",
+        "se dividen solo por meiosis.",
+        "nunca replican su material genético.",
+        "se mantienen detenidas en G0."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son tejidos de alta renovación: sus células recorren el ciclo celular con mucha frecuencia.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-20",
-      "topic": "Estrategia del encuentro · 20",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Compactación",
+      "stem": "¿Por qué el ADN debe compactarse en cromosomas antes de que la célula se divida?",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Para aumentar el número de genes.",
+        "Para salir del núcleo hacia afuera.",
+        "Para repartirse sin enredarse.",
+        "Para poder ser copiado más rápido."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Compactado en cromosomas, el material genético puede moverse y repartirse de forma ordenada.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "AURORA-21",
-      "topic": "Estrategia del encuentro · 21",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Interfase",
+      "stem": "Respecto de lo que ocurre durante la interfase de una célula, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: la separación de los cromosomas ocurre en la fase M, no en la interfase.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "los cromosomas se separan hacia los polos.",
+        "la célula crece y aumenta su tamaño.",
+        "se replica la molécula de ADN.",
+        "la célula se prepara para dividirse."
+      ]
     },
     {
       "id": "AURORA-22",
-      "topic": "Estrategia del encuentro · 22",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Fase S",
+      "stem": "Una célula acaba de completar la fase S de su ciclo. Respecto de su estado, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el II y el IV: en la fase S se duplica el ADN, pero no el número de cromosomas, y la división todavía no ha ocurrido.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "cada cromosoma tiene ahora dos cromátidas hermanas.",
+        "el número de cromosomas también se duplicó.",
+        "la cantidad de ADN se duplicó.",
+        "la célula ya completó su división."
+      ]
     },
     {
       "id": "AURORA-23",
-      "topic": "Estrategia del encuentro · 23",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Puntos de control",
+      "stem": "Respecto de los puntos de control del ciclo celular, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El II es falso: existen varios puntos de control repartidos en distintos momentos del ciclo.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "pueden detener el ciclo si detectan un daño.",
+        "actúan solo una vez durante todo el ciclo.",
+        "revisan que el ADN se haya copiado bien.",
+        "ayudan a evitar la división descontrolada."
+      ]
     },
     {
       "id": "AURORA-24",
-      "topic": "Estrategia del encuentro · 24",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Cromatina y cromosoma",
+      "stem": "Al comparar la cromatina con el cromosoma, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y IV",
+        "Solo I, II y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "Las cuatro son correctas: la cromatina y el cromosoma son el mismo ADN, pero con distinto grado de compactación.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "ambos están formados por ADN.",
+        "la cromatina está poco compactada.",
+        "el cromosoma se observa durante la división.",
+        "corresponden al mismo material genético."
+      ]
     },
     {
       "id": "AURORA-25",
-      "topic": "Estrategia del encuentro · 25",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Orden y función",
+      "stem": "Un científico observa una célula y registra que está sintetizando proteínas y aumentando de tamaño, sin copiar su ADN. Respecto de esta célula, es correcto afirmar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El II es falso: las dos cromátidas aparecen recién después de la fase S, y esta célula aún no la cursa.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "se encuentra en la fase G1 del ciclo.",
+        "sus cromosomas tienen dos cromátidas.",
+        "todavía no ha pasado por la fase S.",
+        "aún no está lista para dividirse."
+      ]
     },
     {
       "id": "AURORA-26",
-      "topic": "Estrategia del encuentro · 26",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Regulación",
+      "stem": "En un cultivo, un grupo de células deja de responder a las señales que ordenan detener la división. Respecto de lo que se esperaría observar, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: si no se detienen, justamente NO entran en G0; siguen dividiéndose.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "las células se mantendrán detenidas en G0.",
+        "el número de células aumentará sin control.",
+        "los puntos de control no están funcionando.",
+        "podrían acumularse errores en el ADN."
+      ]
     },
     {
       "id": "AURORA-27",
-      "topic": "Estrategia del encuentro · 27",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Cantidad de ADN",
+      "stem": "Se mide la cantidad de ADN de una misma célula en tres momentos y se obtiene: en G1 un valor X, en G2 un valor 2X y tras la división 1X por célula hija. A partir de estos datos, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Son falsos el II y el III: cada célula hija recibe la mitad del ADN duplicado y la cantidad de ADN se duplica, no se triplica.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la duplicación ocurrió en la fase S.",
+        "cada célula hija recibió el doble del ADN inicial.",
+        "la cantidad de ADN se triplicó en el proceso.",
+        "las células hijas tienen la misma cantidad que la inicial."
+      ]
     },
     {
       "id": "AURORA-28",
-      "topic": "Estrategia del encuentro · 28",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Tipos de células",
+      "stem": "Se comparan tres tejidos: la piel, que se renueva cada pocas semanas; el hígado, que se divide solo si se daña; y las neuronas, que prácticamente no se dividen. Al respecto, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el II y el IV: las neuronas quedan detenidas en G0 y los tres tejidos no se dividen a la misma velocidad.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "las células de la piel cumplen ciclos frecuentes.",
+        "las neuronas se dividen con mucha frecuencia.",
+        "las células del hígado pueden volver a dividirse.",
+        "los tres tejidos se dividen a la misma velocidad."
+      ]
     },
     {
       "id": "AURORA-29",
-      "topic": "Estrategia del encuentro · 29",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Preparación",
+      "stem": "Antes de entrar a la fase M, la célula debe cumplir ciertas condiciones. Respecto de ellas, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "El III es falso: la célula repara los daños o detiene el ciclo, pero no elimina sus cromosomas.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "debe haber crecido lo suficiente.",
+        "debe haber replicado todo su ADN.",
+        "debe haber eliminado sus cromosomas dañados.",
+        "debe haber superado el control de G2."
+      ]
     },
     {
       "id": "AURORA-30",
-      "topic": "Estrategia del encuentro · 30",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Visión global",
+      "stem": "Un estudiante afirma: «el ciclo celular es solo el momento en que la célula se parte en dos». Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "El IV es falso y contradice a los demás: el ciclo es mucho más que la fase M.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque el ciclo incluye la interfase.",
+        "la división es solo la etapa final del ciclo.",
+        "la interfase ocupa la mayor parte del tiempo.",
+        "es correcta, porque el ciclo equivale a la fase M."
+      ]
     }
   ]
 }

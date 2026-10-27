@@ -10,7 +10,8 @@
   const ids=new Set();
   for(const [i,q] of (bank?.questions||[]).entries()){
    if(!q||typeof q.id!=='string'||!q.id||ids.has(q.id))errors.push('ID inválido o repetido en pregunta '+(i+1));else ids.add(q.id);
-   if(!q||['topic','stem','explain'].some(k=>typeof q[k]!=='string'||!q[k].trim())||!Array.isArray(q.options)||q.options.length!==4||q.options.some(x=>typeof x!=='string'||!x.trim())||new Set(q.options).size!==4||!Number.isInteger(q.answer)||q.answer<0||q.answer>3)errors.push('Contenido incompleto en pregunta '+(i+1));
+   if(!q||['topic','stem','explain'].some(k=>typeof q[k]!=='string'||!q[k].trim())||!Array.isArray(q.options)||![4,5].includes(q.options.length)||q.options.some(x=>typeof x!=='string'||!x.trim())||new Set(q.options).size!==q.options.length||!Number.isInteger(q.answer)||q.answer<0||q.answer>=q.options.length)errors.push('Contenido incompleto en pregunta '+(i+1));
+   if(q?.statements!==undefined&&(!Array.isArray(q.statements)||q.statements.length!==4||q.statements.some(s=>typeof s!=='string'||!s.trim())))errors.push('Numerales incompletos en pregunta '+(i+1));
    if(q?.seconds!==undefined&&(!Number.isFinite(q.seconds)||q.seconds<5||q.seconds>600))errors.push('Tiempo inválido en pregunta '+(i+1));
    if(q?.figure&&!(q.figure==='ratios'||typeof q.figure==='object'&&typeof q.figure.src==='string'&&/^imagenes\/[A-Za-z0-9_./-]+\.(png|webp|jpe?g|svg)$/.test(q.figure.src)&&!q.figure.src.includes('..')&&typeof q.figure.alt==='string'))errors.push('Imagen inválida en pregunta '+(i+1));
   }

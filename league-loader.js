@@ -9,7 +9,9 @@
   const bank=await response.json(),check=window.BioDexLeague.validateBank(bank,slug);
   if(!check.valid)throw Error(check.errors.join(' '));
   const preview=new URLSearchParams(location.search).get('preview')==='1';
-  window.BioDexMission={...gym,bank,preview};
+  const times=bank.questions.map(q=>q.seconds??gym.questionSeconds);
+  const timeLabel=Math.min(...times)+'–'+Math.max(...times)+' s por pregunta';
+  window.BioDexMission={...gym,bank,preview,timeLabel};
   document.title='BioDex · '+gym.title;
   document.body.dataset.gym=slug;
   document.documentElement.style.setProperty('--gym-background',`url("${gym.background}")`);
@@ -35,12 +37,12 @@
   document.querySelectorAll('#storyPortrait,#battlePortrait').forEach(e=>e.setAttribute('aria-label',gym.leader));
   document.querySelector('.enemy-intel .intel-facts').innerHTML='<span>2 fases</span><span>Banco de 30 preguntas</span>';
   document.querySelector('.enemy-intel .bank-note').textContent='Contenido: '+gym.subject;
-  document.querySelector('.mission-chips').innerHTML='<span>◆ Preguntas + estrategia</span><span>◇ 4 bioformas de premio</span><span>◷ 45 s por pregunta</span>';
+  document.querySelector('.mission-chips').innerHTML='<span>◆ Preguntas + estrategia</span><span>◇ 4 bioformas de premio</span><span>◷ '+timeLabel+'</span>';
   document.getElementById('missionStatus').textContent=preview?'PREPARACIÓN DOCENTE · recompensas desactivadas':check.ready?'DESAFÍO ACTIVO · 30 preguntas':'ACTIVIDAD PRÓXIMAMENTE';
   document.querySelector('.practice-setting').hidden=!preview;
   for(const id of ['previewDivider','demoButton','previewNote'])document.getElementById(id).hidden=!preview;
   document.getElementById('loginForm').hidden=preview;
   document.querySelector('#infoDialog .help-note p').textContent='La colección se carga desde tu cuenta de BioDex. Al vencer, las cuatro recompensas se canjean y guardan en esa misma cuenta. Si la conexión falla, puedes reintentar cada captura. El reloj continúa al cambiar de estrategia o pestaña; al agotarse falla la acción.';
-  const script=document.createElement('script');script.src='app.js?v=6';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
+  const script=document.createElement('script');script.src='app.js?v=7';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
  }catch(e){error(e.message||'No se pudo preparar el gimnasio.');}
 })();

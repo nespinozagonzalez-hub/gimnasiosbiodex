@@ -1,458 +1,712 @@
 {
   "gym": "nova",
-  "version": 1,
-  "status": "draft",
-  "title": "Horno Cylar",
+  "version": 2,
+  "status": "published",
+  "title": "Cuando la división falla",
+  "source": {
+    "file": "Liga_Celular_2doMedio.xlsx",
+    "sheet": "Gimnasio 4"
+  },
   "questions": [
     {
       "id": "NOVA-01",
-      "topic": "Estrategia del encuentro · 01",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Control del ciclo",
+      "stem": "Los puntos de control del ciclo celular tienen como función:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "verificar que todo esté bien.",
+        "duplicar el material genético.",
+        "separar las cromátidas hermanas.",
+        "acelerar siempre la división."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "explain": "Los puntos de control revisan el estado de la célula y detienen el ciclo si algo está mal.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-02",
-      "topic": "Estrategia del encuentro · 02",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Apoptosis",
+      "stem": "La muerte celular programada se denomina:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "metástasis.",
+        "citocinesis.",
+        "apoptosis.",
+        "mitosis."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 2,
+      "explain": "La apoptosis es un suicidio celular controlado que elimina células dañadas o innecesarias.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-03",
-      "topic": "Estrategia del encuentro · 03",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Apoptosis",
+      "stem": "¿Cuál es el beneficio de la apoptosis para un organismo?",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Aumenta el tamaño del tumor.",
+        "Produce los gametos haploides.",
+        "Duplica el número de células.",
+        "Elimina las células dañadas."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 3,
+      "explain": "Al eliminar células dañadas, la apoptosis evita que se transformen en células tumorales.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-04",
-      "topic": "Estrategia del encuentro · 04",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Cáncer",
+      "stem": "El cáncer se origina cuando un grupo de células:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "se transforma en gametos.",
+        "se divide sin control alguno.",
+        "deja de replicar su ADN.",
+        "entra en la fase G0 definitiva."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 1,
+      "explain": "El cáncer es una proliferación descontrolada debida a fallas en el control del ciclo celular.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-05",
-      "topic": "Estrategia del encuentro · 05",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Tumor",
+      "stem": "Un tumor benigno se diferencia de uno maligno porque el benigno:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "no invade otros tejidos.",
+        "crece mucho más rápido.",
+        "siempre produce metástasis.",
+        "se disemina por la sangre."
       ],
       "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "explain": "El tumor benigno queda localizado; el maligno invade tejidos vecinos y puede dar metástasis.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-06",
-      "topic": "Estrategia del encuentro · 06",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Metástasis",
+      "stem": "La diseminación de células tumorales a órganos distantes se llama:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "trisomía.",
+        "metástasis.",
+        "apoptosis celular.",
+        "mutación."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 1,
+      "explain": "En la metástasis las células tumorales viajan por sangre o linfa y colonizan otros órganos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-07",
-      "topic": "Estrategia del encuentro · 07",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Factores de riesgo",
+      "stem": "¿Cuál de los siguientes es un factor de riesgo para desarrollar cáncer?",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "El consumo de verduras.",
+        "Las horas de sueño.",
+        "El consumo de tabaco.",
+        "La actividad física diaria."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 2,
+      "explain": "El tabaco contiene sustancias que dañan el ADN y favorecen mutaciones en genes del ciclo.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-08",
-      "topic": "Estrategia del encuentro · 08",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "No disyunción",
+      "stem": "El error en el que los cromosomas no se reparten bien durante la división se llama:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "entrecruzamiento.",
+        "citocinesis.",
+        "apoptosis.",
+        "no disyunción."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 3,
+      "explain": "La no disyunción es la falla en la separación de homólogos o de cromátidas hermanas.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-09",
-      "topic": "Estrategia del encuentro · 09",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Trisomía",
+      "stem": "Una trisomía es una anomalía cromosómica en la que un individuo tiene:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "todos sus cromosomas duplicados.",
+        "un cromosoma extra en un par.",
+        "un cromosoma menos en un par.",
+        "tres juegos completos de cromosomas."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 1,
+      "explain": "En una trisomía hay tres copias de un cromosoma en lugar de dos: por ejemplo, 47 en humanos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-10",
-      "topic": "Estrategia del encuentro · 10",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Síndrome de Down",
+      "stem": "El síndrome de Down corresponde a una trisomía del cromosoma:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "21.",
+        "18.",
+        "13.",
+        "23."
       ],
       "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "explain": "El síndrome de Down es la trisomía 21: hay tres copias del cromosoma 21.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-11",
-      "topic": "Estrategia del encuentro · 11",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Monosomía",
+      "stem": "Una monosomía es una anomalía en la que falta:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "un juego completo de cromosomas.",
+        "una base del ADN nuclear.",
+        "un cromosoma de un par.",
+        "un cromosoma extra del par."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 2,
+      "explain": "En la monosomía hay un solo cromosoma de un par en lugar de dos: por ejemplo, 45 en humanos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-12",
-      "topic": "Estrategia del encuentro · 12",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Cariotipo",
+      "stem": "El estudio que permite ver el número y la forma de los cromosomas se llama:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "genotipo.",
+        "fenotipo.",
+        "cariocinesis.",
+        "cariotipo."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 3,
+      "explain": "El cariotipo ordena y fotografía los cromosomas, permitiendo detectar trisomías y monosomías.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "NOVA-13",
-      "topic": "Estrategia del encuentro · 13",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Origen del error",
+      "stem": "La mayoría de las trisomías se originan por un error que ocurre durante:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "la apoptosis de la célula.",
+        "la mitosis de la piel.",
+        "la meiosis de las gónadas.",
+        "la fecundación del óvulo."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "La no disyunción en la meiosis produce gametos con un cromosoma de más o de menos.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-14",
-      "topic": "Estrategia del encuentro · 14",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Cuenta cromosómica",
+      "stem": "Una persona con síndrome de Down tiene en sus células un total de:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "47 cromosomas.",
+        "45 cromosomas.",
+        "48 cromosomas.",
+        "46 cromosomas."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Al tener tres copias del cromosoma 21, el total pasa de 46 a 47 cromosomas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-15",
-      "topic": "Estrategia del encuentro · 15",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Gameto alterado",
+      "stem": "Si un gameto con 24 cromosomas fecunda a uno normal de 23, el cigoto tendrá:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "48 cromosomas.",
+        "45 cromosomas.",
+        "46 cromosomas.",
+        "47 cromosomas."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "Sumando 24 más 23 se obtienen 47 cromosomas: el cigoto presenta una trisomía.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-16",
-      "topic": "Estrategia del encuentro · 16",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Falla del control",
+      "stem": "Si un punto de control del ciclo celular deja de funcionar, lo más probable es que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "la célula reduzca su ploidía.",
+        "la célula se divida con daños.",
+        "la célula entre en apoptosis.",
+        "la célula produzca más gametos."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Sin el control, una célula con ADN dañado puede dividirse y acumular más errores.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-17",
-      "topic": "Estrategia del encuentro · 17",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Apoptosis y cáncer",
+      "stem": "Cuando las células tumorales pierden la capacidad de hacer apoptosis, ocurre que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "dejan de dividirse por completo.",
+        "recuperan su función normal.",
+        "sobreviven aunque estén dañadas.",
+        "mueren más rápido que las sanas."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Al evadir la apoptosis, las células dañadas sobreviven y siguen dividiéndose sin control.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-18",
-      "topic": "Estrategia del encuentro · 18",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Mutación",
+      "stem": "Una mutación en un gen que controla la división celular puede provocar que la célula:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "pierda el control del ciclo.",
+        "duplique su número de genes.",
+        "se convierta en un gameto.",
+        "repare siempre todo su ADN."
       ],
       "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Los genes que controlan el ciclo, al mutar, pueden dejar que la célula se divida sin freno.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-19",
-      "topic": "Estrategia del encuentro · 19",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Prevención",
+      "stem": "Una medida que disminuye el riesgo de desarrollar cáncer de piel es:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "evitar por completo la fruta.",
+        "dormir menos de cinco horas.",
+        "usar protector solar diario.",
+        "exponerse al sol al mediodía."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "La radiación ultravioleta daña el ADN de la piel; el protector solar reduce ese daño.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-20",
-      "topic": "Estrategia del encuentro · 20",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Diagnóstico",
+      "stem": "Para detectar si un feto presenta una trisomía, el examen que se utiliza es:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "la prueba de glicemia.",
+        "el cariotipo fetal.",
+        "el examen de orina.",
+        "la medición del pulso."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "El cariotipo permite contar los cromosomas del feto y detectar trisomías o monosomías.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "NOVA-21",
-      "topic": "Estrategia del encuentro · 21",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Cáncer",
+      "stem": "Respecto de las características de las células cancerosas, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "El I es falso: las células cancerosas se caracterizan justamente por evadir la apoptosis.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "siempre entran en apoptosis a tiempo.",
+        "se dividen de manera descontrolada.",
+        "evaden los puntos de control del ciclo.",
+        "pueden invadir tejidos vecinos."
+      ]
     },
     {
       "id": "NOVA-22",
-      "topic": "Estrategia del encuentro · 22",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "No disyunción",
+      "stem": "Respecto de la no disyunción como error de la división celular, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El II es falso: por definición la no disyunción produce gametos con una dotación alterada.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "los cromosomas se reparten de forma desigual.",
+        "siempre produce cuatro gametos normales.",
+        "puede ocurrir en la meiosis I o en la II.",
+        "origina gametos con cromosomas de más o menos."
+      ]
     },
     {
       "id": "NOVA-23",
-      "topic": "Estrategia del encuentro · 23",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Apoptosis",
+      "stem": "Respecto de la apoptosis o muerte celular programada, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y III",
+        "Solo I, II y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "Las cuatro son correctas: la apoptosis es un programa ordenado de la propia célula y no un daño accidental.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "es un proceso ordenado y controlado.",
+        "elimina células dañadas del organismo.",
+        "ayuda a prevenir la formación de tumores.",
+        "es distinta de la muerte por daño accidental."
+      ]
     },
     {
       "id": "NOVA-24",
-      "topic": "Estrategia del encuentro · 24",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Anomalías",
+      "stem": "Respecto de las anomalías cromosómicas numéricas, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "El III es falso: estas anomalías se originan por errores de reparto, no en la replicación.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la trisomía implica un cromosoma extra.",
+        "la monosomía implica un cromosoma menos.",
+        "se producen durante la fase S del ciclo.",
+        "se detectan mediante un cariotipo."
+      ]
     },
     {
       "id": "NOVA-25",
-      "topic": "Estrategia del encuentro · 25",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Análisis de cariotipo",
+      "stem": "Un cariotipo muestra 47 cromosomas, con tres copias del cromosoma 21. Respecto de este resultado, es correcto afirmar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y III",
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El IV es falso: el cariotipo humano normal tiene 46 cromosomas, no 47.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "corresponde a una trisomía del par 21.",
+        "se asocia al síndrome de Down.",
+        "se originó por una no disyunción.",
+        "corresponde a un cariotipo humano normal."
+      ]
     },
     {
       "id": "NOVA-26",
-      "topic": "Estrategia del encuentro · 26",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Progresión tumoral",
+      "stem": "A una paciente le detectan un tumor en la mama y, meses después, células con las mismas características en el hígado. Respecto de este caso, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el III y el IV: las células viajaron desde la mama hacia el hígado y un tumor benigno no produce metástasis.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el tumor original era maligno.",
+        "ocurrió un proceso de metástasis.",
+        "las células del hígado originaron el tumor mamario.",
+        "se trataba de un tumor benigno localizado."
+      ]
     },
     {
       "id": "NOVA-27",
-      "topic": "Estrategia del encuentro · 27",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Falla de control",
+      "stem": "Una célula presenta su ADN dañado, pero igualmente supera el punto de control y entra en mitosis. Respecto de las consecuencias, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: si hubiera corregido el ADN, las hijas no heredarían el daño.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la célula corrigió su ADN antes de dividirse.",
+        "las células hijas heredarán el daño.",
+        "el daño podría acumularse en generaciones.",
+        "aumenta el riesgo de formar un tumor."
+      ]
     },
     {
       "id": "NOVA-28",
-      "topic": "Estrategia del encuentro · 28",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Dos vías posibles",
+      "stem": "Ante una célula con daño irreparable en su ADN, el organismo dispone de mecanismos de defensa. Al respecto, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el II y el IV: un daño irreparable no se repara solo y la respuesta de la célula es detener el ciclo, no dividirse.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "los puntos de control detienen el ciclo.",
+        "la célula dañada siempre logra repararse sola.",
+        "la célula puede ser llevada a apoptosis.",
+        "la célula es obligada a dividirse de inmediato."
+      ]
     },
     {
       "id": "NOVA-29",
-      "topic": "Estrategia del encuentro · 29",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Origen del error",
+      "stem": "Un niño presenta una trisomía y el análisis indica que el cromosoma extra proviene del gameto materno. Respecto de este caso, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El III es falso: una mitosis de la piel no tiene ninguna relación con la formación del gameto.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "hubo no disyunción en la meiosis materna.",
+        "el óvulo aportó un cromosoma de más.",
+        "el error ocurrió en una mitosis de la piel.",
+        "el error ocurrió antes de la fecundación."
+      ]
     },
     {
       "id": "NOVA-30",
-      "topic": "Estrategia del encuentro · 30",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Visión global",
+      "stem": "Un compañero afirma: «el cáncer es una enfermedad del ciclo celular». Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo III y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Son falsos el II y el IV: las células cancerosas se dividen sin detenerse y el descontrol del ciclo celular es justamente el origen del cáncer.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es correcta, porque falla el control del ciclo.",
+        "las células dejan de dividirse por completo.",
+        "además fallan los mecanismos de apoptosis.",
+        "es incorrecta, porque el ciclo celular no participa."
+      ]
     }
   ]
 }

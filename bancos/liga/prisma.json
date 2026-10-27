@@ -1,458 +1,712 @@
 {
   "gym": "prisma",
-  "version": 1,
-  "status": "draft",
-  "title": "Cámara Solvian",
+  "version": 2,
+  "status": "published",
+  "title": "Mitosis",
+  "source": {
+    "file": "Liga_Celular_2doMedio.xlsx",
+    "sheet": "Gimnasio 2"
+  },
   "questions": [
     {
       "id": "PRISMA-01",
-      "topic": "Estrategia del encuentro · 01",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Etapas",
+      "stem": "¿Cuáles son las cuatro etapas de la mitosis, en orden?",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Profase, metafase, anafase y telofase.",
+        "Metafase, profase, telofase y anafase.",
+        "Anafase, telofase, profase y metafase.",
+        "Telofase, anafase, metafase y profase."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "explain": "El orden correcto es profase, metafase, anafase y telofase. Un truco: PMAT.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-02",
-      "topic": "Estrategia del encuentro · 02",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Profase",
+      "stem": "Durante la profase ocurre principalmente que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "se divide todo el citoplasma celular.",
+        "los cromosomas se alinean al centro.",
+        "la cromatina forma los cromosomas.",
+        "las cromátidas viajan a los polos."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 2,
+      "explain": "En profase la cromatina se condensa en cromosomas visibles y se desarma la envoltura nuclear.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-03",
-      "topic": "Estrategia del encuentro · 03",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Metafase",
+      "stem": "¿Qué sucede con los cromosomas durante la metafase?",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Se duplican una segunda vez.",
+        "Se alinean en el centro celular.",
+        "Se separan hacia los polos opuestos.",
+        "Se descompactan en cromatina."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 1,
+      "explain": "En metafase los cromosomas se alinean en el plano ecuatorial, al centro de la célula.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-04",
-      "topic": "Estrategia del encuentro · 04",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Anafase",
+      "stem": "La separación de las cromátidas hermanas hacia polos opuestos ocurre en:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "la anafase.",
+        "la telofase.",
+        "la profase.",
+        "la metafase."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "explain": "En anafase el centrómero se divide y cada cromátida viaja hacia un polo distinto.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-05",
-      "topic": "Estrategia del encuentro · 05",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Telofase",
+      "stem": "Durante la telofase ocurre que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "se replica el material genético.",
+        "las cromátidas recién se separan.",
+        "se forman dos núcleos nuevos.",
+        "los cromosomas se alinean al centro."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 2,
+      "explain": "En telofase se reorganiza la envoltura nuclear y los cromosomas se descompactan.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-06",
-      "topic": "Estrategia del encuentro · 06",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Citocinesis",
+      "stem": "La división del citoplasma que separa a las dos células hijas se llama:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "interfase.",
+        "citocinesis.",
+        "cariocinesis.",
+        "replicación."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 1,
+      "explain": "La citocinesis es la división del citoplasma y ocurre al final de la fase M.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-07",
-      "topic": "Estrategia del encuentro · 07",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Resultado",
+      "stem": "¿Cuántas células hijas se obtienen al final de una mitosis?",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Cuatro células.",
+        "Ocho células.",
+        "Una sola célula.",
+        "Dos células."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 3,
+      "explain": "La mitosis genera dos células hijas a partir de una célula madre.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-08",
-      "topic": "Estrategia del encuentro · 08",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Genética de las hijas",
+      "stem": "Las dos células hijas producidas por mitosis son:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "genéticamente idénticas entre sí.",
+        "distintas entre sí por recombinación.",
+        "haploides, con la mitad del material.",
+        "siempre más pequeñas que la madre."
       ],
       "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "explain": "La mitosis produce copias idénticas: ambas hijas tienen el mismo material genético.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-09",
-      "topic": "Estrategia del encuentro · 09",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Ploidía",
+      "stem": "Si una célula madre diploide (2n) entra en mitosis, sus células hijas serán:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "haploides (n).",
+        "diploides (2n).",
+        "triploides (3n).",
+        "tetraploides (4n)."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 1,
+      "explain": "La mitosis conserva la ploidía: de una célula 2n se obtienen dos células 2n.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-10",
-      "topic": "Estrategia del encuentro · 10",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Función",
+      "stem": "¿Para cuál de los siguientes procesos sirve la mitosis?",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Para reducir el número de cromosomas.",
+        "Para formar los gametos.",
+        "Para crear variabilidad genética.",
+        "Para reparar tejidos dañados."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 3,
+      "explain": "La mitosis permite el crecimiento, la reparación de tejidos y la reproducción asexual.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-11",
-      "topic": "Estrategia del encuentro · 11",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Huso",
+      "stem": "La estructura de fibras que mueve a los cromosomas durante la mitosis se llama:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "envoltura nuclear.",
+        "pared celular.",
+        "huso acromático.",
+        "placa ecuatorial."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 2,
+      "explain": "El huso acromático o mitótico se une a los centrómeros y arrastra las cromátidas.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-12",
-      "topic": "Estrategia del encuentro · 12",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Dónde ocurre",
+      "stem": "¿En qué tipo de células del cuerpo humano ocurre la mitosis?",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Únicamente en las neuronas.",
+        "Solo en los óvulos maduros.",
+        "Solo en los espermatozoides.",
+        "En las células somáticas."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 3,
+      "explain": "La mitosis ocurre en las células somáticas, es decir, las que no son gametos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "PRISMA-13",
-      "topic": "Estrategia del encuentro · 13",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Identificar etapa",
+      "stem": "Al microscopio se observa una célula con todos sus cromosomas alineados en el centro. Esta célula está en:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "profase.",
+        "metafase.",
+        "anafase.",
+        "telofase."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "La alineación en el plano ecuatorial es la característica distintiva de la metafase.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-14",
-      "topic": "Estrategia del encuentro · 14",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Identificar etapa",
+      "stem": "Se observa una célula con dos grupos de cromosomas, uno en cada extremo, y dos envolturas nucleares formándose. Está en:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "telofase.",
+        "profase.",
+        "metafase.",
+        "anafase."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "La reorganización de las dos envolturas nucleares identifica a la telofase.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-15",
-      "topic": "Estrategia del encuentro · 15",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Cromátidas",
+      "stem": "Antes de la anafase, cada cromosoma tiene dos cromátidas. Después de la anafase, cada cromosoma de los polos tiene:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "ninguna cromátida.",
+        "una sola cromátida.",
+        "dos cromátidas unidas.",
+        "cuatro cromátidas nuevas."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "En anafase las cromátidas hermanas se separan, por lo que cada una pasa a ser un cromosoma.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-16",
-      "topic": "Estrategia del encuentro · 16",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Citocinesis vegetal",
+      "stem": "En una célula vegetal la citocinesis es distinta a la animal porque la vegetal:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "forma una nueva pared celular.",
+        "no divide nunca su citoplasma.",
+        "produce cuatro células hijas.",
+        "se estrangula por el centro."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "La célula vegetal forma una placa celular que originará la nueva pared; la animal se estrangula.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-17",
-      "topic": "Estrategia del encuentro · 17",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Cuenta cromosómica",
+      "stem": "Una célula de ratón tiene 40 cromosomas. Tras una mitosis completa, cada célula hija tendrá:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "10 cromosomas.",
+        "20 cromosomas.",
+        "40 cromosomas.",
+        "80 cromosomas."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "La mitosis mantiene el número cromosómico: cada hija recibe los mismos 40 cromosomas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-18",
-      "topic": "Estrategia del encuentro · 18",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Aplicación",
+      "stem": "Cuando se te cierra una herida en la piel, el proceso celular responsable es:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "la fecundación del tejido.",
+        "la mutación de la epidermis.",
+        "la meiosis de la dermis.",
+        "la mitosis de las células."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "La reparación de tejidos se produce gracias a la mitosis de las células vecinas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-19",
-      "topic": "Estrategia del encuentro · 19",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Reproducción asexual",
+      "stem": "Algunas plantas se reproducen a partir de un trozo de tallo. Este tipo de reproducción se basa en:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "la mitosis, que genera copias.",
+        "la meiosis, que genera gametos.",
+        "la mutación del material genético.",
+        "la unión de dos células sexuales."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "La reproducción asexual se basa en la mitosis, por eso el nuevo individuo es idéntico al original.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-20",
-      "topic": "Estrategia del encuentro · 20",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Clon natural",
+      "stem": "Los gemelos idénticos se originan cuando un embrión se divide en dos. Por eso sus células provienen de:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "dos meiosis separadas.",
+        "dos óvulos distintos.",
+        "divisiones mitóticas.",
+        "una doble fecundación."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Al dividirse el embrión por mitosis, ambos gemelos comparten el mismo material genético.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "PRISMA-21",
-      "topic": "Estrategia del encuentro · 21",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Características",
+      "stem": "Respecto de la mitosis como proceso de división celular, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "El I es falso: la mitosis conserva el número de cromosomas, no lo reduce.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "reduce a la mitad el número de cromosomas.",
+        "genera dos células hijas.",
+        "las hijas son genéticamente idénticas.",
+        "ocurre en las células somáticas."
+      ]
     },
     {
       "id": "PRISMA-22",
-      "topic": "Estrategia del encuentro · 22",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Anafase",
+      "stem": "Respecto de lo que ocurre durante la anafase, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: la alineación al centro corresponde a la metafase, no a la anafase.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "los cromosomas se alinean al centro.",
+        "el centrómero de cada cromosoma se divide.",
+        "las cromátidas hermanas se separan.",
+        "cada cromátida viaja hacia un polo distinto."
+      ]
     },
     {
       "id": "PRISMA-23",
-      "topic": "Estrategia del encuentro · 23",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Funciones",
+      "stem": "Respecto de las funciones que cumple la mitosis en un organismo, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Son falsos el II y el IV: la variabilidad genética y los gametos se originan en la meiosis, no en la mitosis.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "permite el crecimiento del individuo.",
+        "permite producir variabilidad genética.",
+        "repara los tejidos dañados.",
+        "produce los gametos para la fecundación."
+      ]
     },
     {
       "id": "PRISMA-24",
-      "topic": "Estrategia del encuentro · 24",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Profase",
+      "stem": "Respecto de los cambios que ocurren en la profase, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El II es falso: la división del citoplasma es la citocinesis y ocurre al final del proceso.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la cromatina se condensa en cromosomas.",
+        "se divide el citoplasma de la célula.",
+        "se desarma la envoltura nuclear.",
+        "comienza a formarse el huso acromático."
+      ]
     },
     {
       "id": "PRISMA-25",
-      "topic": "Estrategia del encuentro · 25",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Secuencia",
+      "stem": "Un estudiante observa cuatro células en distintos momentos: la célula W tiene los cromosomas al centro, la X los tiene en los polos, la Y recién los condensó y la Z ya formó dos núcleos. Al respecto, es correcto afirmar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el II y el IV: la célula W está en metafase y el orden correcto sería Y, W, X, Z.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la célula Y está en profase.",
+        "la célula W está en anafase.",
+        "la célula X está en anafase.",
+        "el orden real sería W, Y, X, Z."
+      ]
     },
     {
       "id": "PRISMA-26",
-      "topic": "Estrategia del encuentro · 26",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Error en anafase",
+      "stem": "En una célula, durante la anafase, dos cromátidas hermanas no logran separarse y viajan juntas al mismo polo. Respecto de las células hijas resultantes, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El III es falso: justamente por el error de reparto las hijas dejan de ser idénticas.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "una tendrá un cromosoma de más.",
+        "la otra tendrá un cromosoma de menos.",
+        "ambas serán genéticamente idénticas.",
+        "se produjo un error en el reparto."
+      ]
     },
     {
       "id": "PRISMA-27",
-      "topic": "Estrategia del encuentro · 27",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Mitosis y ciclo",
+      "stem": "Una célula diploide con 46 cromosomas completa la fase S y luego una mitosis. Respecto del proceso completo, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo II y III",
+        "Solo III y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "Las cuatro son correctas: en la fase S se duplica el ADN, mientras el número de cromosomas se mantiene en 46.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "tras la fase S tenía 46 cromosomas de dos cromátidas.",
+        "cada célula hija quedó con 46 cromosomas.",
+        "las células hijas son diploides.",
+        "el ADN se duplicó durante la fase S."
+      ]
     },
     {
       "id": "PRISMA-28",
-      "topic": "Estrategia del encuentro · 28",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Comparación",
+      "stem": "Se comparan una célula que acaba de terminar la mitosis con su célula madre original. Al respecto, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El II es falso: la reducción a la mitad ocurre en la meiosis, no en la mitosis.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "tienen el mismo número de cromosomas.",
+        "la hija tiene la mitad de los cromosomas.",
+        "tienen la misma información genética.",
+        "ambas son células somáticas diploides."
+      ]
     },
     {
       "id": "PRISMA-29",
-      "topic": "Estrategia del encuentro · 29",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Aplicación",
+      "stem": "A una persona le extirpan parte del hígado y meses después el órgano ha recuperado gran parte de su tamaño. Respecto del proceso responsable, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Son falsos el II y el III: la mitosis produce células idénticas y la reparación de un órgano no tiene relación con la reproducción sexual.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "se trata de divisiones por mitosis.",
+        "las células nuevas tienen distinta información genética.",
+        "el tejido se reparó por reproducción sexual.",
+        "las células del hígado salieron de G0 para dividirse."
+      ]
     },
     {
       "id": "PRISMA-30",
-      "topic": "Estrategia del encuentro · 30",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Visión global",
+      "stem": "Un compañero afirma: «la mitosis sirve para que los organismos tengan hijos distintos a los padres». Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "El IV es falso y contradice a los demás: la mitosis copia la información, no la mezcla.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque la mitosis produce copias idénticas.",
+        "la variabilidad se genera en la meiosis.",
+        "la mitosis sirve para crecer y reparar tejidos.",
+        "es correcta, porque la mitosis mezcla la información."
+      ]
     }
   ]
 }

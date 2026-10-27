@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"><script src="appearance.js?v=7"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#101d24">
   <meta name="description" content="Reúne a tus bioformas y cruza el Umbral en una misión de combate por turnos de la Liga BioNova.">
@@ -11,21 +11,21 @@
   <link rel="stylesheet" href="rpg.css?v=2">
   <link rel="stylesheet" href="tactics.css?v=1">
   <link rel="stylesheet" href="ux.css?v=4">
-  <link rel="stylesheet" href="liga.css?v=4">
+  <link rel="stylesheet" href="liga.css?v=7">
   <script defer src="config.js?v=4"></script>
   <script defer src="account.js?v=5"></script>
   <script defer src="motor/access.js?v=4"></script>
-  <script defer src="liga-config.js?v=4"></script>
-  <script defer src="motor/league.js?v=4"></script>
+  <script defer src="liga-config.js?v=7"></script>
+  <script defer src="motor/league.js?v=7"></script>
   <script defer src="motor/rewards.js?v=4"></script>
   <script defer src="bancos/umbral.js?v=1"></script>
   <script defer src="motor/roster.js?v=1"></script>
   <script defer src="motor/combat.js?v=1"></script>
-  <script defer src="motor/questions.js?v=2"></script>
+  <script defer src="motor/questions.js?v=7"></script>
   <script defer src="assets/bioformas/manifest.js?v=1"></script>
   <script defer src="motor/renderer.js?v=1"></script>
-  <script defer src="league-loader.js?v=6"></script>
-</head>
+  <script defer src="league-loader.js?v=7"></script>
+<link rel="stylesheet" href="appearance.css?v=7"></head>
 <body data-view="access">
   <a class="skip" href="#main">Ir a la misión</a>
   <div class="world-grid" aria-hidden="true"></div>
@@ -37,7 +37,7 @@
       <span class="step" data-step="story"><b>03</b> Historia</span><i></i>
       <span class="step" data-step="battle"><b>04</b> Combate</span>
     </nav>
-    <div class="header-actions"><a class="text-button league-back" href="index.html">← La liga</a><button id="atlasButton" class="text-button atlas-button">◈ Atlas táctico</button><button class="icon-button" id="soundButton" title="Activar sonido" aria-label="Activar sonido" aria-pressed="false">♪</button><button class="icon-button" id="fullButton" title="Pantalla completa" aria-label="Pantalla completa">⛶</button><button class="icon-button" id="helpButton" title="Cómo jugar" aria-label="Cómo jugar">?</button></div>
+    <div class="header-actions"><button class="typeface-toggle" data-typeface-toggle type="button" aria-pressed="true"><span aria-hidden="true">Aa</span><span data-typeface-label>Letra retro: sí</span></button><a class="text-button league-back" href="index.html">← La liga</a><button id="atlasButton" class="text-button atlas-button">◈ Atlas táctico</button><button class="icon-button" id="soundButton" title="Activar sonido" aria-label="Activar sonido" aria-pressed="false">♪</button><button class="icon-button" id="fullButton" title="Pantalla completa" aria-label="Pantalla completa">⛶</button><button class="icon-button" id="helpButton" title="Cómo jugar" aria-label="Cómo jugar">?</button></div>
   </header>
   <main id="main" tabindex="-1">
     <section id="accessView" class="view">
@@ -120,7 +120,7 @@
           <div class="command-deck"><div class="command-title"><span id="commandPrompt">Elige una acción y responde para ejecutarla.</span><small id="commandState">TU TURNO</small></div><div class="commands"><button data-action="attack" class="command"><span class="command-icon">↗</span><b>Atacar</b><small>Acierta → golpe y energía</small></button><button data-action="skill" class="command skill-command"><span class="command-icon">✦</span><b>Habilidad</b><small id="skillCost">Acierta · 2 de energía</small></button><button data-action="guard" class="command"><span class="command-icon">⬡</span><b>Defender</b><small>Acierta → escudo del 75 %</small></button><button id="switchButton" class="command"><span class="command-icon">⇄</span><b>Cambiar</b><small>Relevo táctico · usa turno</small></button></div></div>
           <dialog id="questionPanel" class="question-panel battle-question-modal" aria-labelledby="questionStem" aria-describedby="questionAction">
             <div class="question-header"><div><div class="question-top"><span class="eyebrow" id="questionTopic"></span><span id="questionNumber"></span></div><div class="question-action" id="questionAction"></div><p id="questionMatchup" class="question-matchup"></p></div><button id="cancelQuestion" class="text-button">← Cambiar estrategia</button></div>
-            <div id="questionClock" class="question-clock" hidden><div><span>TIEMPO PARA CONFIRMAR</span><strong id="questionSeconds" role="timer" aria-live="off"></strong></div><div class="clock-track"><i id="questionClockBar"></i></div><span id="clockAnnouncement" class="visually-hidden" role="status"></span></div><div class="question-content"><h3 id="questionStem" tabindex="-1"></h3><div id="questionFigure" hidden></div><div id="questionOptions" class="question-options" role="group" aria-label="Opciones de respuesta"></div><p id="questionSelection" class="question-selection" hidden></p><div id="answerFeedback" class="answer-feedback" hidden><b id="feedbackTitle"></b><p id="feedbackExplanation"></p><p id="feedbackAnswer"></p></div></div>
+            <div id="questionClock" class="question-clock" hidden><div><span>TIEMPO PARA CONFIRMAR</span><strong id="questionSeconds" role="timer" aria-live="off"></strong></div><div class="clock-track"><i id="questionClockBar"></i></div><span id="clockAnnouncement" class="visually-hidden" role="status"></span></div><div class="question-content"><h3 id="questionStem" tabindex="-1"></h3><ol id="questionStatements" class="question-statements" hidden aria-label="Enunciados I a IV"></ol><div id="questionFigure" hidden></div><div id="questionOptions" class="question-options" role="group" aria-label="Opciones de respuesta"></div><p id="questionSelection" class="question-selection" hidden></p><div id="answerFeedback" class="answer-feedback" hidden><b id="feedbackTitle"></b><p id="feedbackExplanation"></p><p id="feedbackAnswer"></p></div></div>
             <div class="question-actions"><button id="confirmAnswer" class="button primary" disabled>Confirmar mi decisión <span>→</span></button><button id="resolveAnswer" class="button primary" hidden>Continuar el encuentro <span>→</span></button></div>
           </dialog>
         </div>

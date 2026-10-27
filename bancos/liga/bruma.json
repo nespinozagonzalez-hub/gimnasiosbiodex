@@ -1,458 +1,712 @@
 {
   "gym": "bruma",
-  "version": 1,
-  "status": "draft",
-  "title": "Fosa Velion",
+  "version": 2,
+  "status": "published",
+  "title": "Biotecnología y edición genética",
+  "source": {
+    "file": "Liga_Celular_2doMedio.xlsx",
+    "sheet": "Gimnasio 5"
+  },
   "questions": [
     {
       "id": "BRUMA-01",
-      "topic": "Estrategia del encuentro · 01",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Biotecnología",
+      "stem": "La biotecnología se define como el uso de:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "máquinas para fabricar alimentos.",
+        "medicamentos para curar enfermedades.",
+        "energía solar en los cultivos.",
+        "seres vivos para obtener productos."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 3,
+      "explain": "La biotecnología utiliza organismos o sus componentes para obtener productos útiles.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-02",
-      "topic": "Estrategia del encuentro · 02",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Biotecnología tradicional",
+      "stem": "¿Cuál de los siguientes es un ejemplo de biotecnología tradicional?",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "La elaboración del pan.",
+        "La edición con CRISPR.",
+        "La clonación de una oveja.",
+        "La terapia génica humana."
       ],
       "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "explain": "El pan, el vino, la cerveza y el yogur se obtienen con microorganismos: biotecnología tradicional.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-03",
-      "topic": "Estrategia del encuentro · 03",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Transgénico",
+      "stem": "Un organismo transgénico es aquel que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "perdió todos sus genes propios.",
+        "se reproduce de forma asexual.",
+        "tiene el doble de cromosomas.",
+        "tiene un gen de otra especie."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 3,
+      "explain": "Un transgénico lleva incorporado en su genoma un gen proveniente de otra especie.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-04",
-      "topic": "Estrategia del encuentro · 04",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "ADN recombinante",
+      "stem": "El ADN recombinante es una molécula de ADN que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "pertenece a una sola bacteria.",
+        "combina fragmentos de dos fuentes.",
+        "se replica sin usar ninguna enzima.",
+        "está formada solo por proteínas."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "answer": 1,
+      "explain": "El ADN recombinante se arma uniendo en el laboratorio fragmentos de ADN de distintas fuentes.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-05",
-      "topic": "Estrategia del encuentro · 05",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Enzimas de restricción",
+      "stem": "Las enzimas de restricción se utilizan en biotecnología para:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "copiar el ADN muchas veces.",
+        "teñir los cromosomas de la célula.",
+        "cortar el ADN en sitios precisos.",
+        "unir los fragmentos de ADN."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 2,
+      "explain": "Las enzimas de restricción actúan como tijeras moleculares que cortan el ADN en sitios específicos.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-06",
-      "topic": "Estrategia del encuentro · 06",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Ligasa",
+      "stem": "La enzima que une dos fragmentos de ADN entre sí se denomina:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "ligasa.",
+        "restrictasa.",
+        "polimerasa.",
+        "amilasa."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "explain": "La ADN ligasa actúa como pegamento molecular y une los fragmentos cortados.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-07",
-      "topic": "Estrategia del encuentro · 07",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Vector",
+      "stem": "En la producción de ADN recombinante, un plásmido bacteriano se utiliza como:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "tijera que corta el ADN.",
+        "vector del gen de interés.",
+        "fuente de energía celular.",
+        "molde para copiar proteínas."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "answer": 1,
+      "explain": "El plásmido es un vector: transporta el gen de interés al interior de la bacteria.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-08",
-      "topic": "Estrategia del encuentro · 08",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Insulina",
+      "stem": "La insulina humana que se usa como medicamento se produce actualmente:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "mediante síntesis química.",
+        "a partir de plantas silvestres.",
+        "en bacterias modificadas.",
+        "extrayéndola de personas."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
+      "answer": 2,
+      "explain": "Se inserta el gen humano de la insulina en bacterias, que la producen en grandes cantidades.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-09",
-      "topic": "Estrategia del encuentro · 09",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Clonación",
+      "stem": "La clonación de un organismo da como resultado un individuo:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "genéticamente idéntico al original.",
+        "con genes de dos progenitores.",
+        "con la mitad de los cromosomas.",
+        "de una especie completamente nueva."
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
+      "explain": "Un clon tiene el mismo material genético que el organismo del que se obtuvo.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-10",
-      "topic": "Estrategia del encuentro · 10",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Oveja Dolly",
+      "stem": "La oveja Dolly fue relevante en la historia de la biotecnología porque fue:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "el primer animal con trisomía.",
+        "el primer mamífero clonado.",
+        "el primer animal transgénico.",
+        "el primer ser editado con CRISPR."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
+      "answer": 1,
+      "explain": "Dolly, nacida en 1996, fue el primer mamífero clonado a partir de una célula adulta.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-11",
-      "topic": "Estrategia del encuentro · 11",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "CRISPR",
+      "stem": "CRISPR-Cas9 es una herramienta que permite:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "clonar un organismo completo.",
+        "fermentar azúcares en alcohol.",
+        "editar genes de forma dirigida.",
+        "contar los cromosomas de un feto."
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
+      "answer": 2,
+      "explain": "CRISPR-Cas9 corta el ADN en un punto elegido, permitiendo corregir, quitar o agregar genes.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-12",
-      "topic": "Estrategia del encuentro · 12",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Terapia génica",
+      "stem": "La terapia génica consiste en tratar una enfermedad mediante:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "la corrección de un gen defectuoso.",
+        "la extirpación de un órgano dañado.",
+        "la administración de antibióticos.",
+        "el trasplante de células sanguíneas."
       ],
       "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
+      "explain": "La terapia génica busca reparar o reemplazar el gen responsable de una enfermedad.",
       "seconds": 45,
-      "placeholder": true
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
     },
     {
       "id": "BRUMA-13",
-      "topic": "Estrategia del encuentro · 13",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Aplicación agrícola",
+      "stem": "Se desarrolla un maíz que resiste a una plaga gracias a un gen bacteriano. Ese maíz es:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "un híbrido tradicional.",
+        "un organismo transgénico.",
+        "un organismo clonado idéntico.",
+        "un organismo haploide."
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Al llevar un gen de otra especie, el maíz corresponde a un organismo transgénico.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-14",
-      "topic": "Estrategia del encuentro · 14",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Orden del proceso",
+      "stem": "En la producción de una bacteria recombinante, el paso inmediatamente posterior a cortar el gen de interés es:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "purificar la proteína final.",
+        "secuenciar el genoma entero.",
+        "insertarlo en un plásmido.",
+        "cultivar la bacteria en placas."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "Tras el corte, el gen se liga a un plásmido que servirá de vector para entrar a la bacteria.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-15",
-      "topic": "Estrategia del encuentro · 15",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Herramienta adecuada",
+      "stem": "Para corregir una mutación puntual en un gen humano, la herramienta más adecuada es:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "la fermentación con levaduras.",
+        "la clonación por transferencia.",
+        "el cultivo de tejidos vegetales.",
+        "la edición con CRISPR-Cas9."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "CRISPR-Cas9 permite intervenir un punto específico del genoma, ideal para corregir mutaciones.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-16",
-      "topic": "Estrategia del encuentro · 16",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Clonación vegetal",
+      "stem": "Un agricultor obtiene cientos de plantas idénticas a partir de fragmentos de una sola planta. Esto corresponde a:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "clonación por cultivo de tejidos.",
+        "producción de organismos transgénicos.",
+        "edición génica dirigida con CRISPR.",
+        "fermentación de origen bacteriano."
       ],
       "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "El cultivo de tejidos genera clones: todas las plantas tienen el mismo material genético.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-17",
-      "topic": "Estrategia del encuentro · 17",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Ventaja",
+      "stem": "Una ventaja de los cultivos transgénicos resistentes a plagas es que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "no requieren ningún control.",
+        "reducen el uso de pesticidas.",
+        "eliminan la necesidad de riego.",
+        "aumentan la variedad silvestre."
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Al resistir la plaga, el cultivo necesita menos pesticidas químicos para sobrevivir.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-18",
-      "topic": "Estrategia del encuentro · 18",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Riesgo",
+      "stem": "Una preocupación frecuente respecto de los cultivos transgénicos es que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "podrían reducir la biodiversidad.",
+        "no logran crecer en ningún suelo.",
+        "pierden todo su valor nutritivo.",
+        "son incapaces de reproducirse."
       ],
       "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "El uso masivo de pocas variedades mejoradas puede desplazar a las variedades locales.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-19",
-      "topic": "Estrategia del encuentro · 19",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Ética",
+      "stem": "El principal debate ético respecto de la edición genética en embriones humanos se refiere a que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "la técnica resulta demasiado económica.",
+        "no existe ninguna herramienta disponible.",
+        "los embriones no poseen material genético.",
+        "los cambios se heredan a la descendencia."
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "Al editar un embrión, la modificación pasa a todas sus células y a las generaciones siguientes.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-20",
-      "topic": "Estrategia del encuentro · 20",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Diferenciar técnicas",
+      "stem": "La diferencia principal entre clonar y crear un transgénico es que al clonar:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "se eliminan todos los cromosomas.",
+        "no se agregan genes externos.",
+        "se insertan genes de otra especie.",
+        "se reduce la ploidía del organismo."
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "La clonación copia el genoma tal cual; el transgénico incorpora un gen externo.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
     },
     {
       "id": "BRUMA-21",
-      "topic": "Estrategia del encuentro · 21",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Transgénicos",
+      "stem": "Respecto de los organismos transgénicos, es correcto afirmar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: un clon no lleva genes externos, mientras el transgénico sí los lleva.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "son clones del organismo original.",
+        "poseen un gen de otra especie.",
+        "se obtienen con ADN recombinante.",
+        "pueden producir proteínas de interés."
+      ]
     },
     {
       "id": "BRUMA-22",
-      "topic": "Estrategia del encuentro · 22",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Herramientas",
+      "stem": "Respecto de las herramientas que se utilizan en ingeniería genética, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El II es falso y contradice al III: la ligasa une fragmentos, no los corta.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "las enzimas de restricción cortan el ADN.",
+        "la ligasa corta el ADN en sitios precisos.",
+        "la ligasa une los fragmentos de ADN.",
+        "los plásmidos actúan como vectores."
+      ]
     },
     {
       "id": "BRUMA-23",
-      "topic": "Estrategia del encuentro · 23",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "CRISPR",
+      "stem": "Respecto de la técnica CRISPR-Cas9 de edición genética, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo I y III",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "El III es falso: CRISPR se aplica en muy diversos organismos, incluidos animales y plantas.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "permite cortar el ADN en un punto elegido.",
+        "sirve para corregir genes defectuosos.",
+        "solo funciona en bacterias y levaduras.",
+        "plantea debates éticos sobre su uso."
+      ]
     },
     {
       "id": "BRUMA-24",
-      "topic": "Estrategia del encuentro · 24",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Biotecnología",
+      "stem": "Respecto de las aplicaciones actuales de la biotecnología, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo III y IV"
       ],
-      "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "Son falsos el I y el IV: la insulina se produce en bacterias modificadas y los minerales no son productos biotecnológicos.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la insulina se extrae de personas donantes.",
+        "se obtienen cultivos resistentes a plagas.",
+        "se desarrollan terapias génicas.",
+        "se fabrican minerales en el laboratorio."
+      ]
     },
     {
       "id": "BRUMA-25",
-      "topic": "Estrategia del encuentro · 25",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Análisis de procedimiento",
+      "stem": "Un laboratorio corta el gen humano de la hormona del crecimiento, lo une a un plásmido e introduce este en bacterias que luego producen la hormona. Respecto de este procedimiento, es correcto afirmar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y II",
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El IV es falso: las bacterias solo recibieron un gen, no son clones de una persona.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "se utilizó la técnica del ADN recombinante.",
+        "las bacterias resultantes son transgénicas.",
+        "el plásmido funcionó como vector del gen.",
+        "las bacterias son clones del ser humano."
+      ]
     },
     {
       "id": "BRUMA-26",
-      "topic": "Estrategia del encuentro · 26",
-      "stem": "El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "topic": "Evaluar una afirmación",
+      "stem": "En una noticia se afirma que «la oveja Dolly fue el primer animal transgénico de la historia». Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "Defender antes del golpe.",
-        "Cambiar la pestaña del navegador.",
-        "Esperar sin responder.",
-        "Cerrar la pregunta para reiniciar el reloj."
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Una defensa acertada reduce un 75 % el próximo golpe recibido. La protección espera hasta que el rival ataque.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 4,
+      "explain": "Las cuatro son correctas: Dolly fue un clon y no un transgénico, porque clonar es distinto de insertar un gen externo.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque Dolly fue un clon.",
+        "Dolly no recibió genes de otra especie.",
+        "Dolly fue el primer mamífero clonado.",
+        "clonar y transgenizar son procesos distintos."
+      ]
     },
     {
       "id": "BRUMA-27",
-      "topic": "Estrategia del encuentro · 27",
-      "stem": "Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "topic": "Decisión técnica",
+      "stem": "Un equipo quiere corregir una mutación puntual que causa una enfermedad en células de un paciente. Respecto de la estrategia adecuada, es correcto afirmar que:",
       "options": [
-        "Atacar o defender con una respuesta correcta.",
-        "Abrir y cerrar el atlas repetidamente.",
-        "Recargar la página durante el turno.",
-        "Esperar a que desaparezca el rival."
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
       ],
-      "answer": 0,
-      "explain": "Atacar o defender recupera energía. Una habilidad necesita dos puntos de energía y una respuesta correcta para activarse.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 3,
+      "explain": "El I es falso: un clon tendría exactamente la misma mutación que el paciente original.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la clonación del paciente resolvería el problema.",
+        "CRISPR-Cas9 permite dirigirse a ese punto.",
+        "se trataría de una terapia génica.",
+        "el objetivo es corregir el gen defectuoso."
+      ]
     },
     {
       "id": "BRUMA-28",
-      "topic": "Estrategia del encuentro · 28",
-      "stem": "Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "topic": "Debate ético",
+      "stem": "Un país discute si permitir la edición genética de embriones humanos. Respecto de los argumentos en juego, es correcto afirmar que:",
       "options": [
-        "Su daño recibe el multiplicador de ventaja.",
-        "Se elimina la necesidad de responder.",
-        "Todas las respuestas pasan a ser correctas.",
-        "El rival pierde su turno para siempre."
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
       ],
-      "answer": 0,
-      "explain": "La ventaja de afinidad aplica un multiplicador de ×1,25 al daño del movimiento acertado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 2,
+      "explain": "El III es falso: precisamente la transmisión a la descendencia es lo que plantea el dilema ético.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "los cambios se transmitirían a la descendencia.",
+        "podrían prevenirse enfermedades hereditarias.",
+        "la decisión no tiene implicancias éticas.",
+        "existen dudas sobre efectos no previstos."
+      ]
     },
     {
       "id": "BRUMA-29",
-      "topic": "Estrategia del encuentro · 29",
-      "stem": "Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "topic": "Clasificar casos",
+      "stem": "Se presentan tres casos: en el primero se elabora yogur con bacterias, en el segundo se inserta un gen bacteriano en una papa y en el tercero se obtienen plantas idénticas por cultivo de tejidos. Al respecto, es correcto afirmar que:",
       "options": [
-        "Las habilidades y pasivas de curación del equipo.",
-        "El orden alfabético de las bioformas.",
-        "El tamaño de la imagen del escenario.",
-        "El color del botón de pantalla completa."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
       ],
       "answer": 0,
-      "explain": "Las habilidades y pasivas de algunas bioformas recuperan vida. Consultarlas permite elegir el apoyo adecuado para el equipo.",
-      "seconds": 45,
-      "placeholder": true
+      "explain": "Son falsos el III y el IV: el tercer caso corresponde a una clonación y solo el segundo emplea ADN recombinante.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el primero es biotecnología tradicional.",
+        "el segundo produjo un organismo transgénico.",
+        "el tercero produjo un organismo transgénico.",
+        "los tres casos emplean ADN recombinante."
+      ]
     },
     {
       "id": "BRUMA-30",
-      "topic": "Estrategia del encuentro · 30",
-      "stem": "El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "topic": "Visión global",
+      "stem": "Al cerrar la unidad, una estudiante sostiene: «toda la biotecnología es moderna y nació con CRISPR». Respecto de esta afirmación, es correcto señalar que:",
       "options": [
-        "La acción falla y el rival continúa su movimiento.",
-        "El reloj empieza de nuevo automáticamente.",
-        "Se entrega una victoria por esperar.",
-        "Se activa la habilidad sin responder."
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV"
       ],
-      "answer": 0,
-      "explain": "Cuando vence el plazo sin confirmar, la acción falla y el rival ejecuta el movimiento que había anunciado.",
-      "seconds": 45,
-      "placeholder": true
+      "answer": 1,
+      "explain": "Son falsos el II y el IV: CRISPR es una herramienta reciente, mientras el pan y el vino se elaboran desde hace miles de años.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque existe hace milenios.",
+        "CRISPR se descubrió junto con la fermentación.",
+        "el pan y el vino ya eran biotecnología.",
+        "es correcta, porque antes no se usaban seres vivos."
+      ]
     }
   ]
 }

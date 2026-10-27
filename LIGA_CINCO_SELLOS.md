@@ -6,7 +6,9 @@ Mesa de preparación: https://nespinozagonzalez-hub.github.io/gimnasiosbiodex/re
 
 ## Estado
 
-Cinco gimnasios con líderes, escenarios, tres escenas de historia y dos fases. Cada banco contiene exactamente 30 espacios pendientes (`draft`, `placeholder: true`). La vista estudiantil no presenta rótulos de maqueta ni ofrece preguntas provisionales: permite conectar la colección y activar destinos, que muestran «Actividad próximamente» hasta publicar sus 30 preguntas. La preparación docente se conserva en `revision.html`, con enlace `preview=1` y premios desactivados.
+Los cinco gimnasios tienen publicados sus 30 ítems de la Liga Celular para 2.º medio: ciclo celular, mitosis, meiosis, errores de la división y biotecnología. Se conservan el texto, las cuatro o cinco alternativas, los numerales y las explicaciones del Excel original. Cada gimnasio mantiene su líder, su paisaje, tres escenas de historia, dos fases y cuatro bioformas de recompensa.
+
+Los accesos de estudiantes requieren la cuenta BioDex y el código LIGA del destino. La preparación docente se conserva en `revision.html`, con enlace `preview=1` y premios desactivados.
 
 ## Ruta y recompensas
 
@@ -59,7 +61,7 @@ Las cuatro recompensas de cada gimnasio pertenecen al sector que muestra el atla
 
 ## Reglas del reloj
 
-- 45 segundos por defecto; cada pregunta admite `seconds` entre 5 y 600. Ajustar el tiempo al texto, las imágenes y las necesidades del curso.
+- Los ítems importados usan 45, 60, 75 o 90 segundos según su lectura y complejidad. Cada pregunta admite `seconds` entre 5 y 600.
 - El tiempo empieza al abrir la pregunta. Se puede elegir una alternativa y luego confirmar; hay que confirmar antes del límite.
 - Al agotarse, se consume la pregunta una sola vez, falla la acción y se ejecuta el movimiento anunciado del rival. Ese movimiento puede ser ataque, carga o escudo.
 - Cambiar de estrategia conserva la misma pregunta, el orden de alternativas, la selección y la fecha límite.
@@ -68,15 +70,15 @@ Las cuatro recompensas de cada gimnasio pertenecen al sector que muestra el atla
 - Solo la preparación docente ofrece la opción sin reloj. El acceso estudiantil siempre usa el tiempo configurado.
 - El banco se baraja sin repeticiones dentro del intento. La victoria puede llegar antes de usar las 30 preguntas; si se agotan sin vencer, finaliza el intento.
 
-## Qué falta para publicar contenido real
+## Cómo actualizar las preguntas
 
 1. Reemplazar las 30 preguntas de `bancos/liga/aurora.json` (o el archivo correspondiente). La mesa permite editarlas, importarlas y descargarlas.
-2. Cada pregunta necesita `id`, `topic`, `stem`, cuatro `options`, `answer` de 0 a 3, `explain` y `placeholder: false`. `seconds` y `figure` son opcionales.
+2. Cada pregunta necesita `id`, `topic`, `stem`, cuatro o cinco `options`, `answer` de 0 a 3 o de 0 a 4 respectivamente, `explain` y `placeholder: false`. `seconds`, `figure` y cuatro `statements` para los enunciados I–IV son opcionales.
 3. Para una imagen: `figure: {src: "imagenes/neurona-01.webp", alt: "Esquema de una neurona"}`. Colocar el archivo en `imagenes/`.
 4. Cuando las 30 sean definitivas, cambiar `status` a `published` y aumentar `version` si se reemplaza un banco ya utilizado. El validador rechaza bancos incompletos, preguntas con índices inválidos y publicaciones con espacios de ensayo.
 5. Reemplazar solo ese JSON. Los enlaces, la historia y el motor seguirán funcionando. No se necesitan cambios en Apps Script.
 
-Para pasarme preguntas basta con: enunciado, alternativas A–D, correcta y explicación, agrupadas por gimnasio. Tiempo sugerido e imagen son opcionales.
+Para incorporar un banco nuevo se necesitan enunciado, alternativas A–D o A–E, correcta y explicación, agrupadas por gimnasio. Las preguntas de numerales necesitan los cuatro enunciados I–IV. Tiempo sugerido e imagen son opcionales.
 
 ## Recompensas y datos
 
@@ -94,7 +96,9 @@ Esta implementación no verifica victorias en el servidor. Los códigos de captu
 
 ## Archivos
 
-- `index.html`, `liga-hub.js`, `liga.css`: portal de cinco gimnasios.
+- `index.html`, `liga-hub.js`, `liga.css`: portal de cinco gimnasios, acceso ilustrado y estado apagado/activo.
+- `appearance.js`, `appearance.css`: elección de tipografía y persistencia local.
+- `assets/ui/`: arte del acceso y la gran arena.
 - `combate.html?gym=aurora` (o `prisma`, `nexo`, `nova`, `bruma`): acceso, colección, historia y combate.
 - `liga-config.js`: ruta, líderes, fases y recompensas.
 - `league-loader.js`: carga y valida el banco antes de iniciar el motor.
