@@ -145,7 +145,7 @@
     if(matchMedia('(prefers-reduced-motion: reduce)').matches){$('storyText').textContent=fullStory;return;}
     let count=0;$('storyText').textContent='';typingTimer=setInterval(()=>{count+=3;$('storyText').textContent=fullStory.slice(0,count);if(count>=fullStory.length)finishStory();},20);
   }
-  function enterBattle(){finishStory();leaderSay('Elige tu estrategia. Tu respuesta dará energía al movimiento.','LA PRUEBA COMIENZA');setView('battle');renderBattle(battle);}
+  function enterBattle(){finishStory();leaderSay('Elige tu estrategia. Tu respuesta dará energía al movimiento.','EL ENCUENTRO COMIENZA');setView('battle');renderBattle(battle);}
   $('storyNext').addEventListener('click',()=>{if(typingTimer){finishStory();return;}if(storyIndex<2){storyIndex++;renderStory();tone();}else enterBattle();});
   $('showStoryText').addEventListener('click',finishStory);$('skipStory').addEventListener('click',enterBattle);$('storyBack').addEventListener('click',()=>{finishStory();renderTeam();setView('team');});
   function leaderSay(line,caption=M.leaderTitle?.toLocaleUpperCase('es')||'GUARDIANA DEL UMBRAL',encouraging=false){$('leaderLine').textContent=line;$('leaderCaption').textContent=caption;$('battlePortrait').classList.toggle('encouraging',encouraging);}

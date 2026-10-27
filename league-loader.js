@@ -5,7 +5,7 @@
  const error=message=>{document.getElementById('loginError').textContent=message;document.getElementById('loginButton').disabled=true;document.getElementById('demoButton').disabled=true;};
  if(!gym){error('Elige uno de los cinco gimnasios en «La liga».');return;}
  try{
-  const response=await fetch(gym.bankUrl);if(!response.ok)throw Error('No se pudo abrir el banco del gimnasio.');
+  const response=await fetch(gym.bankUrl,{cache:'no-store'});if(!response.ok)throw Error('No se pudo abrir el banco del gimnasio.');
   const bank=await response.json(),check=window.BioDexLeague.validateBank(bank,slug);
   if(!check.valid)throw Error(check.errors.join(' '));
   const preview=new URLSearchParams(location.search).get('preview')==='1';
@@ -41,6 +41,6 @@
   for(const id of ['previewDivider','demoButton','previewNote'])document.getElementById(id).hidden=!preview;
   document.getElementById('loginForm').hidden=preview;
   document.querySelector('#infoDialog .help-note p').textContent='La colección se carga desde tu cuenta de BioDex. Al vencer, las cuatro recompensas se canjean y guardan en esa misma cuenta. Si la conexión falla, puedes reintentar cada captura. El reloj continúa al cambiar de estrategia o pestaña; al agotarse falla la acción.';
-  const script=document.createElement('script');script.src='app.js?v=4';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
+  const script=document.createElement('script');script.src='app.js?v=6';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
  }catch(e){error(e.message||'No se pudo preparar el gimnasio.');}
 })();

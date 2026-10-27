@@ -11,7 +11,7 @@
  async function load(){
   const slug=$('reviewGym').value,gym=G.get(slug),requestId=++loadId;
   try{
-   const next=cache.has(slug)?cache.get(slug):await(async()=>{const r=await fetch(gym.bankUrl);if(!r.ok)throw Error('No se pudo abrir el banco.');return r.json();})();
+   const next=cache.has(slug)?cache.get(slug):await(async()=>{const r=await fetch(gym.bankUrl,{cache:'no-store'});if(!r.ok)throw Error('No se pudo abrir el banco.');return r.json();})();
    if(requestId!==loadId)return;
    const check=L.validateBank(next,slug);if(!check.valid)throw Error(check.errors.join(' '));bank=next;loadedSlug=slug;cache.set(slug,bank);$('reviewSlot').value='0';render();message('Banco cargado. Los cambios se conservan durante esta sesión de edición.');$('reviewPlay').href='combate.html?gym='+slug+'&preview=1';
    $('reviewRewards').innerHTML='<div class="eyebrow gold">'+escape(gym.sector)+'</div><h3>'+escape(gym.emblem)+'</h3><p>Cuatro códigos de captura existentes. Se muestran tras una victoria con cuenta real y banco publicado. El ensayo solo muestra simulaciones.</p><table><thead><tr><th>Bioforma</th><th>Código</th></tr></thead><tbody>'+gym.rewards.map(r=>'<tr><td>'+escape(r.name)+'</td><td><code>'+escape(r.code)+'</code></td></tr>').join('')+'</tbody></table><p>Estos códigos pueden compartirse. Esta página de preparación es pública.</p>';

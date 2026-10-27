@@ -27,7 +27,7 @@
  $('refreshAccount').addEventListener('click',()=>task(async()=>{await account.load();}));
  $('logoutAccount').addEventListener('click',()=>task(async()=>{await account.logout();}));
  $('entryForm').addEventListener('submit',event=>{event.preventDefault();if(busy)return;try{const {gym,saved}=access.activate(account.session?.name,$('entryCode').value);$('entryCode').value='';$('entryMessage').textContent=gym.title+' activado.'+(!results[G.GYMS.indexOf(gym)]?.value?.ready?' Tu docente anunciará la apertura de la actividad.':' Ya puedes entrar a combatir.')+(!saved?' Conserva el código para tu próxima visita.':'');render();$('gym-'+gym.slug).scrollIntoView({behavior:'smooth',block:'center'});}catch(error){$('entryMessage').textContent=error.message;}});
- const banks=Promise.allSettled(G.GYMS.map(async g=>{const r=await fetch(g.bankUrl);if(!r.ok)throw Error(g.slug);const check=L.validateBank(await r.json(),g.slug);if(!check.valid)throw Error(check.errors.join(' '));return check;}));
+ const banks=Promise.allSettled(G.GYMS.map(async g=>{const r=await fetch(g.bankUrl,{cache:'no-store'});if(!r.ok)throw Error(g.slug);const check=L.validateBank(await r.json(),g.slug);if(!check.valid)throw Error(check.errors.join(' '));return check;}));
  await task(async()=>{await account.restore();});results=await banks;render();
  if(results.some(r=>r.status==='rejected'))$('hubError').textContent='No se pudo consultar una actividad. Recarga la página para volver a intentar.';
 })();
