@@ -1,0 +1,426 @@
+{
+  "sourceRepository": "nespinozagonzalez-hub/biodex",
+  "sourceCommit": "8aa36575c57bb0efa56bc4a147c8d572b05f812e",
+  "sectors": [
+    {
+      "id": "S01",
+      "nombre": "Sector Aurora",
+      "icono": "AU",
+      "theme": "aurora",
+      "codigoActivacion": "",
+      "desc": "Zona inicial de exploración. Aquí despiertan las primeras señales de BioNova.",
+      "gimnasios": [
+        {
+          "id": "GYM-S01-A",
+          "nombre": "Laboratorio Nimbel",
+          "dificultad": "Inicial",
+          "bioformas": [
+            "B001",
+            "B002"
+          ],
+          "objetivo": "Observación inicial: registra señales del entorno y formula una hipótesis simple."
+        },
+        {
+          "id": "GYM-S01-B",
+          "nombre": "Estación Prismara",
+          "dificultad": "Inicial",
+          "bioformas": [
+            "B003"
+          ],
+          "objetivo": "Analiza patrones y construye una explicación ordenada a partir de datos."
+        },
+        {
+          "id": "GYM-S01-C",
+          "nombre": "Campo Lunor",
+          "dificultad": "Inicial",
+          "bioformas": [
+            "B004",
+            "B005"
+          ],
+          "objetivo": "Identifica ciclos biológicos y compara dos situaciones usando evidencia."
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "nombre": "Santuario Prisma",
+      "icono": "PR",
+      "theme": "prisma",
+      "codigoActivacion": "",
+      "desc": "Sector de observación, ciclos y análisis de patrones del mundo vivo.",
+      "gimnasios": [
+        {
+          "id": "GYM-S02-A",
+          "nombre": "Cámara Solvian",
+          "dificultad": "Inicial",
+          "bioformas": [
+            "B006"
+          ],
+          "objetivo": "Diseña una observación sistemática y registra variables de forma ordenada."
+        },
+        {
+          "id": "GYM-S02-B",
+          "nombre": "Guarida Vireon",
+          "dificultad": "Inicial",
+          "bioformas": [
+            "B007",
+            "B008"
+          ],
+          "objetivo": "Distingue observación directa e inferencia al investigar un fenómeno."
+        },
+        {
+          "id": "GYM-S02-C",
+          "nombre": "Torre Nexora",
+          "dificultad": "Inicial",
+          "bioformas": [
+            "B009"
+          ],
+          "objetivo": "Conecta evidencias con una conclusión y comunícala claramente."
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "nombre": "Distrito Nexo",
+      "icono": "NX",
+      "theme": "nexo",
+      "codigoActivacion": "",
+      "desc": "Zona de conexión, análisis de evidencias y toma de decisiones responsables.",
+      "gimnasios": [
+        {
+          "id": "GYM-S03-A",
+          "nombre": "Fuerte Clyrion",
+          "dificultad": "Intermedia",
+          "bioformas": [
+            "B010",
+            "B011"
+          ],
+          "objetivo": "Relaciona evidencias con decisiones responsables en contextos de salud."
+        },
+        {
+          "id": "GYM-S03-B",
+          "nombre": "Cueva Aegira",
+          "dificultad": "Intermedia",
+          "bioformas": [
+            "B012"
+          ],
+          "objetivo": "Usa modelos para defender una idea científica ante preguntas críticas."
+        },
+        {
+          "id": "GYM-S03-C",
+          "nombre": "Bunker Myrka",
+          "dificultad": "Intermedia",
+          "bioformas": [
+            "B013"
+          ],
+          "objetivo": "Evalúa distintas fuentes de información y justifica cuál es más confiable."
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "nombre": "Muralla Nova",
+      "icono": "NV",
+      "theme": "nova",
+      "codigoActivacion": "",
+      "desc": "Sector de defensa, estrategia y argumentación científica rigurosa.",
+      "gimnasios": [
+        {
+          "id": "GYM-S04-A",
+          "nombre": "Mazmorra Zephor",
+          "dificultad": "Intermedia",
+          "bioformas": [
+            "B014",
+            "B015"
+          ],
+          "objetivo": "Investiga fenómenos microscópicos y distingue lo observable de lo inferido."
+        },
+        {
+          "id": "GYM-S04-B",
+          "nombre": "Taller Embera",
+          "dificultad": "Intermedia",
+          "bioformas": [
+            "B016"
+          ],
+          "objetivo": "Propone soluciones biotecnológicas evaluando su impacto y viabilidad."
+        },
+        {
+          "id": "GYM-S04-C",
+          "nombre": "Horno Cylar",
+          "dificultad": "Intermedia",
+          "bioformas": [
+            "B017",
+            "B018"
+          ],
+          "objetivo": "Aplica creatividad y pensamiento crítico para diseñar una solución innovadora."
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "nombre": "Laboratorio Bruma",
+      "icono": "BR",
+      "theme": "bruma",
+      "codigoActivacion": "",
+      "desc": "Espacio de fenómenos pequeños, hallazgos inesperados y análisis de variables.",
+      "gimnasios": [
+        {
+          "id": "GYM-S05-A",
+          "nombre": "Nebulosa Altor",
+          "dificultad": "Avanzada",
+          "bioformas": [
+            "B019",
+            "B020"
+          ],
+          "objetivo": "Reconoce variables dependientes e independientes y explica los cambios observados."
+        },
+        {
+          "id": "GYM-S05-B",
+          "nombre": "Pantano Dravik",
+          "dificultad": "Avanzada",
+          "bioformas": [
+            "B021"
+          ],
+          "objetivo": "Controla condiciones de un experimento y redacta un protocolo claro."
+        },
+        {
+          "id": "GYM-S05-C",
+          "nombre": "Fosa Velion",
+          "dificultad": "Avanzada",
+          "bioformas": [
+            "B022"
+          ],
+          "objetivo": "Interpreta resultados con justificación numérica y reconoce incertidumbre."
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "nombre": "Campo Vector",
+      "icono": "VC",
+      "theme": "vector",
+      "codigoActivacion": "",
+      "desc": "Terreno de fuerzas, movimiento, presión y pruebas experimentales.",
+      "gimnasios": [
+        {
+          "id": "GYM-S06-A",
+          "nombre": "Abismo Caelix",
+          "dificultad": "Avanzada",
+          "bioformas": [
+            "B023",
+            "B024"
+          ],
+          "objetivo": "Mide, compara magnitudes y justifica conclusiones usando datos cuantitativos."
+        },
+        {
+          "id": "GYM-S06-B",
+          "nombre": "Grieta Lithor",
+          "dificultad": "Avanzada",
+          "bioformas": [
+            "B025"
+          ],
+          "objetivo": "Reconoce los límites de un modelo y propone mejoras argumentadas."
+        },
+        {
+          "id": "GYM-S06-C",
+          "nombre": "Montaña Quarza",
+          "dificultad": "Avanzada",
+          "bioformas": [
+            "B026"
+          ],
+          "objetivo": "Usa escalas y modelos para explicar fenómenos de gran magnitud."
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "nombre": "Archivo Terra",
+      "icono": "TR",
+      "theme": "terra",
+      "codigoActivacion": "",
+      "desc": "El archivo final: memoria, ambiente, riesgo geológico y visión global.",
+      "gimnasios": [
+        {
+          "id": "GYM-S07-A",
+          "nombre": "Cráter Pyronix",
+          "dificultad": "Final",
+          "bioformas": [
+            "B027",
+            "B028"
+          ],
+          "objetivo": "Evalúa riesgos geológicos y ambientales a partir de evidencias históricas."
+        },
+        {
+          "id": "GYM-S07-B",
+          "nombre": "Bosque Borelia",
+          "dificultad": "Final",
+          "bioformas": [
+            "B029"
+          ],
+          "objetivo": "Analiza cambios en ecosistemas y argumenta medidas de conservación."
+        },
+        {
+          "id": "GYM-S07-C",
+          "nombre": "Santuario Gaian",
+          "dificultad": "Final",
+          "bioformas": [
+            "B030"
+          ],
+          "objetivo": "Argumenta cómo la ciencia ayuda a tomar decisiones globales informadas."
+        }
+      ]
+    }
+  ],
+  "catalog": [
+    {
+      "id": "B001",
+      "nombre": "Nimbel",
+      "codigo": "CAP-NIMBEL-104"
+    },
+    {
+      "id": "B002",
+      "nombre": "Auralis",
+      "codigo": "CAP-AURALIS-216"
+    },
+    {
+      "id": "B003",
+      "nombre": "Prismara",
+      "codigo": "CAP-PRISMARA-337"
+    },
+    {
+      "id": "B004",
+      "nombre": "Lunor",
+      "codigo": "CAP-LUNOR-441"
+    },
+    {
+      "id": "B005",
+      "nombre": "Orbelix",
+      "codigo": "CAP-ORBELIX-512"
+    },
+    {
+      "id": "B006",
+      "nombre": "Solvian",
+      "codigo": "CAP-SOLVIAN-633"
+    },
+    {
+      "id": "B007",
+      "nombre": "Vireon",
+      "codigo": "CAP-VIREON-745"
+    },
+    {
+      "id": "B008",
+      "nombre": "Nexora",
+      "codigo": "CAP-NEXORA-856"
+    },
+    {
+      "id": "B009",
+      "nombre": "Clyrion",
+      "codigo": "CAP-CLYRION-967"
+    },
+    {
+      "id": "B010",
+      "nombre": "Terral",
+      "codigo": "CAP-TERRAL-178"
+    },
+    {
+      "id": "B011",
+      "nombre": "Valtrix",
+      "codigo": "CAP-VALTRIX-289"
+    },
+    {
+      "id": "B012",
+      "nombre": "Aegira",
+      "codigo": "CAP-AEGIRA-390"
+    },
+    {
+      "id": "B013",
+      "nombre": "Myrka",
+      "codigo": "CAP-MYRKA-402"
+    },
+    {
+      "id": "B014",
+      "nombre": "Zephor",
+      "codigo": "CAP-ZEPHOR-513"
+    },
+    {
+      "id": "B015",
+      "nombre": "Spirel",
+      "codigo": "CAP-SPIREL-624"
+    },
+    {
+      "id": "B016",
+      "nombre": "Embera",
+      "codigo": "CAP-EMBERA-735"
+    },
+    {
+      "id": "B017",
+      "nombre": "Cylar",
+      "codigo": "CAP-CYLAR-846"
+    },
+    {
+      "id": "B018",
+      "nombre": "Orynx",
+      "codigo": "CAP-ORYNX-957"
+    },
+    {
+      "id": "B019",
+      "nombre": "Altor",
+      "codigo": "CAP-ALTOR-167"
+    },
+    {
+      "id": "B020",
+      "nombre": "Dravik",
+      "codigo": "CAP-DRAVIK-278"
+    },
+    {
+      "id": "B021",
+      "nombre": "Velion",
+      "codigo": "CAP-VELION-389"
+    },
+    {
+      "id": "B022",
+      "nombre": "Umbrin",
+      "codigo": "CAP-UMBRIN-490"
+    },
+    {
+      "id": "B023",
+      "nombre": "Caelix",
+      "codigo": "CAP-CAELIX-601"
+    },
+    {
+      "id": "B024",
+      "nombre": "Nuvora",
+      "codigo": "CAP-NUVORA-712"
+    },
+    {
+      "id": "B025",
+      "nombre": "Lithor",
+      "codigo": "CAP-LITHOR-823"
+    },
+    {
+      "id": "B026",
+      "nombre": "Quarza",
+      "codigo": "CAP-QUARZA-934"
+    },
+    {
+      "id": "B027",
+      "nombre": "Pyronix",
+      "codigo": "CAP-PYRONIX-145"
+    },
+    {
+      "id": "B028",
+      "nombre": "Strata",
+      "codigo": "CAP-STRATA-256"
+    },
+    {
+      "id": "B029",
+      "nombre": "Borelia",
+      "codigo": "CAP-BORELIA-367"
+    },
+    {
+      "id": "B030",
+      "nombre": "Gaian",
+      "codigo": "CAP-GAIAN-478"
+    }
+  ]
+}

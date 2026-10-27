@@ -1,0 +1,458 @@
+{
+  "gym": "nova",
+  "version": 1,
+  "status": "draft",
+  "title": "Maqueta · Horno Cylar",
+  "questions": [
+    {
+      "id": "NOVA-01",
+      "topic": "Ensayo del motor · espacio 01",
+      "stem": "[MAQUETA 01/30] El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "options": [
+        "Defender antes del golpe.",
+        "Cambiar la pestaña del navegador.",
+        "Esperar sin responder.",
+        "Cerrar la pregunta para reiniciar el reloj."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-02",
+      "topic": "Ensayo del motor · espacio 02",
+      "stem": "[MAQUETA 02/30] Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "options": [
+        "Atacar o defender con una respuesta correcta.",
+        "Abrir y cerrar el atlas repetidamente.",
+        "Recargar la página durante el turno.",
+        "Esperar a que desaparezca el rival."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-03",
+      "topic": "Ensayo del motor · espacio 03",
+      "stem": "[MAQUETA 03/30] Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "options": [
+        "Su daño recibe el multiplicador de ventaja.",
+        "Se elimina la necesidad de responder.",
+        "Todas las respuestas pasan a ser correctas.",
+        "El rival pierde su turno para siempre."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-04",
+      "topic": "Ensayo del motor · espacio 04",
+      "stem": "[MAQUETA 04/30] Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "options": [
+        "Las habilidades y pasivas de curación del equipo.",
+        "El orden alfabético de las bioformas.",
+        "El tamaño de la imagen del escenario.",
+        "El color del botón de pantalla completa."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-05",
+      "topic": "Ensayo del motor · espacio 05",
+      "stem": "[MAQUETA 05/30] El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "options": [
+        "La acción falla y el rival continúa su movimiento.",
+        "El reloj empieza de nuevo automáticamente.",
+        "Se entrega una victoria por esperar.",
+        "Se activa la habilidad sin responder."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-06",
+      "topic": "Ensayo del motor · espacio 06",
+      "stem": "[MAQUETA 06/30] El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "options": [
+        "Defender antes del golpe.",
+        "Cambiar la pestaña del navegador.",
+        "Esperar sin responder.",
+        "Cerrar la pregunta para reiniciar el reloj."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-07",
+      "topic": "Ensayo del motor · espacio 07",
+      "stem": "[MAQUETA 07/30] Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "options": [
+        "Atacar o defender con una respuesta correcta.",
+        "Abrir y cerrar el atlas repetidamente.",
+        "Recargar la página durante el turno.",
+        "Esperar a que desaparezca el rival."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-08",
+      "topic": "Ensayo del motor · espacio 08",
+      "stem": "[MAQUETA 08/30] Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "options": [
+        "Su daño recibe el multiplicador de ventaja.",
+        "Se elimina la necesidad de responder.",
+        "Todas las respuestas pasan a ser correctas.",
+        "El rival pierde su turno para siempre."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-09",
+      "topic": "Ensayo del motor · espacio 09",
+      "stem": "[MAQUETA 09/30] Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "options": [
+        "Las habilidades y pasivas de curación del equipo.",
+        "El orden alfabético de las bioformas.",
+        "El tamaño de la imagen del escenario.",
+        "El color del botón de pantalla completa."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-10",
+      "topic": "Ensayo del motor · espacio 10",
+      "stem": "[MAQUETA 10/30] El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "options": [
+        "La acción falla y el rival continúa su movimiento.",
+        "El reloj empieza de nuevo automáticamente.",
+        "Se entrega una victoria por esperar.",
+        "Se activa la habilidad sin responder."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-11",
+      "topic": "Ensayo del motor · espacio 11",
+      "stem": "[MAQUETA 11/30] El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "options": [
+        "Defender antes del golpe.",
+        "Cambiar la pestaña del navegador.",
+        "Esperar sin responder.",
+        "Cerrar la pregunta para reiniciar el reloj."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-12",
+      "topic": "Ensayo del motor · espacio 12",
+      "stem": "[MAQUETA 12/30] Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "options": [
+        "Atacar o defender con una respuesta correcta.",
+        "Abrir y cerrar el atlas repetidamente.",
+        "Recargar la página durante el turno.",
+        "Esperar a que desaparezca el rival."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-13",
+      "topic": "Ensayo del motor · espacio 13",
+      "stem": "[MAQUETA 13/30] Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "options": [
+        "Su daño recibe el multiplicador de ventaja.",
+        "Se elimina la necesidad de responder.",
+        "Todas las respuestas pasan a ser correctas.",
+        "El rival pierde su turno para siempre."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-14",
+      "topic": "Ensayo del motor · espacio 14",
+      "stem": "[MAQUETA 14/30] Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "options": [
+        "Las habilidades y pasivas de curación del equipo.",
+        "El orden alfabético de las bioformas.",
+        "El tamaño de la imagen del escenario.",
+        "El color del botón de pantalla completa."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-15",
+      "topic": "Ensayo del motor · espacio 15",
+      "stem": "[MAQUETA 15/30] El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "options": [
+        "La acción falla y el rival continúa su movimiento.",
+        "El reloj empieza de nuevo automáticamente.",
+        "Se entrega una victoria por esperar.",
+        "Se activa la habilidad sin responder."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-16",
+      "topic": "Ensayo del motor · espacio 16",
+      "stem": "[MAQUETA 16/30] El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "options": [
+        "Defender antes del golpe.",
+        "Cambiar la pestaña del navegador.",
+        "Esperar sin responder.",
+        "Cerrar la pregunta para reiniciar el reloj."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-17",
+      "topic": "Ensayo del motor · espacio 17",
+      "stem": "[MAQUETA 17/30] Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "options": [
+        "Atacar o defender con una respuesta correcta.",
+        "Abrir y cerrar el atlas repetidamente.",
+        "Recargar la página durante el turno.",
+        "Esperar a que desaparezca el rival."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-18",
+      "topic": "Ensayo del motor · espacio 18",
+      "stem": "[MAQUETA 18/30] Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "options": [
+        "Su daño recibe el multiplicador de ventaja.",
+        "Se elimina la necesidad de responder.",
+        "Todas las respuestas pasan a ser correctas.",
+        "El rival pierde su turno para siempre."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-19",
+      "topic": "Ensayo del motor · espacio 19",
+      "stem": "[MAQUETA 19/30] Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "options": [
+        "Las habilidades y pasivas de curación del equipo.",
+        "El orden alfabético de las bioformas.",
+        "El tamaño de la imagen del escenario.",
+        "El color del botón de pantalla completa."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-20",
+      "topic": "Ensayo del motor · espacio 20",
+      "stem": "[MAQUETA 20/30] El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "options": [
+        "La acción falla y el rival continúa su movimiento.",
+        "El reloj empieza de nuevo automáticamente.",
+        "Se entrega una victoria por esperar.",
+        "Se activa la habilidad sin responder."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-21",
+      "topic": "Ensayo del motor · espacio 21",
+      "stem": "[MAQUETA 21/30] El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "options": [
+        "Defender antes del golpe.",
+        "Cambiar la pestaña del navegador.",
+        "Esperar sin responder.",
+        "Cerrar la pregunta para reiniciar el reloj."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-22",
+      "topic": "Ensayo del motor · espacio 22",
+      "stem": "[MAQUETA 22/30] Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "options": [
+        "Atacar o defender con una respuesta correcta.",
+        "Abrir y cerrar el atlas repetidamente.",
+        "Recargar la página durante el turno.",
+        "Esperar a que desaparezca el rival."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-23",
+      "topic": "Ensayo del motor · espacio 23",
+      "stem": "[MAQUETA 23/30] Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "options": [
+        "Su daño recibe el multiplicador de ventaja.",
+        "Se elimina la necesidad de responder.",
+        "Todas las respuestas pasan a ser correctas.",
+        "El rival pierde su turno para siempre."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-24",
+      "topic": "Ensayo del motor · espacio 24",
+      "stem": "[MAQUETA 24/30] Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "options": [
+        "Las habilidades y pasivas de curación del equipo.",
+        "El orden alfabético de las bioformas.",
+        "El tamaño de la imagen del escenario.",
+        "El color del botón de pantalla completa."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-25",
+      "topic": "Ensayo del motor · espacio 25",
+      "stem": "[MAQUETA 25/30] El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "options": [
+        "La acción falla y el rival continúa su movimiento.",
+        "El reloj empieza de nuevo automáticamente.",
+        "Se entrega una victoria por esperar.",
+        "Se activa la habilidad sin responder."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-26",
+      "topic": "Ensayo del motor · espacio 26",
+      "stem": "[MAQUETA 26/30] El rival anuncia un golpe potente para el próximo turno. ¿Qué acción reduce mejor ese daño?",
+      "options": [
+        "Defender antes del golpe.",
+        "Cambiar la pestaña del navegador.",
+        "Esperar sin responder.",
+        "Cerrar la pregunta para reiniciar el reloj."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-27",
+      "topic": "Ensayo del motor · espacio 27",
+      "stem": "[MAQUETA 27/30] Tu bioforma necesita energía para su habilidad. ¿Qué acción acertada permite recuperarla?",
+      "options": [
+        "Atacar o defender con una respuesta correcta.",
+        "Abrir y cerrar el atlas repetidamente.",
+        "Recargar la página durante el turno.",
+        "Esperar a que desaparezca el rival."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-28",
+      "topic": "Ensayo del motor · espacio 28",
+      "stem": "[MAQUETA 28/30] Una bioforma tiene ventaja de afinidad ante el rival. ¿Qué cambia al acertar su ataque?",
+      "options": [
+        "Su daño recibe el multiplicador de ventaja.",
+        "Se elimina la necesidad de responder.",
+        "Todas las respuestas pasan a ser correctas.",
+        "El rival pierde su turno para siempre."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-29",
+      "topic": "Ensayo del motor · espacio 29",
+      "stem": "[MAQUETA 29/30] Tu equipo necesita recuperar vida. ¿Qué conviene revisar antes de elegir al siguiente compañero?",
+      "options": [
+        "Las habilidades y pasivas de curación del equipo.",
+        "El orden alfabético de las bioformas.",
+        "El tamaño de la imagen del escenario.",
+        "El color del botón de pantalla completa."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    },
+    {
+      "id": "NOVA-30",
+      "topic": "Ensayo del motor · espacio 30",
+      "stem": "[MAQUETA 30/30] El reloj llega a cero antes de confirmar. ¿Qué sucede con tu acción?",
+      "options": [
+        "La acción falla y el rival continúa su movimiento.",
+        "El reloj empieza de nuevo automáticamente.",
+        "Se entrega una victoria por esperar.",
+        "Se activa la habilidad sin responder."
+      ],
+      "answer": 0,
+      "explain": "Pregunta de ensayo para comprobar la mecánica. Este espacio se reemplazará por una pregunta de tu contenido y su explicación.",
+      "seconds": 45,
+      "placeholder": true
+    }
+  ]
+}

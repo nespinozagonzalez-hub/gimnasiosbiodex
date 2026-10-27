@@ -1,0 +1,563 @@
+[
+  {
+    "id": "B001",
+    "name": "Nimbel",
+    "type": "Aurora",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 42,
+      "analisis": 46,
+      "evidencia": 40,
+      "comunicacion": 62,
+      "energia": 55
+    },
+    "skill": "Destello del sendero",
+    "story": "Revolotea entre las hojas al caer la tarde. El pequeño farol que lleva en su interior se enciende cuando reconoce a alguien que ha perdido el camino.",
+    "color": "#ff8bd1"
+  },
+  {
+    "id": "B002",
+    "name": "Auralis",
+    "type": "Aurora",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 58,
+      "analisis": 48,
+      "evidencia": 52,
+      "comunicacion": 78,
+      "energia": 62
+    },
+    "skill": "Manto del crepúsculo",
+    "story": "Despliega sus alas violetas sobre los claros donde descansan los viajeros. Bajo su resplandor, hasta la noche más oscura parece un lugar seguro.",
+    "color": "#ff8bd1"
+  },
+  {
+    "id": "B003",
+    "name": "Prismara",
+    "type": "Aurora",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 72,
+      "analisis": 66,
+      "evidencia": 70,
+      "comunicacion": 84,
+      "energia": 76
+    },
+    "skill": "Corona de los tres reflejos",
+    "story": "Tres cristales giran a su alrededor sin llegar a tocarse. Dicen que cada uno guarda el reflejo de un horizonte que todavía no has visitado.",
+    "color": "#ff4fd8"
+  },
+  {
+    "id": "B004",
+    "name": "Lunor",
+    "type": "Prisma",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 44,
+      "analisis": 58,
+      "evidencia": 54,
+      "comunicacion": 48,
+      "energia": 60
+    },
+    "skill": "Susurro de luna",
+    "story": "Recorre los tejados y las orillas del lago cuando aparece la primera estrella. Sus orejas de media luna escuchan pasos que nadie más alcanza a oír.",
+    "color": "#ff9d4d"
+  },
+  {
+    "id": "B005",
+    "name": "Orbelix",
+    "type": "Prisma",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 56,
+      "analisis": 68,
+      "evidencia": 62,
+      "comunicacion": 56,
+      "energia": 68
+    },
+    "skill": "Danza de las lunas",
+    "story": "Pequeñas lunas lo acompañan en una danza silenciosa. A veces se queda dormido en el aire y despierta varios senderos más allá de donde empezó.",
+    "color": "#ff9d4d"
+  },
+  {
+    "id": "B006",
+    "name": "Solvian",
+    "type": "Prisma",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 78,
+      "analisis": 72,
+      "evidencia": 82,
+      "comunicacion": 70,
+      "energia": 80
+    },
+    "skill": "Alas del primer sol",
+    "story": "Sus alas doradas anuncian el regreso del amanecer. Las leyendas cuentan que una sola de sus plumas puede conservar la luz de un día entero.",
+    "color": "#ffe66d"
+  },
+  {
+    "id": "B007",
+    "name": "Vireon",
+    "type": "Nexo",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 40,
+      "analisis": 52,
+      "evidencia": 46,
+      "comunicacion": 58,
+      "energia": 54
+    },
+    "skill": "Salto del vigía",
+    "story": "Se adelanta entre los matorrales y vuelve para comprobar que sigues detrás. Su máscara blanca parece ocultar una sonrisa cada vez que encuentra un atajo.",
+    "color": "#ff5f7a"
+  },
+  {
+    "id": "B008",
+    "name": "Nexora",
+    "type": "Nexo",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 60,
+      "analisis": 60,
+      "evidencia": 70,
+      "comunicacion": 72,
+      "energia": 66
+    },
+    "skill": "Escudo del vínculo",
+    "story": "Su armadura esmeralda está marcada por largos viajes. Aunque parece imponente, suele detenerse a esperar a las criaturas más pequeñas del sendero.",
+    "color": "#ff5f7a"
+  },
+  {
+    "id": "B009",
+    "name": "Clyrion",
+    "type": "Nexo",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 76,
+      "analisis": 70,
+      "evidencia": 84,
+      "comunicacion": 80,
+      "energia": 82
+    },
+    "skill": "Halo del guardián",
+    "story": "Aparece sobre los puentes cuando el río queda en silencio. El halo que flota a su alrededor ilumina el siguiente paso, incluso entre la niebla más espesa.",
+    "color": "#ff5f7a"
+  },
+  {
+    "id": "B010",
+    "name": "Terral",
+    "type": "Nova",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 58,
+      "analisis": 48,
+      "evidencia": 52,
+      "comunicacion": 44,
+      "energia": 50
+    },
+    "skill": "Paso de piedra",
+    "story": "A primera vista parece una piedra cubierta de musgo. Solo cuando avanza deja al descubierto dos ojos de cristal y unas pequeñas huellas sobre la tierra.",
+    "color": "#4dff91"
+  },
+  {
+    "id": "B011",
+    "name": "Valtrix",
+    "type": "Nova",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 70,
+      "analisis": 72,
+      "evidencia": 74,
+      "comunicacion": 54,
+      "energia": 66
+    },
+    "skill": "Bastión esmeralda",
+    "story": "Custodia las antiguas puertas de los bosques. Las placas doradas de su armadura suenan como campanas suaves cuando una expedición regresa a casa.",
+    "color": "#4dff91"
+  },
+  {
+    "id": "B012",
+    "name": "Aegira",
+    "type": "Nova",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 86,
+      "analisis": 76,
+      "evidencia": 90,
+      "comunicacion": 68,
+      "energia": 84
+    },
+    "skill": "Bóveda de cristal",
+    "story": "Sus alas transparentes reflejan los colores de cada territorio. Los cristales que la rodean forman una bóveda luminosa sobre quienes caminan a su lado.",
+    "color": "#4dff91"
+  },
+  {
+    "id": "B013",
+    "name": "Myrka",
+    "type": "Bruma",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 36,
+      "analisis": 58,
+      "evidencia": 50,
+      "comunicacion": 42,
+      "energia": 48
+    },
+    "skill": "Faroles del musgo",
+    "story": "Se esconde bajo las raíces y asoma cuando la lluvia acaba de pasar. Sus pequeñas puntas verdes se encienden una a una como faroles de un pueblo diminuto.",
+    "color": "#9cffd2"
+  },
+  {
+    "id": "B014",
+    "name": "Zephor",
+    "type": "Bruma",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 62,
+      "analisis": 72,
+      "evidencia": 66,
+      "comunicacion": 52,
+      "energia": 62
+    },
+    "skill": "Espiral del viento verde",
+    "story": "Se desliza entre los helechos sin doblar una sola hoja. Cuando acelera, su larga cola dibuja espirales verdes que tardan unos segundos en desaparecer.",
+    "color": "#9cffd2"
+  },
+  {
+    "id": "B015",
+    "name": "Spirel",
+    "type": "Bruma",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 76,
+      "analisis": 78,
+      "evidencia": 72,
+      "comunicacion": 64,
+      "energia": 76
+    },
+    "skill": "Sendero de esporas",
+    "story": "Suele aparecer bajo los árboles más antiguos cuando la niebla cubre el bosque. Las pequeñas luces que desprende señalan senderos que no figuran en ningún mapa.",
+    "color": "#9cffd2"
+  },
+  {
+    "id": "B016",
+    "name": "Embera",
+    "type": "Lumen",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 48,
+      "analisis": 60,
+      "evidencia": 58,
+      "comunicacion": 48,
+      "energia": 68
+    },
+    "skill": "Brasa del refugio",
+    "story": "Guarda una brasa suave en el centro de su cuerpo. Se acerca a los campamentos al anochecer y se queda dormida junto al último farol encendido.",
+    "color": "#a477ff"
+  },
+  {
+    "id": "B017",
+    "name": "Cylar",
+    "type": "Lumen",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 64,
+      "analisis": 74,
+      "evidencia": 76,
+      "comunicacion": 62,
+      "energia": 80
+    },
+    "skill": "Pulso del engranaje",
+    "story": "Su caparazón gira con un delicado sonido de engranajes. Recorre los talleres abandonados y despierta mecanismos que parecían haber olvidado su movimiento.",
+    "color": "#a477ff"
+  },
+  {
+    "id": "B018",
+    "name": "Orynx",
+    "type": "Lumen",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 78,
+      "analisis": 78,
+      "evidencia": 84,
+      "comunicacion": 72,
+      "energia": 88
+    },
+    "skill": "Aliento del renacer",
+    "story": "Su silueta blanca cruza los caminos al terminar las tormentas. Allí donde se detiene, el aire se llena de cintas luminosas y las hojas recuperan su brillo.",
+    "color": "#a477ff"
+  },
+  {
+    "id": "B019",
+    "name": "Altor",
+    "type": "Vector",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 50,
+      "analisis": 62,
+      "evidencia": 54,
+      "comunicacion": 44,
+      "energia": 56
+    },
+    "skill": "Órbita traviesa",
+    "story": "Un aro dorado gira alrededor de su pequeño cuerpo azul. Le gusta saltar de roca en roca mientras sus diminutos compañeros de luz intentan seguirle el ritmo.",
+    "color": "#ffe66d"
+  },
+  {
+    "id": "B020",
+    "name": "Dravik",
+    "type": "Vector",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 60,
+      "analisis": 78,
+      "evidencia": 68,
+      "comunicacion": 52,
+      "energia": 62
+    },
+    "skill": "Garra de la cornisa",
+    "story": "Se aferra a los riscos con sus grandes patas y observa el valle antes de dar otro salto. Sus escamas guardan el calor del sol hasta bien entrada la noche.",
+    "color": "#ffe66d"
+  },
+  {
+    "id": "B021",
+    "name": "Velion",
+    "type": "Vector",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 72,
+      "analisis": 86,
+      "evidencia": 78,
+      "comunicacion": 60,
+      "energia": 74
+    },
+    "skill": "Impulso del horizonte",
+    "story": "Su cuerpo dorado se enrosca en el aire antes de lanzarse sobre las llanuras. A su paso quedan cintas azules y violetas que parecen jugar con el viento.",
+    "color": "#ffe66d"
+  },
+  {
+    "id": "B022",
+    "name": "Umbrin",
+    "type": "Umbral",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 48,
+      "analisis": 62,
+      "evidencia": 58,
+      "comunicacion": 46,
+      "energia": 54
+    },
+    "skill": "Sello del umbral",
+    "story": "Avanza con pasos cortos por los corredores de piedra. Los símbolos dorados de su cuerpo resplandecen al acercarse a un pasaje que lleva mucho tiempo cerrado.",
+    "color": "#48e7ff"
+  },
+  {
+    "id": "B023",
+    "name": "Caelix",
+    "type": "Umbral",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 64,
+      "analisis": 74,
+      "evidencia": 70,
+      "comunicacion": 56,
+      "energia": 66
+    },
+    "skill": "Estela de la gruta",
+    "story": "Nada entre los reflejos del agua como si pudiera atravesarlos. Sus aletas transparentes dejan pequeñas estelas que guían hacia las grutas más escondidas.",
+    "color": "#48e7ff"
+  },
+  {
+    "id": "B024",
+    "name": "Nuvora",
+    "type": "Umbral",
+    "rarity": "Rara",
+    "stage": 3,
+    "stats": {
+      "vida": 74,
+      "analisis": 82,
+      "evidencia": 74,
+      "comunicacion": 68,
+      "energia": 80
+    },
+    "skill": "Manto de aurora",
+    "story": "Su largo cuerpo de nube aparece sobre el lago antes del amanecer. Los viajeros lo reconocen por las cintas rosadas que deja suspendidas entre las montañas.",
+    "color": "#48e7ff"
+  },
+  {
+    "id": "B025",
+    "name": "Lithor",
+    "type": "Arcana",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 62,
+      "analisis": 66,
+      "evidencia": 60,
+      "comunicacion": 44,
+      "energia": 58
+    },
+    "skill": "Coraza del risco",
+    "story": "Las grietas de su cuerpo guardan un tenue brillo naranja. Le gusta rodar por las laderas y detenerse justo donde empieza un sendero desconocido.",
+    "color": "#ff9d4d"
+  },
+  {
+    "id": "B026",
+    "name": "Quarza",
+    "type": "Arcana",
+    "rarity": "Poco común",
+    "stage": 2,
+    "stats": {
+      "vida": 72,
+      "analisis": 78,
+      "evidencia": 82,
+      "comunicacion": 58,
+      "energia": 76
+    },
+    "skill": "Cuernos del eco profundo",
+    "story": "Sus cuernos de cuarzo sobresalen entre la niebla de la cordillera. Cuando se sacude, pequeñas chispas doradas recorren las grietas de su armadura.",
+    "color": "#ff9d4d"
+  },
+  {
+    "id": "B027",
+    "name": "Pyronix",
+    "type": "Arcana",
+    "rarity": "Épica",
+    "stage": 3,
+    "stats": {
+      "vida": 94,
+      "analisis": 84,
+      "evidencia": 88,
+      "comunicacion": 76,
+      "energia": 96
+    },
+    "skill": "Vuelo de la forja",
+    "story": "Abre sus alas sobre los cráteres al ponerse el sol. La luz de su cuerpo recorre la obsidiana como un río de fuego que nunca termina de apagarse.",
+    "color": "#ff5f7a"
+  },
+  {
+    "id": "B028",
+    "name": "Strata",
+    "type": "Terra",
+    "rarity": "Común",
+    "stage": 1,
+    "stats": {
+      "vida": 60,
+      "analisis": 70,
+      "evidencia": 72,
+      "comunicacion": 48,
+      "energia": 54
+    },
+    "skill": "Corona del recuerdo",
+    "story": "Su corona de cuarzo recoge la luz de las estrellas. Permanece junto a las antiguas escaleras del Archivo Terra, como si esperara a alguien que aún no conoce.",
+    "color": "#c7d2ff"
+  },
+  {
+    "id": "B029",
+    "name": "Borelia",
+    "type": "Terra",
+    "rarity": "Rara",
+    "stage": 2,
+    "stats": {
+      "vida": 78,
+      "analisis": 82,
+      "evidencia": 86,
+      "comunicacion": 72,
+      "energia": 88
+    },
+    "skill": "Floración del sendero",
+    "story": "Camina entre los jardines del archivo sin dejar una sola flor doblada. Sus astas se llenan de pétalos azules cada vez que una nueva ruta vuelve a florecer.",
+    "color": "#69e36f"
+  },
+  {
+    "id": "B030",
+    "name": "Gaian",
+    "type": "Terra",
+    "rarity": "Legendaria",
+    "stage": 3,
+    "stats": {
+      "vida": 126,
+      "analisis": 96,
+      "evidencia": 100,
+      "comunicacion": 94,
+      "energia": 130
+    },
+    "skill": "Pacto de los siete territorios",
+    "story": "Un bosque diminuto crece sobre su lomo y sus astas iluminan la noche. Las leyendas afirman que recuerda todos los caminos que alguna vez existieron en BioNova.",
+    "color": "#4dff91"
+  },
+  {
+    "id": "B031",
+    "name": "Astrael",
+    "type": "Astral",
+    "rarity": "Mega legendaria",
+    "stage": 1,
+    "stats": {
+      "vida": 100,
+      "analisis": 99,
+      "evidencia": 97,
+      "comunicacion": 100,
+      "energia": 98
+    },
+    "skill": "Horizonte de estrellas",
+    "story": "Seis alas se despliegan entre las ruinas del cielo cuando nace una nueva estrella. Astrael guarda el horizonte que une todos los caminos del alba.",
+    "color": "#e4edff"
+  },
+  {
+    "id": "B032",
+    "name": "Thalúmor",
+    "type": "Abisal",
+    "rarity": "Mega legendaria",
+    "stage": 1,
+    "stats": {
+      "vida": 100,
+      "analisis": 100,
+      "evidencia": 99,
+      "comunicacion": 97,
+      "energia": 98
+    },
+    "skill": "Memoria de las mareas",
+    "story": "Bajo los santuarios sumergidos, sus aletas despliegan un cielo de luces azules. Thalúmor custodia las rutas que el océano ocultó antes de que existieran los primeros mapas.",
+    "color": "#0d6172"
+  },
+  {
+    "id": "B033",
+    "name": "Ignivar",
+    "type": "Primordial",
+    "rarity": "Mega legendaria",
+    "stage": 1,
+    "stats": {
+      "vida": 100,
+      "analisis": 97,
+      "evidencia": 98,
+      "comunicacion": 99,
+      "energia": 100
+    },
+    "skill": "Voluntad de la forja",
+    "story": "La primera forja todavía arde entre las placas de su armadura. Ignivar recorre las montañas de obsidiana mientras su melena ilumina la noche como un segundo amanecer.",
+    "color": "#423739"
+  }
+]

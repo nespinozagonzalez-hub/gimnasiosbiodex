@@ -1,0 +1,131 @@
+/* Equipo: la acción principal cabe en la pantalla y acompaña a la colección. */
+.preparation-panel {
+  position: sticky;
+  top: 16px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 32px);
+  min-height: 0;
+}
+.preparation-panel .mission-map { height: 84px; flex-shrink: 0; }
+.prep-body { padding: 0; display: flex; flex-direction: column; min-height: 0; }
+.prep-team { padding: 18px; flex-shrink: 0; }
+.prep-team h3 { margin: 7px 0 13px; }
+.prep-team .team-slots { margin-bottom: 0; }
+.prep-details { padding: 0 18px 14px; overflow: auto; overscroll-behavior: contain; min-height: 0; }
+.prep-details .enemy-intel { padding-top: 0; }
+.prep-details .team-advice { margin-bottom: 0; }
+.prep-actions { padding: 15px 18px; flex-shrink: 0; border-top: 1px solid #526950; background: #1d3432; }
+.prep-actions .trial-note { margin-top: 9px; line-height: 1.5; }
+.team-dock { display: none; }
+
+/* Cada ficha permanece en el lado de su bioforma: equipo a la izquierda,
+   guardián a la derecha. Se usan esquinas libres para dejar visibles los sprites. */
+.arena .fighter-hud { --hud-inset: clamp(12px, 1.5vw, 25px); }
+.arena .player-hud { inset: var(--hud-inset) auto auto var(--hud-inset); }
+.arena .enemy-hud { inset: auto var(--hud-inset) var(--hud-inset) auto; }
+
+/* Las preguntas usan la capa modal nativa: la arena permanece detrás. */
+body.question-active { overflow: hidden; }
+.battle-question-modal {
+  position: fixed;
+  inset: auto auto 16px 50%;
+  transform: translateX(-50%);
+  width: min(790px, calc(100vw - 32px));
+  max-width: none;
+  max-height: min(76dvh, 680px);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #a3b68b;
+  background: #142c30;
+  color: var(--ink);
+  box-shadow: 0 15px 70px #031015aa, inset 0 0 0 4px #0e2226;
+}
+.battle-question-modal[open] { display: flex; flex-direction: column; }
+.battle-question-modal::backdrop { background: #03151c55; }
+.question-header { display: flex; justify-content: space-between; gap: 15px; padding: 15px 20px 12px; background: #263b33; border-bottom: 1px solid #688261; flex-shrink: 0; }
+.question-header > div { min-width: 0; flex: 1; }
+.question-header .question-top { margin-bottom: 7px; }
+.question-header .question-action { margin-bottom: 4px; }
+.question-header .eyebrow { font-size: 10px; }
+.question-header .text-button { align-self: start; white-space: nowrap; min-height: 44px; font-size: 11px; color: #e4dfbd; }
+.question-matchup { font-size: 11px; color: #c4d8b5; line-height: 1.6; }
+.question-content { overflow: auto; overscroll-behavior: contain; min-height: 0; padding: 18px 20px; }
+.battle-question-modal h3 { font-size: 17px; line-height: 1.5; margin: 0 0 15px; }
+.battle-question-modal .question-options { gap: 10px; margin: 0; }
+.battle-question-modal .question-option { min-height: 68px; padding: 12px; align-items: center; }
+.battle-question-modal .question-option > b { font-size: 14px; line-height: 1.5; }
+.question-selection { margin-bottom: 13px; color: #d4dfc4; font-size: 13px; line-height: 1.6; }
+.battle-question-modal .answer-feedback { padding: 15px; }
+.battle-question-modal .answer-feedback p { font-size: 14px; line-height: 1.6; }
+.battle-question-modal .answer-feedback p + p { font-size: 12px; }
+.question-actions { flex-shrink: 0; padding: 12px 20px 16px; border-top: 1px solid #476451; background: #1b3432; }
+.question-actions .button { min-height: 48px; font-size: 14px; }
+.battle-main.question-open .commands { display: grid; }
+.battle-main.question-open .command-deck { border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+.battle-main.question-open .command-title { margin-bottom: 8px; }
+
+/* Arena y controles juntos en tablet y escritorio; las fichas se consultan al lado. */
+@media (min-width: 701px) and (min-height: 680px) {
+  body[data-view="battle"] { height: 100dvh; display: flex; flex-direction: column; }
+  body[data-view="battle"] .masthead { width: 100%; flex-shrink: 0; min-height: 64px; padding-top: 11px; padding-bottom: 11px; }
+  body[data-view="battle"] .brand { font-size: 30px; }
+  body[data-view="battle"] .brand small { margin-top: 3px; }
+  body[data-view="battle"] main { width: 100%; flex: 1; display: flex; flex-direction: column; padding-top: 8px; padding-bottom: 8px; min-height: 0; }
+  #battleView { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+  body[data-view="battle"] .site-footer { display: none; }
+  .battle-topline { flex-shrink: 0; min-height: 48px; margin: 0 0 10px; }
+  .battle-topline h2 { font-size: 31px; }
+  .battle-layout { flex: 1; height: auto; min-height: 0; grid-template-columns: minmax(0,1fr) 245px; gap: 18px; }
+  .battle-main { display: grid; grid-template-rows: minmax(210px,1fr) auto auto auto auto; min-height: 0; }
+  .arena { height: auto; min-height: 0; }
+  .matchup-strip { padding: 7px 12px; }
+  .intent { min-height: 64px; padding: 9px 12px; gap: 10px; }
+  .battle-dialogue { padding: 10px 12px; gap: 12px; }
+  .battle-dialogue > .leader-portrait { width: 44px; height: 44px; }
+  .battle-dialogue p { min-height: 0; font-size: 12px; line-height: 1.5; }
+  .battle-dialogue .dialogue-meta { margin-bottom: 3px; }
+  .command-deck { margin-top: 8px; padding: 10px; }
+  .command-title { margin-bottom: 8px; font-size: 11px; }
+  .command { padding: 10px 8px; min-height: 65px; }
+  .battle-aside { display: block; min-height: 0; overflow: auto; overscroll-behavior: contain; padding-right: 4px; }
+  .battle-aside .learning-counter { display: grid; grid-template-columns: 1fr auto; padding: 12px; }
+  .battle-aside .learning-counter > .tiny-label { grid-column: 1/-1; grid-row: auto; }
+  .battle-aside .learning-counter > b { grid-column: 1; grid-row: 2/4; }
+  .battle-aside .learning-counter > small, .battle-aside .learning-counter > span:last-child { grid-column: 2; grid-row: auto; }
+  .battle-aside .party-panel, .battle-aside .skill-panel, .battle-aside .passive-panel { padding: 14px; }
+  .fighter-hud { width: 190px; padding: 9px 11px; }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .team-layout { grid-template-columns: minmax(0,1fr) 235px; gap: 16px; }
+  .collection-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .section-heading { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .battle-layout { grid-template-columns: minmax(0,1fr) 205px; gap: 12px; }
+  .fighter-hud { width: 165px; }
+  .battle-metadata { gap: 9px; }
+  .battle-topline h2 { font-size: 27px; }
+}
+
+@media (max-width: 700px) {
+  .battle-question-modal { bottom: 8px; width: calc(100vw - 16px); max-height: calc(100dvh - 24px); }
+  .question-header { padding: 12px 14px 10px; gap: 8px; }
+  .question-header .eyebrow { font-size: 8px; }
+  .question-header .text-button { font-size: 10px; white-space: normal; max-width: 100px; }
+  .question-content { padding: 15px 14px; }
+  .question-actions { padding: 10px 14px 14px; }
+  .battle-question-modal h3 { font-size: 15px; }
+  .battle-question-modal .question-option > b { font-size: 13px; }
+}
+
+@media (max-width: 650px) {
+  .team-layout { display: flex; flex-direction: column; padding-bottom: 100px; }
+  .preparation-panel { position: relative; top: auto; max-height: none; }
+  .prep-details { overflow: visible; }
+  .team-dock { position: fixed; bottom: 0; left: 0; right: 0; z-index: 20; display: flex; align-items: center; gap: 15px; padding: 12px 16px max(12px, env(safe-area-inset-bottom)); background: #142c30f5; border-top: 1px solid #a3b68b; box-shadow: 0 -8px 25px #05191c66; }
+  .team-dock > span { font-size: 12px; white-space: nowrap; color: #dfdfb2; }
+  .team-dock .button { min-height: 48px; font-size: 12px; }
+  .battle-question-modal .question-options { grid-template-columns: 1fr; }
+}
