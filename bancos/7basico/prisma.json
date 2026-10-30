@@ -1,0 +1,713 @@
+{
+  "gym": "prisma",
+  "leagueId": "7basico",
+  "version": 1,
+  "status": "published",
+  "title": "Fuerzas y sus efectos",
+  "source": {
+    "file": "Liga_Ciencias_7Basico.xlsx",
+    "sheet": "Gimnasio 2"
+  },
+  "questions": [
+    {
+      "id": "7B-PRISMA-01",
+      "topic": "Qué es una fuerza",
+      "stem": "En física, una fuerza se entiende como:",
+      "options": [
+        "un tipo de energía propia.",
+        "una acción sobre un cuerpo.",
+        "un material muy resistente.",
+        "una medida de la distancia."
+      ],
+      "answer": 1,
+      "explain": "La fuerza es una acción que un cuerpo ejerce sobre otro y puede cambiar su movimiento o su forma.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-02",
+      "topic": "Efectos",
+      "stem": "¿Cuál de los siguientes es un efecto que puede producir una fuerza?",
+      "options": [
+        "Cambiar su color.",
+        "Aumentar su brillo.",
+        "Modificar su olor.",
+        "Deformar un objeto."
+      ],
+      "answer": 3,
+      "explain": "Una fuerza puede poner en movimiento, detener, desviar o deformar un cuerpo.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-03",
+      "topic": "Unidad",
+      "stem": "La unidad en que se mide la fuerza se llama:",
+      "options": [
+        "newton.",
+        "kilogramo.",
+        "metro.",
+        "segundo."
+      ],
+      "answer": 0,
+      "explain": "La fuerza se mide en newton (N), en honor a Isaac Newton.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-04",
+      "topic": "Instrumento",
+      "stem": "El instrumento que se usa para medir fuerzas se llama:",
+      "options": [
+        "cronómetro.",
+        "barómetro.",
+        "dinamómetro.",
+        "termómetro de mercurio."
+      ],
+      "answer": 2,
+      "explain": "El dinamómetro mide fuerzas gracias a un resorte que se estira.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-05",
+      "topic": "Fuerza gravitacional",
+      "stem": "La fuerza que atrae a todos los cuerpos hacia la Tierra se llama:",
+      "options": [
+        "fuerza de roce.",
+        "fuerza elástica.",
+        "fuerza electromagnética.",
+        "fuerza gravitacional."
+      ],
+      "answer": 3,
+      "explain": "La fuerza gravitacional atrae los cuerpos hacia el centro de la Tierra.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-06",
+      "topic": "Masa",
+      "stem": "La masa de un cuerpo corresponde a:",
+      "options": [
+        "la rapidez con que se mueve.",
+        "la cantidad de materia que tiene.",
+        "la fuerza con que lo atrae la Tierra.",
+        "el espacio que ocupa el cuerpo."
+      ],
+      "answer": 1,
+      "explain": "La masa es la cantidad de materia de un cuerpo y se mide en kilogramos.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-07",
+      "topic": "Peso",
+      "stem": "El peso de un cuerpo corresponde a:",
+      "options": [
+        "el volumen total que ocupa.",
+        "la temperatura que alcanza.",
+        "la fuerza que ejerce la Tierra.",
+        "la cantidad de materia que tiene."
+      ],
+      "answer": 2,
+      "explain": "El peso es una fuerza: la atracción gravitacional sobre el cuerpo, y se mide en newton.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-08",
+      "topic": "Masa y peso",
+      "stem": "Si un astronauta viaja a la Luna, lo que ocurre con su masa y su peso es que:",
+      "options": [
+        "la masa se mantiene y el peso baja.",
+        "el peso se mantiene y la masa baja.",
+        "ambos se mantienen exactamente igual.",
+        "ambos aumentan al llegar allá."
+      ],
+      "answer": 0,
+      "explain": "La masa no cambia de lugar a lugar, pero el peso sí, porque la gravedad lunar es menor.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-09",
+      "topic": "Fuerza de roce",
+      "stem": "La fuerza de roce es aquella que:",
+      "options": [
+        "estira los resortes del cuerpo.",
+        "se opone al movimiento.",
+        "empuja el cuerpo hacia delante.",
+        "atrae los cuerpos al suelo."
+      ],
+      "answer": 1,
+      "explain": "El roce aparece entre dos superficies en contacto y se opone al movimiento.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-10",
+      "topic": "Fuerza elástica",
+      "stem": "La fuerza elástica es la que aparece cuando:",
+      "options": [
+        "dos superficies se rozan entre sí.",
+        "la Tierra atrae a un cuerpo.",
+        "un imán atrae a otro imán.",
+        "se estira o comprime un resorte."
+      ],
+      "answer": 3,
+      "explain": "La fuerza elástica aparece en cuerpos elásticos, como resortes y elásticos, al deformarse.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-11",
+      "topic": "Representación",
+      "stem": "En un dibujo de física, una fuerza se representa mediante:",
+      "options": [
+        "un cuadrado.",
+        "una línea punteada.",
+        "una flecha.",
+        "un círculo."
+      ],
+      "answer": 2,
+      "explain": "La fuerza se dibuja como una flecha, porque tiene dirección, sentido e intensidad.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-12",
+      "topic": "Fuerza neta",
+      "stem": "Cuando sobre un cuerpo actúan dos fuerzas iguales en sentidos opuestos, la fuerza neta es:",
+      "options": [
+        "cero.",
+        "el doble.",
+        "la mitad.",
+        "la suma."
+      ],
+      "answer": 0,
+      "explain": "Dos fuerzas iguales y opuestas se anulan, por lo que la fuerza neta resulta cero.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-PRISMA-13",
+      "topic": "Fuerza neta",
+      "stem": "Dos niños empujan una caja en el mismo sentido con 20 N cada uno. La fuerza neta sobre la caja es de:",
+      "options": [
+        "20 N.",
+        "10 N.",
+        "0 N.",
+        "40 N."
+      ],
+      "answer": 3,
+      "explain": "Cuando las fuerzas van en el mismo sentido se suman: 20 N más 20 N dan 40 N.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-14",
+      "topic": "Fuerza neta",
+      "stem": "Dos equipos tiran de una cuerda: uno con 150 N y el otro con 130 N. La fuerza neta resulta de:",
+      "options": [
+        "0 N, porque la cuerda no se mueve.",
+        "20 N hacia el equipo más fuerte.",
+        "280 N hacia el equipo más fuerte.",
+        "20 N hacia el equipo más débil."
+      ],
+      "answer": 1,
+      "explain": "Al ir en sentidos opuestos se restan: 150 N menos 130 N dan 20 N hacia el equipo más fuerte.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-15",
+      "topic": "Roce en la vida diaria",
+      "stem": "Una bicicleta que deja de pedalear se detiene poco a poco. Esto se explica por:",
+      "options": [
+        "la fuerza elástica.",
+        "la fuerza magnética.",
+        "la fuerza muscular.",
+        "la fuerza de roce."
+      ],
+      "answer": 3,
+      "explain": "El roce con el suelo y con el aire frena la bicicleta hasta detenerla.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-16",
+      "topic": "Reducir el roce",
+      "stem": "Para que una puerta deje de chirriar se le echa aceite a las bisagras. Con esto se logra:",
+      "options": [
+        "eliminar la fuerza de gravedad.",
+        "aumentar el peso de la puerta.",
+        "disminuir la fuerza de roce.",
+        "aumentar la fuerza de roce."
+      ],
+      "answer": 2,
+      "explain": "El aceite es un lubricante: reduce el roce entre las superficies que están en contacto.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-17",
+      "topic": "Roce útil",
+      "stem": "Las zapatillas deportivas tienen suela rugosa porque así:",
+      "options": [
+        "aumentan el roce con el piso.",
+        "disminuyen el roce con el piso.",
+        "aumentan el peso del deportista.",
+        "reducen la gravedad al saltar."
+      ],
+      "answer": 0,
+      "explain": "La suela rugosa aumenta el roce y evita que la persona resbale.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-18",
+      "topic": "Fuerza elástica",
+      "stem": "Al colgar una mochila de un resorte, este se estira. La fuerza que hace que el resorte vuelva a su forma es la:",
+      "options": [
+        "fuerza de empuje.",
+        "fuerza elástica.",
+        "fuerza de roce.",
+        "fuerza magnética."
+      ],
+      "answer": 1,
+      "explain": "La fuerza elástica tiende a devolver al resorte su forma original.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-19",
+      "topic": "Peso y gravedad",
+      "stem": "Una manzana cae del árbol al suelo. La fuerza responsable de esa caída es la:",
+      "options": [
+        "fuerza gravitacional.",
+        "fuerza de roce.",
+        "fuerza elástica del tallo.",
+        "fuerza muscular."
+      ],
+      "answer": 0,
+      "explain": "La fuerza gravitacional atrae la manzana hacia el centro de la Tierra.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-20",
+      "topic": "Deformación",
+      "stem": "Al apretar una pelota antiestrés con la mano, la fuerza aplicada produce:",
+      "options": [
+        "un cambio en su material interno.",
+        "una pérdida de su peso.",
+        "una deformación del cuerpo.",
+        "un aumento de su masa."
+      ],
+      "answer": 2,
+      "explain": "Una fuerza puede deformar un cuerpo sin cambiar la materia de la que está hecho.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-PRISMA-21",
+      "topic": "Efectos de una fuerza",
+      "stem": "Respecto de los efectos que puede producir una fuerza sobre un cuerpo, es correcto afirmar que:",
+      "options": [
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El IV es falso: una fuerza modifica el movimiento o la forma, pero no el color de un cuerpo.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "puede ponerlo en movimiento.",
+        "puede detener su movimiento.",
+        "puede deformar su estructura.",
+        "puede cambiar el color del cuerpo."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-22",
+      "topic": "Fuerza de roce",
+      "stem": "Respecto de la fuerza de roce, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: el roce nunca impulsa el movimiento, siempre se opone a él.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "empuja al cuerpo hacia adelante.",
+        "se opone al movimiento del cuerpo.",
+        "aparece entre superficies en contacto.",
+        "disminuye al usar un lubricante."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-23",
+      "topic": "Masa y peso",
+      "stem": "Respecto de la diferencia entre masa y peso, es correcto afirmar que:",
+      "options": [
+        "Solo I y III",
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV"
+      ],
+      "answer": 4,
+      "explain": "El II es falso: la masa es siempre la misma, el que cambia según el planeta es el peso.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la masa es la cantidad de materia.",
+        "la masa cambia según el planeta.",
+        "el peso es una fuerza.",
+        "el peso se mide en newton."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-24",
+      "topic": "Tipos de fuerza",
+      "stem": "Respecto de los tipos de fuerza estudiados, es correcto afirmar que:",
+      "options": [
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 2,
+      "explain": "Son falsos el I y el IV: la fuerza elástica actúa en cuerpos elásticos, como los resortes, y no solo en el agua.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la fuerza elástica estira los cuerpos rígidos.",
+        "la fuerza gravitacional atrae hacia la Tierra.",
+        "la fuerza de roce frena a los cuerpos.",
+        "la fuerza elástica solo actúa en el agua."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-25",
+      "topic": "Analizar un caso",
+      "stem": "Un niño empuja un carro de supermercado y, al soltarlo, el carro recorre un trecho y se detiene solo. Respecto de esta situación, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El III es falso: los cuerpos no guardan fuerza propia, lo que detiene al carro es el roce.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la fuerza del niño puso el carro en movimiento.",
+        "la fuerza de roce hizo que se detuviera.",
+        "el carro se detuvo porque se quedó sin fuerza propia.",
+        "sobre el carro actuó más de una fuerza."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-26",
+      "topic": "Comparar superficies",
+      "stem": "Se empuja la misma caja con la misma fuerza, primero sobre una alfombra y luego sobre un piso encerado. Respecto del resultado, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y IV",
+        "Solo III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "Las cuatro son correctas: el roce está presente en ambos casos, pero es mayor en la superficie más rugosa.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "sobre la alfombra el roce es mayor.",
+        "sobre el piso encerado la caja avanza más.",
+        "el roce actúa en las dos superficies.",
+        "la rugosidad de la superficie afecta el roce."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-27",
+      "topic": "Interpretar un diagrama",
+      "stem": "En un dibujo, una caja recibe una flecha de 30 N hacia la derecha y otra de 30 N hacia la izquierda. Respecto de la situación, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el III y el IV: las fuerzas se restan, la fuerza neta es cero y la caja no se desplaza.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "las dos fuerzas tienen la misma intensidad.",
+        "las dos fuerzas van en sentidos opuestos.",
+        "la fuerza neta sobre la caja es de 60 N.",
+        "la caja se desplaza hacia la derecha."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-28",
+      "topic": "Masa y peso",
+      "stem": "Una astronauta de 60 kg de masa viaja a la Luna, donde la gravedad es menor que en la Tierra. Respecto de lo que ocurre, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: la masa es la misma en cualquier lugar, lo que disminuye es el peso.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "su masa disminuye al llegar a la Luna.",
+        "su peso en la Luna resulta menor.",
+        "su masa sigue siendo de 60 kg.",
+        "el peso depende de la gravedad del lugar."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-29",
+      "topic": "Usar el dinamómetro",
+      "stem": "Un grupo cuelga distintos objetos de un dinamómetro y anota cuánto se estira el resorte en cada caso. Respecto de la actividad, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 2,
+      "explain": "El II es falso: mientras mayor es el peso colgado, más se estira el resorte del dinamómetro.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el dinamómetro mide fuerzas en newton.",
+        "a mayor peso, el resorte se estira menos.",
+        "el resorte se estira por la fuerza elástica.",
+        "lo que se mide es el peso de cada objeto."
+      ]
+    },
+    {
+      "id": "7B-PRISMA-30",
+      "topic": "Evaluar una afirmación",
+      "stem": "Un compañero sostiene: «el roce siempre es malo y habría que eliminarlo del todo». Respecto de esta afirmación, es correcto señalar que:",
+      "options": [
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el II y el IV: el roce puede ser un problema, pero es indispensable para caminar y frenar.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 2",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "sin roce no podríamos caminar sin resbalar.",
+        "es correcta, porque el roce nunca sirve.",
+        "el roce permite que los frenos funcionen.",
+        "eliminar el roce mejoraría todos los vehículos."
+      ]
+    }
+  ]
+}

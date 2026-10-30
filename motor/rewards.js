@@ -8,7 +8,7 @@
   const snapshot=()=>Object.fromEntries([...states].map(([id,value])=>[id,{...value}]));
   function claim(onlyId){
    if(pending)return pending;
-   if(!league.rewardEligible({won,demo,bank,slug:gym.slug})||!owner||account.session?.name!==owner)return Promise.reject(Error('Esta partida no habilita recompensas para esta cuenta.'));
+   if(!league.rewardEligible({won,demo,bank,slug:gym.slug,leagueId:gym.leagueId||'2medio'})||!owner||account.session?.name!==owner)return Promise.reject(Error('Esta partida no habilita recompensas para esta cuenta.'));
    if(onlyId&&!states.has(onlyId))return Promise.reject(Error('Esa recompensa no pertenece al gimnasio.'));
    pending=(async()=>{
     for(const reward of gym.rewards){

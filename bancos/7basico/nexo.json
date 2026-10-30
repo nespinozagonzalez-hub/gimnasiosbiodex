@@ -1,0 +1,713 @@
+{
+  "gym": "nexo",
+  "leagueId": "7basico",
+  "version": 1,
+  "status": "published",
+  "title": "Microorganismos e inmunidad",
+  "source": {
+    "file": "Liga_Ciencias_7Basico.xlsx",
+    "sheet": "Gimnasio 3"
+  },
+  "questions": [
+    {
+      "id": "7B-NEXO-01",
+      "topic": "Microorganismos",
+      "stem": "Los microorganismos se caracterizan por ser:",
+      "options": [
+        "plantas sin flores.",
+        "minerales del suelo.",
+        "seres muy pequeños.",
+        "animales de gran tamaño."
+      ],
+      "answer": 2,
+      "explain": "Los microorganismos son seres vivos tan pequeños que solo se ven con microscopio.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-02",
+      "topic": "Virus",
+      "stem": "Una característica propia de los virus es que:",
+      "options": [
+        "se alimentan igual que los animales.",
+        "forman colonias sobre el pan viejo.",
+        "fabrican su alimento con luz solar.",
+        "necesitan una célula para copiarse."
+      ],
+      "answer": 3,
+      "explain": "El virus no puede reproducirse solo: necesita entrar a una célula y usar su maquinaria.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-03",
+      "topic": "Bacterias",
+      "stem": "Las bacterias se diferencian de los virus porque las bacterias:",
+      "options": [
+        "solo viven dentro del agua.",
+        "son células completas.",
+        "no tienen material genético.",
+        "miden varios centímetros."
+      ],
+      "answer": 1,
+      "explain": "La bacteria es una célula completa y puede reproducirse por sí sola; el virus no.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-04",
+      "topic": "Hongos",
+      "stem": "El moho que aparece sobre un pan guardado muchos días corresponde a:",
+      "options": [
+        "un hongo.",
+        "un virus.",
+        "una bacteria.",
+        "un alga."
+      ],
+      "answer": 0,
+      "explain": "El moho del pan es un hongo microscópico que crece en ambientes húmedos.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-05",
+      "topic": "Beneficiosos",
+      "stem": "Un ejemplo de microorganismo beneficioso para el ser humano es:",
+      "options": [
+        "el virus del sarampión.",
+        "la bacteria del cólera.",
+        "el hongo del pie de atleta.",
+        "la levadura del pan."
+      ],
+      "answer": 3,
+      "explain": "La levadura es un hongo que fermenta la masa y hace que el pan suba.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-06",
+      "topic": "Patógenos",
+      "stem": "A los microorganismos que provocan enfermedades se les llama:",
+      "options": [
+        "antígenos.",
+        "vacunas.",
+        "patógenos.",
+        "anticuerpos."
+      ],
+      "answer": 2,
+      "explain": "Un patógeno es un microorganismo capaz de causar una enfermedad.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-07",
+      "topic": "Barrera primaria",
+      "stem": "La piel cumple una función de defensa porque:",
+      "options": [
+        "impide la entrada de patógenos.",
+        "destruye los virus en la sangre.",
+        "produce todos los anticuerpos.",
+        "almacena las células de defensa."
+      ],
+      "answer": 0,
+      "explain": "La piel es la barrera primaria: una muralla física que impide el ingreso de patógenos.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-08",
+      "topic": "Barrera primaria",
+      "stem": "¿Cuál de las siguientes corresponde a una barrera primaria del cuerpo?",
+      "options": [
+        "Los linfocitos.",
+        "La fiebre alta.",
+        "Las lágrimas.",
+        "Los anticuerpos."
+      ],
+      "answer": 2,
+      "explain": "Las lágrimas, la saliva y el mucus son barreras primarias que arrastran y destruyen microbios.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-09",
+      "topic": "Inflamación",
+      "stem": "El enrojecimiento y la hinchazón alrededor de una herida corresponden a:",
+      "options": [
+        "una alergia.",
+        "una vacuna.",
+        "un trasplante de piel.",
+        "una inflamación."
+      ],
+      "answer": 3,
+      "explain": "La inflamación es parte de la barrera secundaria: lleva más sangre y células de defensa a la zona.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-10",
+      "topic": "Macrófagos",
+      "stem": "Los macrófagos son células de defensa que se encargan de:",
+      "options": [
+        "formar la capa externa de la piel.",
+        "fagocitar a los microorganismos.",
+        "transportar el oxígeno del aire.",
+        "producir la energía del cuerpo."
+      ],
+      "answer": 1,
+      "explain": "El macrófago rodea y devora a los patógenos: a ese proceso se le llama fagocitosis.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-11",
+      "topic": "Anticuerpos",
+      "stem": "Los anticuerpos son moléculas que:",
+      "options": [
+        "reconocen a un patógeno específico.",
+        "forman la primera capa de la piel.",
+        "transportan el oxígeno en la sangre.",
+        "digieren los alimentos del intestino."
+      ],
+      "answer": 0,
+      "explain": "Cada anticuerpo reconoce a un patógeno determinado y ayuda a eliminarlo.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-12",
+      "topic": "Vacunas",
+      "stem": "Una vacuna sirve para que el cuerpo:",
+      "options": [
+        "suba su temperatura corporal.",
+        "prepare sus defensas de antemano.",
+        "elimine todas sus bacterias buenas.",
+        "deje de producir sus anticuerpos."
+      ],
+      "answer": 1,
+      "explain": "La vacuna enseña al sistema inmune a reconocer un patógeno antes de que llegue la enfermedad.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NEXO-13",
+      "topic": "Identificar barrera",
+      "stem": "Una persona se corta y la sangre forma una costra sobre la herida. Esa costra actúa como:",
+      "options": [
+        "una barrera primaria.",
+        "una barrera terciaria.",
+        "una reacción alérgica.",
+        "una vacuna natural."
+      ],
+      "answer": 0,
+      "explain": "La costra cierra la herida e impide la entrada de patógenos: función de barrera primaria.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-14",
+      "topic": "Fiebre",
+      "stem": "Cuando una persona tiene fiebre durante una infección, ocurre que:",
+      "options": [
+        "los anticuerpos dejan de producirse.",
+        "el patógeno se reproduce más rápido.",
+        "el cuerpo dificulta la vida al patógeno.",
+        "el cuerpo deja de defenderse del patógeno."
+      ],
+      "answer": 2,
+      "explain": "La fiebre eleva la temperatura y dificulta la reproducción de muchos patógenos.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-15",
+      "topic": "Barrera secundaria",
+      "stem": "Al observar pus en una herida infectada, lo que se está viendo son:",
+      "options": [
+        "glóbulos rojos que salieron del vaso.",
+        "células de defensa y microbios.",
+        "restos de piel que no se regeneró.",
+        "anticuerpos acumulados en la zona."
+      ],
+      "answer": 1,
+      "explain": "El pus se forma con glóbulos blancos y patógenos muertos tras el combate en la zona.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-16",
+      "topic": "Barrera terciaria",
+      "stem": "La barrera terciaria o respuesta específica se caracteriza por:",
+      "options": [
+        "actuar igual frente a cualquier microbio.",
+        "ser la primera en entrar en acción.",
+        "estar formada solo por la piel.",
+        "atacar a un patógeno determinado."
+      ],
+      "answer": 3,
+      "explain": "La barrera terciaria es específica: produce anticuerpos dirigidos contra un patógeno concreto.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-17",
+      "topic": "Memoria inmune",
+      "stem": "Una persona que tuvo varicela de niña no vuelve a enfermar de lo mismo porque:",
+      "options": [
+        "su piel se volvió impenetrable.",
+        "dejó de producir anticuerpos.",
+        "su cuerpo guarda memoria inmune.",
+        "el virus desapareció del planeta."
+      ],
+      "answer": 2,
+      "explain": "Tras la infección quedan células de memoria que reconocen al virus y responden de inmediato.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-18",
+      "topic": "Alergia",
+      "stem": "Una alergia ocurre cuando el sistema inmune:",
+      "options": [
+        "pierde todos sus anticuerpos.",
+        "reacciona ante algo inofensivo.",
+        "deja de responder a los virus.",
+        "ataca a los órganos del cuerpo."
+      ],
+      "answer": 1,
+      "explain": "En la alergia el sistema inmune reacciona de forma exagerada ante algo que no es peligroso.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-19",
+      "topic": "Autoinmunidad",
+      "stem": "En una enfermedad autoinmune, el sistema inmune:",
+      "options": [
+        "deja entrar a todos los virus.",
+        "produce una fiebre permanente.",
+        "ataca células del propio cuerpo.",
+        "reacciona ante el polen del aire."
+      ],
+      "answer": 2,
+      "explain": "En la enfermedad autoinmune las defensas confunden células propias con un enemigo.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-20",
+      "topic": "Antibióticos",
+      "stem": "Los antibióticos sirven para combatir infecciones causadas por:",
+      "options": [
+        "bacterias.",
+        "virus del resfrío.",
+        "alergias.",
+        "heridas."
+      ],
+      "answer": 0,
+      "explain": "El antibiótico actúa sobre bacterias; no sirve contra los virus, como el del resfrío.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NEXO-21",
+      "topic": "Tipos de microorganismos",
+      "stem": "Respecto de las diferencias entre virus, bacterias y hongos, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El II es falso: el virus es mucho más pequeño que una bacteria, no al revés.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "el virus necesita una célula para reproducirse.",
+        "la bacteria es más pequeña que un virus.",
+        "la bacteria es una célula completa.",
+        "algunos hongos son microscópicos."
+      ]
+    },
+    {
+      "id": "7B-NEXO-22",
+      "topic": "Barrera primaria",
+      "stem": "Respecto de las barreras primarias del cuerpo humano, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "Las cuatro son correctas: todas son barreras primarias y constituyen la primera línea de defensa.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la piel impide el paso de patógenos.",
+        "el mucus atrapa partículas del aire.",
+        "las lágrimas arrastran microorganismos.",
+        "actúan antes que las otras barreras."
+      ]
+    },
+    {
+      "id": "7B-NEXO-23",
+      "topic": "Barrera secundaria",
+      "stem": "Respecto de la barrera secundaria del sistema inmune, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: los anticuerpos específicos pertenecen a la barrera terciaria, no a la secundaria.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "produce anticuerpos específicos para cada patógeno.",
+        "incluye la inflamación de la zona dañada.",
+        "los macrófagos fagocitan a los patógenos.",
+        "la fiebre forma parte de esta respuesta."
+      ]
+    },
+    {
+      "id": "7B-NEXO-24",
+      "topic": "Vacunas",
+      "stem": "Respecto de cómo funcionan las vacunas, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el III y el IV: la vacuna previene, no cura, y no contiene antibióticos.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "preparan al sistema inmune por anticipado.",
+        "generan memoria frente a un patógeno.",
+        "curan una enfermedad que ya está avanzada.",
+        "contienen antibióticos contra los virus."
+      ]
+    },
+    {
+      "id": "7B-NEXO-25",
+      "topic": "Analizar un caso",
+      "stem": "A un niño se le infecta una rodilla raspada: la zona se pone roja, caliente e hinchada, y luego aparece pus. Respecto de este caso, es correcto afirmar que:",
+      "options": [
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El IV es falso: lo que ocurre es una infección con inflamación, no una alergia.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la piel rota dejó entrar a los patógenos.",
+        "el enrojecimiento corresponde a la inflamación.",
+        "los macrófagos acudieron a la zona.",
+        "se trata de una reacción alérgica al raspón."
+      ]
+    },
+    {
+      "id": "7B-NEXO-26",
+      "topic": "Comparar defensas",
+      "stem": "Se comparan la piel y los anticuerpos como mecanismos de defensa. Respecto de ambos, es correcto afirmar que:",
+      "options": [
+        "Solo I y III",
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El III es falso: la piel no distingue microbios, actúa como muralla frente a todos por igual.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la piel actúa contra cualquier patógeno.",
+        "los anticuerpos atacan a un patógeno específico.",
+        "la piel reconoce a cada microbio por separado.",
+        "los anticuerpos pertenecen a la barrera terciaria."
+      ]
+    },
+    {
+      "id": "7B-NEXO-27",
+      "topic": "Evaluar un tratamiento",
+      "stem": "Una persona con resfrío común, causado por un virus, pide antibióticos en la farmacia. Respecto de esta situación, es correcto afirmar que:",
+      "options": [
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 1,
+      "explain": "Son falsos el II y el III: los antibióticos no tienen ningún efecto sobre los virus.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el antibiótico no actúa sobre los virus.",
+        "el antibiótico eliminaría el virus en un día.",
+        "el resfrío común se cura con antibióticos.",
+        "el uso innecesario de antibióticos es un problema."
+      ]
+    },
+    {
+      "id": "7B-NEXO-28",
+      "topic": "Vacunación",
+      "stem": "En un colegio se vacuna a todo un nivel contra una enfermedad viral. Respecto de esta medida, es correcto afirmar que:",
+      "options": [
+        "Solo II y IV",
+        "Solo III y IV",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el I y el III: la vacuna no provoca la enfermedad ni genera una reacción autoinmune.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "los estudiantes vacunados tendrán la enfermedad.",
+        "el sistema inmune generará memoria.",
+        "se produce una enfermedad autoinmune.",
+        "la vacuna protege antes del contagio."
+      ]
+    },
+    {
+      "id": "7B-NEXO-29",
+      "topic": "Reconocer una alteración",
+      "stem": "Una persona estornuda y le pican los ojos cada vez que hay polen en el aire, aunque el polen no es un patógeno. Respecto de esta situación, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 2,
+      "explain": "El II es falso: el polen no infecta nada, el problema es la reacción exagerada de las defensas.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "se trata de una reacción alérgica.",
+        "el polen está infectando sus pulmones.",
+        "el sistema inmune responde de forma exagerada.",
+        "la reacción se produce frente a algo inofensivo."
+      ]
+    },
+    {
+      "id": "7B-NEXO-30",
+      "topic": "Evaluar una afirmación",
+      "stem": "Un compañero sostiene: «todos los microorganismos son dañinos y habría que eliminarlos». Respecto de esta afirmación, es correcto señalar que:",
+      "options": [
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "El I es falso: solo algunos microorganismos son patógenos y muchos otros nos resultan útiles.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 3",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es correcta, porque todos causan enfermedades.",
+        "muchos microorganismos son beneficiosos.",
+        "la levadura permite fabricar pan.",
+        "hay bacterias útiles en nuestro intestino."
+      ]
+    }
+  ]
+}

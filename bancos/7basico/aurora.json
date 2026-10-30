@@ -1,0 +1,713 @@
+{
+  "gym": "aurora",
+  "leagueId": "7basico",
+  "version": 1,
+  "status": "published",
+  "title": "Materia y gases",
+  "source": {
+    "file": "Liga_Ciencias_7Basico.xlsx",
+    "sheet": "Gimnasio 1"
+  },
+  "questions": [
+    {
+      "id": "7B-AURORA-01",
+      "topic": "Modelo cinético",
+      "stem": "Según el modelo cinético-molecular, toda la materia está formada por:",
+      "options": [
+        "partículas en movimiento.",
+        "capas de aire muy comprimido.",
+        "hilos muy delgados y flexibles.",
+        "láminas unidas entre sí."
+      ],
+      "answer": 0,
+      "explain": "El modelo cinético-molecular plantea que la materia está hecha de partículas que se mueven siempre.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-02",
+      "topic": "Estado sólido",
+      "stem": "¿Cómo están las partículas en un cuerpo en estado sólido?",
+      "options": [
+        "Separadas y muy rápidas.",
+        "Unidas en una sola masa.",
+        "Quietas y muy separadas.",
+        "Muy juntas y ordenadas."
+      ],
+      "answer": 3,
+      "explain": "En el sólido las partículas están muy juntas y ordenadas, solo vibran en su lugar.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-03",
+      "topic": "Estado gaseoso",
+      "stem": "¿Cómo están las partículas en un cuerpo en estado gaseoso?",
+      "options": [
+        "Juntas pero desordenadas.",
+        "Pegadas y sin moverse.",
+        "Muy separadas y rápidas.",
+        "Muy juntas y ordenadas."
+      ],
+      "answer": 2,
+      "explain": "En el gas las partículas están muy separadas y se mueven con gran rapidez.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-04",
+      "topic": "Estado líquido",
+      "stem": "Un líquido toma la forma del recipiente que lo contiene porque sus partículas:",
+      "options": [
+        "están fijas en una posición.",
+        "se separan muchísimo entre sí.",
+        "desaparecen dentro del vaso.",
+        "pueden deslizarse entre sí."
+      ],
+      "answer": 3,
+      "explain": "En el líquido las partículas siguen juntas, pero pueden deslizarse, por eso toma la forma del envase.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-05",
+      "topic": "Fusión",
+      "stem": "El paso del estado sólido al estado líquido se llama:",
+      "options": [
+        "solidificación.",
+        "fusión.",
+        "condensación.",
+        "sublimación."
+      ],
+      "answer": 1,
+      "explain": "La fusión es el paso de sólido a líquido: ocurre cuando el hielo se derrite.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-06",
+      "topic": "Evaporación",
+      "stem": "El paso del estado líquido al estado gaseoso se llama:",
+      "options": [
+        "condensación.",
+        "solidificación.",
+        "fusión.",
+        "evaporación."
+      ],
+      "answer": 3,
+      "explain": "La evaporación es el paso de líquido a gas: ocurre cuando el agua de un charco se seca.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-07",
+      "topic": "Condensación",
+      "stem": "Cuando el vapor de agua se transforma en gotitas sobre un vidrio frío ocurre una:",
+      "options": [
+        "solidificación.",
+        "condensación.",
+        "evaporación.",
+        "sublimación."
+      ],
+      "answer": 1,
+      "explain": "La condensación es el paso de gas a líquido y por eso se empañan los vidrios.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-08",
+      "topic": "Sublimación",
+      "stem": "El paso directo del estado sólido al gaseoso, sin pasar por líquido, se llama:",
+      "options": [
+        "fusión.",
+        "decantación.",
+        "sublimación.",
+        "evaporación."
+      ],
+      "answer": 2,
+      "explain": "En la sublimación un sólido pasa directo a gas, como el hielo seco.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-09",
+      "topic": "Presión",
+      "stem": "En el modelo de los gases, la presión se explica por:",
+      "options": [
+        "los choques de partículas.",
+        "el peso de cada partícula.",
+        "el color que tiene el gas.",
+        "el sabor de las partículas."
+      ],
+      "answer": 0,
+      "explain": "La presión de un gas se debe a los choques de sus partículas contra las paredes del envase.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-10",
+      "topic": "Temperatura",
+      "stem": "Si se calienta un gas, sus partículas:",
+      "options": [
+        "se vuelven más grandes.",
+        "se mueven más rápido.",
+        "se mueven más lento.",
+        "dejan de moverse."
+      ],
+      "answer": 1,
+      "explain": "Al aumentar la temperatura, las partículas del gas se mueven con mayor rapidez.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-11",
+      "topic": "Ley de Boyle",
+      "stem": "A temperatura constante, si se reduce el volumen de un gas, su presión:",
+      "options": [
+        "no cambia.",
+        "se vuelve cero.",
+        "aumenta.",
+        "disminuye."
+      ],
+      "answer": 2,
+      "explain": "La ley de Boyle señala que, a temperatura constante, al bajar el volumen sube la presión.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-12",
+      "topic": "Mezclas",
+      "stem": "Una mezcla homogénea se reconoce porque:",
+      "options": [
+        "no se distinguen sus componentes.",
+        "se ven sus partes a simple vista.",
+        "siempre tiene dos capas.",
+        "contiene un solo elemento."
+      ],
+      "answer": 0,
+      "explain": "En la mezcla homogénea los componentes no se distinguen, como el agua con sal disuelta.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-AURORA-13",
+      "topic": "Ley de Boyle",
+      "stem": "Se tapa una jeringa con el dedo y se empuja el émbolo. El aire de adentro queda con:",
+      "options": [
+        "más volumen y menos presión.",
+        "menos volumen y menos presión.",
+        "igual volumen e igual presión.",
+        "menos volumen y más presión."
+      ],
+      "answer": 3,
+      "explain": "Al empujar el émbolo el aire ocupa menos volumen y su presión aumenta: es la ley de Boyle.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-14",
+      "topic": "Ley de Charles",
+      "stem": "Un globo inflado se guarda en el refrigerador y al rato se ve más pequeño porque:",
+      "options": [
+        "el globo perdió todo su aire.",
+        "el aire se convirtió en hielo.",
+        "bajó la temperatura del gas.",
+        "subió la temperatura del gas."
+      ],
+      "answer": 2,
+      "explain": "A menor temperatura el gas ocupa menos volumen: es la ley de Charles.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-15",
+      "topic": "Ley de Gay-Lussac",
+      "stem": "Un neumático queda estacionado al sol durante horas. Lo esperable es que su presión:",
+      "options": [
+        "aumente al subir la temperatura.",
+        "disminuya al subir la temperatura.",
+        "quede igual todo el día.",
+        "llegue siempre hasta cero."
+      ],
+      "answer": 0,
+      "explain": "A volumen constante, si sube la temperatura también sube la presión: es la ley de Gay-Lussac.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-16",
+      "topic": "Filtración",
+      "stem": "Para separar la arena del agua en una mezcla, el método adecuado es la:",
+      "options": [
+        "sublimación.",
+        "filtración.",
+        "destilación.",
+        "evaporación."
+      ],
+      "answer": 1,
+      "explain": "La filtración retiene el sólido en el papel filtro y deja pasar el líquido.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-17",
+      "topic": "Destilación",
+      "stem": "Para obtener agua pura a partir de agua con sal disuelta se usa la:",
+      "options": [
+        "destilación.",
+        "filtración.",
+        "decantación.",
+        "tamización."
+      ],
+      "answer": 0,
+      "explain": "La destilación evapora el agua y luego la condensa, dejando la sal atrás.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-18",
+      "topic": "Decantación",
+      "stem": "Para separar agua y aceite, que forman dos capas, el método adecuado es la:",
+      "options": [
+        "tamización.",
+        "decantación.",
+        "filtración.",
+        "destilación."
+      ],
+      "answer": 1,
+      "explain": "La decantación separa líquidos que no se mezclan y forman capas distintas.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-19",
+      "topic": "Sustancia pura",
+      "stem": "¿Cuál de los siguientes corresponde a una sustancia pura?",
+      "options": [
+        "El agua destilada.",
+        "El agua de mar.",
+        "El jugo en polvo.",
+        "La ensalada de frutas."
+      ],
+      "answer": 0,
+      "explain": "El agua destilada es una sustancia pura; las demás son mezclas de varios componentes.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-20",
+      "topic": "Difusión",
+      "stem": "Al abrir un perfume en una esquina de la sala, el olor llega al otro extremo porque:",
+      "options": [
+        "el perfume cambia de estado.",
+        "el olor viaja por el suelo.",
+        "las partículas del gas se mueven.",
+        "el aire de la sala se mantiene quieto."
+      ],
+      "answer": 2,
+      "explain": "Las partículas del gas se mueven y se reparten por todo el espacio disponible.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-AURORA-21",
+      "topic": "Modelo cinético",
+      "stem": "Respecto de lo que plantea el modelo cinético-molecular de la materia, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: las partículas nunca están quietas, siempre se encuentran en movimiento.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "las partículas permanecen siempre quietas.",
+        "la materia está formada por partículas.",
+        "entre las partículas hay espacio vacío.",
+        "las partículas se mueven todo el tiempo."
+      ]
+    },
+    {
+      "id": "7B-AURORA-22",
+      "topic": "Estados de la materia",
+      "stem": "Respecto de las características de los tres estados de la materia, es correcto afirmar que:",
+      "options": [
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV"
+      ],
+      "answer": 4,
+      "explain": "El II es falso: el líquido cambia de forma según el recipiente, aunque mantiene su volumen.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "el sólido tiene forma y volumen propios.",
+        "el líquido conserva su forma al cambiar de envase.",
+        "el líquido tiene volumen propio.",
+        "el gas ocupa todo el espacio disponible."
+      ]
+    },
+    {
+      "id": "7B-AURORA-23",
+      "topic": "Cambios de estado",
+      "stem": "Respecto de los cambios de estado de la materia, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el III y el IV: la evaporación va de líquido a gas y la solidificación, de líquido a sólido.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la fusión pasa de sólido a líquido.",
+        "la condensación pasa de gas a líquido.",
+        "la evaporación pasa de gas a sólido.",
+        "la solidificación pasa de gas a líquido."
+      ]
+    },
+    {
+      "id": "7B-AURORA-24",
+      "topic": "Leyes de los gases",
+      "stem": "Respecto del comportamiento de un gas encerrado en un envase, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El III es falso: al enfriarse las partículas se mueven menos y el gas ocupa menos volumen.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "si se reduce el volumen, sube la presión.",
+        "si se calienta, sus partículas se aceleran.",
+        "si se enfría, su volumen siempre aumenta.",
+        "la presión se debe a los choques de partículas."
+      ]
+    },
+    {
+      "id": "7B-AURORA-25",
+      "topic": "Analizar un experimento",
+      "stem": "Se calienta agua en una olla hasta que hierve y el vapor empaña la tapa fría. Respecto de lo observado, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El IV es falso: en un cambio de estado la sustancia sigue siendo agua, solo cambia su estado.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el agua pasó de líquido a gas.",
+        "ese primer cambio es la evaporación.",
+        "en la tapa fría ocurrió una condensación.",
+        "el agua se transformó en otra sustancia."
+      ]
+    },
+    {
+      "id": "7B-AURORA-26",
+      "topic": "Aplicar Boyle",
+      "stem": "Un buzo suelta una burbuja de aire en el fondo del mar y esta sube hacia la superficie. Respecto de la burbuja, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo II y IV",
+        "Solo III y IV",
+        "Solo I, II y IV"
+      ],
+      "answer": 2,
+      "explain": "Son falsos el I y el III: cerca de la superficie hay menos presión y por eso la burbuja aumenta su volumen.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "al subir aumenta la presión sobre ella.",
+        "al subir disminuye la presión sobre ella.",
+        "su volumen se mantiene siempre igual.",
+        "al llegar arriba se ve más grande."
+      ]
+    },
+    {
+      "id": "7B-AURORA-27",
+      "topic": "Separar una mezcla",
+      "stem": "Un curso recibe una mezcla de arena, sal y agua y debe separar los tres componentes. Respecto del procedimiento, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo I, II y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "Las cuatro son correctas: la arena se retira por filtración y luego la destilación separa el agua de la sal.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "conviene filtrar primero para sacar la arena.",
+        "la sal queda disuelta en el agua.",
+        "el agua salada se separa por destilación.",
+        "se trata de una mezcla heterogénea."
+      ]
+    },
+    {
+      "id": "7B-AURORA-28",
+      "topic": "Aplicar Gay-Lussac",
+      "stem": "En la etiqueta de un desodorante en aerosol dice «no exponer al sol ni al fuego». Respecto de esta advertencia, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: el peligro está en el calor, que sube la presión del gas, no en un enfriamiento.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el envase podría enfriarse de golpe.",
+        "al calentarse, el gas aumenta su presión.",
+        "las partículas se moverían más rápido.",
+        "una presión muy alta podría reventar el envase."
+      ]
+    },
+    {
+      "id": "7B-AURORA-29",
+      "topic": "Interpretar un gráfico",
+      "stem": "Un grupo calienta un gas encerrado en un envase rígido y registra que la presión sube de forma pareja. Respecto de los datos, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 1,
+      "explain": "Son falsos el II y el IV: la presión subió junto con la temperatura y el gas no cambió de estado.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el volumen del gas se mantuvo constante.",
+        "la presión bajó al subir la temperatura.",
+        "las partículas chocan con más fuerza.",
+        "el gas cambió a estado líquido."
+      ]
+    },
+    {
+      "id": "7B-AURORA-30",
+      "topic": "Evaluar una afirmación",
+      "stem": "Un compañero dice: «cuando el hielo se derrite, el agua deja de ser la misma sustancia». Respecto de esta afirmación, es correcto señalar que:",
+      "options": [
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 2,
+      "explain": "El III es falso y contradice al I: el hielo derretido sigue siendo agua, solo cambió de estado.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 1",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque sigue siendo agua.",
+        "en un cambio de estado no cambia la sustancia.",
+        "al derretirse el hielo se forma otra sustancia.",
+        "lo que cambia es la unión de sus partículas."
+      ]
+    }
+  ]
+}

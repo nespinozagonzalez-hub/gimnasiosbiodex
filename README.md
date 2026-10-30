@@ -2,6 +2,34 @@
 
 Liga de los cinco sellos para los cursos de Nicolás Espinoza. Las batallas y sus preguntas se mantienen en este repositorio independiente de la BioDex distribuida como gestor.
 
+## Ligas por curso
+
+El repositorio comparte el motor, las ilustraciones, los líderes, la sesión BioDex y las cuatro recompensas por victoria. Cada curso tiene su propio banco, sus códigos de entrada y su registro local de activaciones y sellos. Cambiar de liga conserva la colección de la cuenta, y una captura ya obtenida se reconoce como duplicada.
+
+| Curso | Entrada | Banco | Estado |
+| --- | --- | --- | --- |
+| 2.º medio | `index.html` (también la raíz del sitio) | `bancos/liga/` | Publicado, 150 preguntas |
+| 7.º básico | `index.html?liga=7basico` | `bancos/7basico/` | Publicado, 150 preguntas |
+| 6.º básico | `index.html?liga=6basico` | Pendiente | Próximamente, sin preguntas ni combate |
+
+El enlace de 2.º medio, sus cinco archivos de preguntas y sus códigos `LIGA-*` se conservan. Los guardados existentes siguen usando las claves anteriores. La liga de 7.º utiliza códigos `LIGA7-*` y claves locales separadas, incluso si el nombre de cuenta es el mismo. Los enlaces de combate, resultado, edición y revisión de pantalla conservan el curso seleccionado. Un curso inexistente o pendiente nunca utiliza preguntas de otra liga.
+
+`ligas.js` registra los cursos; `course-context.js` configura la página y el selector. Para sumar 6.º se importa su Excel en una carpeta propia, se completan temas y códigos del registro y se marca esa liga como disponible. El motor y los recursos gráficos no se duplican.
+
+### Códigos de 7.º básico
+
+| Sector | Contenido | Código |
+| --- | --- | --- |
+| Aurora | Materia y gases | `LIGA7-AURORA-742` |
+| Prisma | Fuerzas y sus efectos | `LIGA7-PRISMA-385` |
+| Nexo | Microorganismos e inmunidad | `LIGA7-NEXO-916` |
+| Nova | Pubertad y reproducción | `LIGA7-NOVA-528` |
+| Bruma | Autocuidado y prevención | `LIGA7-BRUMA-263` |
+
+Las preguntas de 7.º se importaron de `Liga_Ciencias_7Basico.xlsx`: 100 de cuatro alternativas, 50 de cinco y 50 con numerales I–IV. Se conservan los tiempos 45/60/75/90 segundos, el barajado y los cuatro premios del combate existente. Los puntajes por ronda de la hoja no generan nuevas capturas.
+
+La importación se registra en `reference/septimo-import.json`. Incluye una corrección del ítem `7B-BRUMA-30`: el esquema escolar VPH del Excel estaba desactualizado. Se reemplazó el numeral IV por «la vacuna contra el VPH protege contra todas las ITS», que es falso, y se actualizó la explicación; la clave sigue siendo B (I y III). La corrección se contrastó el 30-10-2026 con [MINSAL, vacuna escolar VPH](https://saludresponde.minsal.cl/vacuna-escolar-contra-el-vph/). El archivo conserva el contenido original de ese ítem para revisar la diferencia.
+
 ## Entradas
 
 - `index.html`: liga de los cinco gimnasios.
@@ -18,7 +46,7 @@ Todos los sprites, PNG, fondos, retratos y fuentes que requiere el juego están 
 
 ## Preguntas y recompensas
 
-Los cinco bancos están publicados: 150 preguntas reales de `Liga_Celular_2doMedio.xlsx`, 30 por gimnasio. Se importaron sin cambiar sus enunciados, alternativas, claves, numerales ni retroalimentaciones. Se conservan 100 preguntas con cuatro alternativas y 50 con cinco; 50 incluyen enunciados I–IV. La procedencia y las firmas de contenido se registran en `reference/cellular-import.json`.
+Los cinco bancos de 2.º medio están publicados: 150 preguntas reales de `Liga_Celular_2doMedio.xlsx`, 30 por gimnasio. Se importaron sin cambiar sus enunciados, alternativas, claves, numerales ni retroalimentaciones. Se conservan 100 preguntas con cuatro alternativas y 50 con cinco; 50 incluyen enunciados I–IV. La procedencia y las firmas de contenido se registran en `reference/cellular-import.json`.
 
 | Gimnasio | Contenido del Excel |
 | --- | --- |

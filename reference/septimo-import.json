@@ -1,0 +1,658 @@
+{
+  "source": "Liga_Ciencias_7Basico.xlsx",
+  "sourceSHA256": "422cf998157c04475caa994d1721dedb002388bd0291c7b3a67c6697ace80435",
+  "leagueId": "7basico",
+  "sheets": [
+    {
+      "gym": "aurora",
+      "questions": [
+        {
+          "id": "7B-AURORA-01",
+          "sha256": "60527b2200cedbf3ed76c1ac8620c27ea126d1e3e50fe6486a3d4a5a75c8483b"
+        },
+        {
+          "id": "7B-AURORA-02",
+          "sha256": "6d6e7083c6bb87213bd84da3bed7cf4bada1e452472bc5762f0d2f81d2699a90"
+        },
+        {
+          "id": "7B-AURORA-03",
+          "sha256": "c25d2117c1720b830f8766d6a84fb03144f0942bebb76bedd8340faa899144bc"
+        },
+        {
+          "id": "7B-AURORA-04",
+          "sha256": "f6513544b84530c4e2fa3d03a59fe8a5c0af4557b9c19b7cc7cd9369c114cbca"
+        },
+        {
+          "id": "7B-AURORA-05",
+          "sha256": "29bd3402bf248333cf416dfac0c756c6bf5b83d25d28b1b1f3f024554c6e26e4"
+        },
+        {
+          "id": "7B-AURORA-06",
+          "sha256": "bc2f952586514025f21a568aafd61aac7068230807750f155421c39695dc35e6"
+        },
+        {
+          "id": "7B-AURORA-07",
+          "sha256": "b17ca1abd9e079e6e02e9ee267bb97cfa4d529a3eee53547f51d8e7aa3021c7b"
+        },
+        {
+          "id": "7B-AURORA-08",
+          "sha256": "bc252cb39252494613ab7070946af8439ab98dd8921fc3468cc93976d91a406f"
+        },
+        {
+          "id": "7B-AURORA-09",
+          "sha256": "5c9dd79d6deb046fe2514d3680b2c27391bb08d02e216eb130d47a93fbc0be99"
+        },
+        {
+          "id": "7B-AURORA-10",
+          "sha256": "d61ac870411472400981bb06a8397c52de2942571a3bbe75723d04c318e69ff8"
+        },
+        {
+          "id": "7B-AURORA-11",
+          "sha256": "62e36dd2c2975cc4bbfd5e10bff97efacaa4f4cbc0003eb16cb61e3f26f7af9a"
+        },
+        {
+          "id": "7B-AURORA-12",
+          "sha256": "eacf5de648c9f8b8e981bad0db48bdb003e4a3283b5d47c125f0d74ea199ce85"
+        },
+        {
+          "id": "7B-AURORA-13",
+          "sha256": "135737030be13f99e42db63d0a87052c853d5eecbbbf45a17988d6b3cb2ddb38"
+        },
+        {
+          "id": "7B-AURORA-14",
+          "sha256": "5f45f6f37febfa9a51f1c2a152ab9ee5ad26cde19bba88121d3fab9f7164393d"
+        },
+        {
+          "id": "7B-AURORA-15",
+          "sha256": "f3312f3f46ef7bd4fe830be0420393982168982daf6cde334ffabc94bb8b473e"
+        },
+        {
+          "id": "7B-AURORA-16",
+          "sha256": "2e018716d9c77430ca94827f781fd943dc33df7dbe8c7ffc30120ebd033a2806"
+        },
+        {
+          "id": "7B-AURORA-17",
+          "sha256": "18357a9a8d915e4e394ef0057c9c3b345ee8c0d314a329ed0b848882b8331dc6"
+        },
+        {
+          "id": "7B-AURORA-18",
+          "sha256": "d6aaf3e9d428d813a8dbecc40cf4674846e62f1d5399f9f8ed057a56e6496932"
+        },
+        {
+          "id": "7B-AURORA-19",
+          "sha256": "12937cc6183a58ed42ff7ee41334b86e1f16c456d1872fef82f37a4c695f4ffa"
+        },
+        {
+          "id": "7B-AURORA-20",
+          "sha256": "4d81a1814af4f5a315354409e03fccb6294d1371f2e1b6544e419eae5c8444ae"
+        },
+        {
+          "id": "7B-AURORA-21",
+          "sha256": "2a240c0e9d036244bd0a109bd824dc29e236a2513ebee3c36a6d9a974dfa828b"
+        },
+        {
+          "id": "7B-AURORA-22",
+          "sha256": "a34fa7f1ffcbc511705cf67aacf939cb612fa4fe3a2dcc4a818dbb53d184247a"
+        },
+        {
+          "id": "7B-AURORA-23",
+          "sha256": "3232df833ed84788721ee625d85b570beb099ae31b364f6759f00e4e27e54a8a"
+        },
+        {
+          "id": "7B-AURORA-24",
+          "sha256": "1a7deb9b3940986a2ce363d2682452e0c1c8897e42a86595b4d3756a8c82d8c9"
+        },
+        {
+          "id": "7B-AURORA-25",
+          "sha256": "cbfb7cce7868b03e3f525271abead5ce198fa1d09438f7f8e6de442f80006c97"
+        },
+        {
+          "id": "7B-AURORA-26",
+          "sha256": "8250d464e554de8fbc4dda1956c31450a2cc5c75cb5db39ee294e8e620def107"
+        },
+        {
+          "id": "7B-AURORA-27",
+          "sha256": "fe7ff2d0e3bf447201a122cd455649b1c1d4f80c604d13a085f75006795c0854"
+        },
+        {
+          "id": "7B-AURORA-28",
+          "sha256": "88442caf7dfade0f51b84aee30a8507142d9a57b6d40ca970efea90a54905406"
+        },
+        {
+          "id": "7B-AURORA-29",
+          "sha256": "75480607e80ef723dc43ece36f9dddf7a1cc0454ceccd795fb69a04787b609fa"
+        },
+        {
+          "id": "7B-AURORA-30",
+          "sha256": "891f68cbe3977e2eaeb8a5f7e7b1544a99837ca3ed2d1125172eb1891d1b77cb"
+        }
+      ]
+    },
+    {
+      "gym": "prisma",
+      "questions": [
+        {
+          "id": "7B-PRISMA-01",
+          "sha256": "ca3347c0b44b7e8a12a40dca5f44a1a6d828ddcb2da0c01766ca9e69a68d9549"
+        },
+        {
+          "id": "7B-PRISMA-02",
+          "sha256": "2e0a65ac9b7395279da1bc365293b8199c457ca701dfea2513067385744e1863"
+        },
+        {
+          "id": "7B-PRISMA-03",
+          "sha256": "ec20980c84c218e007b2539158ef8c69d5699815e50b95bffc0074340ed0ee4d"
+        },
+        {
+          "id": "7B-PRISMA-04",
+          "sha256": "8df5736e705bac8567d5fdde7284cd0fcb541b8d0214a3347b888c143c314379"
+        },
+        {
+          "id": "7B-PRISMA-05",
+          "sha256": "f3c40e915435ea3e473e7b3a2c1834fbab7f796c61a467aa7d867cb172c07798"
+        },
+        {
+          "id": "7B-PRISMA-06",
+          "sha256": "165fbae83679dd3cb986ba802a039152ae81a33344dc9d392f2d6202eb9e4282"
+        },
+        {
+          "id": "7B-PRISMA-07",
+          "sha256": "2d1e3c4a2be2b70e88f76a7d591a5a6a456dfd70d438682c231c7ed464a99ab2"
+        },
+        {
+          "id": "7B-PRISMA-08",
+          "sha256": "484139111f80a25a25d27fbd294b8f765426c0cc02d9b9718fd405dee6d8ba5c"
+        },
+        {
+          "id": "7B-PRISMA-09",
+          "sha256": "c0d5962bfe57fffcb36dea6f316bf1209eecf6f4def92bd4756cce250fc521ab"
+        },
+        {
+          "id": "7B-PRISMA-10",
+          "sha256": "112b5e8afc30c52f8c7cbb8a42425a107c7dd16e5aaa57f915fc1ef0984c6b19"
+        },
+        {
+          "id": "7B-PRISMA-11",
+          "sha256": "e5bdfbe4d99cb9587fef5b098580e94be563625fc0df3f8153c84ed1583eb149"
+        },
+        {
+          "id": "7B-PRISMA-12",
+          "sha256": "1d614051eb96cd308922f9e5068e7baab4f3cfd277daaa872cae737b1e1434d8"
+        },
+        {
+          "id": "7B-PRISMA-13",
+          "sha256": "20bdb46428020962ebb0ad4e47db051fca3cd16612717c60da8e553827acd1c2"
+        },
+        {
+          "id": "7B-PRISMA-14",
+          "sha256": "7aeac6d7514033bcd6e0680cab89467d1181c19216bc937dbe5e4cdf6964c9db"
+        },
+        {
+          "id": "7B-PRISMA-15",
+          "sha256": "65866b62a948694f777a3d9f732acffc43609658b2bb07adf1ce7a9938de5180"
+        },
+        {
+          "id": "7B-PRISMA-16",
+          "sha256": "0c9dfd6d3b92a7bb71d21c047165e0f01c8250983425f4695976fe1a0d152e60"
+        },
+        {
+          "id": "7B-PRISMA-17",
+          "sha256": "1eb581eb15fdf0b9c34668f6ca20a118d9515bf66f9ff08b54c539c9fd064ede"
+        },
+        {
+          "id": "7B-PRISMA-18",
+          "sha256": "b67b4bce439b626cf1d0fc5d556486fd4e258c73557bcc2b73f5959b6a8b633f"
+        },
+        {
+          "id": "7B-PRISMA-19",
+          "sha256": "c231d6e3c6c577c1ed21f4a192e3b0bf300a2543b6ff306574025d040730ea6d"
+        },
+        {
+          "id": "7B-PRISMA-20",
+          "sha256": "0ab612222fed60d5b97d7a019a80e4e98418b7eaec052a58f7f4d84f46a75ec0"
+        },
+        {
+          "id": "7B-PRISMA-21",
+          "sha256": "4317fabdb72f748641265607fdd50a72ea9cedfd1fc1d5f40e90dfc2f4954078"
+        },
+        {
+          "id": "7B-PRISMA-22",
+          "sha256": "e187197c39f82698021346c8d7aa608eb535c186711b2f7fe145dc57f08d21aa"
+        },
+        {
+          "id": "7B-PRISMA-23",
+          "sha256": "2fad73feb06d76cde5b730fb5288a9ce3e90830e2583a8a27a3d462ed9e87e4a"
+        },
+        {
+          "id": "7B-PRISMA-24",
+          "sha256": "71417ac6a701274f3b963caca25d49c8a5f1cce02b943b212c305094f42ac9b2"
+        },
+        {
+          "id": "7B-PRISMA-25",
+          "sha256": "76d9599339a1b4ef46d975807530871d5e4b0f9ee6900dd9174357c4e6406aeb"
+        },
+        {
+          "id": "7B-PRISMA-26",
+          "sha256": "8cf2e1e5391ee1c6f153a9ff373514a91f960ed825965acee19ea170073f4cf7"
+        },
+        {
+          "id": "7B-PRISMA-27",
+          "sha256": "a6ee982391cf8f5b2e3411cf46981c09dbf01c79f72fe620b9b944f2df365a7b"
+        },
+        {
+          "id": "7B-PRISMA-28",
+          "sha256": "83ff408be326009feb98aa1bc904ac8c05886a77eee8867afbf38bd024c22dfb"
+        },
+        {
+          "id": "7B-PRISMA-29",
+          "sha256": "e8d72059ca234d97fad653f126ff1e002093df6661ddc48ff47c9195f7c64c0e"
+        },
+        {
+          "id": "7B-PRISMA-30",
+          "sha256": "38c89b055b2102aa5ef373ca0db8ab80ef3a06f5de78d005d8e00bb4eae7e0aa"
+        }
+      ]
+    },
+    {
+      "gym": "nexo",
+      "questions": [
+        {
+          "id": "7B-NEXO-01",
+          "sha256": "ea6010b94d8b1f0c89b638a137b819b987f11ee510edc303b4f2c791460902a3"
+        },
+        {
+          "id": "7B-NEXO-02",
+          "sha256": "3bde9c9b6377cd32d521b11713cf50c9d28f9ffb149b8ccd5094ba82c8a2b757"
+        },
+        {
+          "id": "7B-NEXO-03",
+          "sha256": "9783d2356179f31a87cb66780c2b23c68d01e52904b97c75c0f73d0f918b8962"
+        },
+        {
+          "id": "7B-NEXO-04",
+          "sha256": "831793a39117311a94c0d0a69e7683ba76d9bba9b5371a5c318a9f506b508f77"
+        },
+        {
+          "id": "7B-NEXO-05",
+          "sha256": "3052b7f60fd9962f42d6ebbcb4294cedf5ed243848c7e951426fbba306f27639"
+        },
+        {
+          "id": "7B-NEXO-06",
+          "sha256": "c8815711db4e8bff983c54804c1e4f5180f136b55a0d455be2b62cf694132e14"
+        },
+        {
+          "id": "7B-NEXO-07",
+          "sha256": "2ac5bbda9b7c43555af3e67a07a5bbe89b5c1a38bee422e243cfc8fb2a0f3f61"
+        },
+        {
+          "id": "7B-NEXO-08",
+          "sha256": "da37aeb0c55b6c35ab994265a845275230ae922d07e949c2d70312bef1d352e4"
+        },
+        {
+          "id": "7B-NEXO-09",
+          "sha256": "ad21894a42f24d1d7ac76a7bac680c5c1889b467f6f116a9bd0b9ae9ba74c492"
+        },
+        {
+          "id": "7B-NEXO-10",
+          "sha256": "0367b4e8bdf6714de5af71e400c2022cd2e7ed297a661124b70a39a0a64ce6be"
+        },
+        {
+          "id": "7B-NEXO-11",
+          "sha256": "e88388ede5a2a4247a13bcc20935ef23b1896a19ba22d3bdc448f370d75491ae"
+        },
+        {
+          "id": "7B-NEXO-12",
+          "sha256": "dce35f1c5e7d0a90e5a9d068ca42bba62b46acbb40c0d5271df478adf613f4c0"
+        },
+        {
+          "id": "7B-NEXO-13",
+          "sha256": "a5d019f174f18aea1de6917cc9e130bfd663707da9b5af2507ef948888b90eb3"
+        },
+        {
+          "id": "7B-NEXO-14",
+          "sha256": "6fbc3ec719c1e2d2e65a7afa4a68e943167ab7f57f94ed45b0262ad702d0dd8a"
+        },
+        {
+          "id": "7B-NEXO-15",
+          "sha256": "a3c50795dd59393025609c0bb314afc3d8b0990541f393469f27eb5c7169b7df"
+        },
+        {
+          "id": "7B-NEXO-16",
+          "sha256": "6049515a6151444752721ba0b38f3580130bf25a60ad32885749ae81bf137faa"
+        },
+        {
+          "id": "7B-NEXO-17",
+          "sha256": "304842ba8abed3e73f24580c2e8755efc1b0cd5b574c4f0b82c6351830e90ed7"
+        },
+        {
+          "id": "7B-NEXO-18",
+          "sha256": "8749d062efec28dc51d1c7f41e29c759cf22c180b6c954ae48a943d6657ea432"
+        },
+        {
+          "id": "7B-NEXO-19",
+          "sha256": "99d83373a52bc57fe47afb4a196f5b0ca226858a732d6104b9136bad942fa4e5"
+        },
+        {
+          "id": "7B-NEXO-20",
+          "sha256": "7a53f9d3dd5881967df7459e5e84438cc2a69ca20d5fa5bce0c847c07d38e9f4"
+        },
+        {
+          "id": "7B-NEXO-21",
+          "sha256": "ce4bf6ae8a79c193eed7ba3fd237890a98a2e8ba1d89c36f4167bb7af81d3158"
+        },
+        {
+          "id": "7B-NEXO-22",
+          "sha256": "cf087ead442e5e90ebfb39f66c8f1f8cc0d6e5c43b9561b785fc7b2dc1fe9791"
+        },
+        {
+          "id": "7B-NEXO-23",
+          "sha256": "637a68c88732c433042cfc72bac82e6dbf54a977920577e9280ac4df185fae71"
+        },
+        {
+          "id": "7B-NEXO-24",
+          "sha256": "0769955d6e772dbeb4028d3215ca7ed7a628d79dac4bab666e06a24feabc963b"
+        },
+        {
+          "id": "7B-NEXO-25",
+          "sha256": "97a4d5beb072ec2a009b353181ad4aa4331fd6d92dae3983ecc91606c6742188"
+        },
+        {
+          "id": "7B-NEXO-26",
+          "sha256": "0c63764da5431d649f9ed5f88cba90437293a93ef35b1c776cb99cdaf56930d0"
+        },
+        {
+          "id": "7B-NEXO-27",
+          "sha256": "92f39e87fab49dbbed5c57662012cdc260f0594fed277fad2b600ab2e911fc31"
+        },
+        {
+          "id": "7B-NEXO-28",
+          "sha256": "21d458c9deb40189466afa13d808536e28821dac695afb3ad9c63d104437a9f5"
+        },
+        {
+          "id": "7B-NEXO-29",
+          "sha256": "f0c020fe0f44f105d00e1eed93d4c8409ff3446e6cbaada6d61716f12298c4b5"
+        },
+        {
+          "id": "7B-NEXO-30",
+          "sha256": "05276f1412d5ca4ed869cfd86efae79a092a3fb78469b8734f2b1bb15f14ffa6"
+        }
+      ]
+    },
+    {
+      "gym": "nova",
+      "questions": [
+        {
+          "id": "7B-NOVA-01",
+          "sha256": "2800764c5d3c4287b93a4d879424c55e1394981c199dab03c45479cd94a330df"
+        },
+        {
+          "id": "7B-NOVA-02",
+          "sha256": "3a6c84ab073753f476826aba7b147fd48f134deb25be3e4f80009c7938dcc8fd"
+        },
+        {
+          "id": "7B-NOVA-03",
+          "sha256": "6e9f7d07c0d3ea34fe2968db75eef72779784289803d877b83f07508249a01e5"
+        },
+        {
+          "id": "7B-NOVA-04",
+          "sha256": "3dff87991907621d9be031ce2a88a25699bf1d9413fb6d826c783b6cea217cb0"
+        },
+        {
+          "id": "7B-NOVA-05",
+          "sha256": "b087fd95ba220fa40e4ba9b450002daedc03bec4cb75ba6f32a5b1b50fd14991"
+        },
+        {
+          "id": "7B-NOVA-06",
+          "sha256": "3414a273f520b89e1b12b7391ae3f70bf5b3ba26343dd6d28ed77f2da3d6b1e5"
+        },
+        {
+          "id": "7B-NOVA-07",
+          "sha256": "f88f9b6c5d7b3458ac4660aaea2590fce6c58fef3b7679975fd3709f7f9799e0"
+        },
+        {
+          "id": "7B-NOVA-08",
+          "sha256": "41497dff6b97064d945341106168a2e690278fcdd831794b73a1ed2fc1c11871"
+        },
+        {
+          "id": "7B-NOVA-09",
+          "sha256": "a15aa6a71126609f1a695e1aadbf7b7902120ab67ca2a44ae223845246663436"
+        },
+        {
+          "id": "7B-NOVA-10",
+          "sha256": "389dea137781cb9183ecee825cda7edc04f3fa7a0ac3805d7ff554f6fc509eef"
+        },
+        {
+          "id": "7B-NOVA-11",
+          "sha256": "35efe5aba7218ef9493cba51d04cb197f2bb8c0388f6fcc231a41acf73b66611"
+        },
+        {
+          "id": "7B-NOVA-12",
+          "sha256": "a80419b8e949ff9de1f44afbeaad870d1e6d2f01c5c8dff6f602c48dea8e8d77"
+        },
+        {
+          "id": "7B-NOVA-13",
+          "sha256": "4750e17c7638b6032cce55a9260345153d6f0c09f415f24c0a6c383b1b6f7b80"
+        },
+        {
+          "id": "7B-NOVA-14",
+          "sha256": "cbded984b2d1cb74631ae81c939addb1ed67d4b25a54f3c7ee58396844983d92"
+        },
+        {
+          "id": "7B-NOVA-15",
+          "sha256": "3aab7408a27406513f16e401f8e6e3864fa19c0b6c1aab17e7009dd4e8cea3f7"
+        },
+        {
+          "id": "7B-NOVA-16",
+          "sha256": "72dba365af14a718ee4f6f32ba34a1cd4143b522ec65d7b619651f579071f9a2"
+        },
+        {
+          "id": "7B-NOVA-17",
+          "sha256": "31b9e7c65cc5eff642d51b2123e5bd1af5e76e85973e3549a937aa25ffb8ad20"
+        },
+        {
+          "id": "7B-NOVA-18",
+          "sha256": "d2dfd3ccbc33bf3e581edd95652745d9f0b019f87d9e01453b4879640773c541"
+        },
+        {
+          "id": "7B-NOVA-19",
+          "sha256": "f8c3125bd9653b08220612b34f8af44d15139b9d513d9988701fac94a57caf1c"
+        },
+        {
+          "id": "7B-NOVA-20",
+          "sha256": "834a8356d484f2c76fcb5ebfd6dfae6c9e44b322c323789ee676fb8e7e7d92c7"
+        },
+        {
+          "id": "7B-NOVA-21",
+          "sha256": "658f63251738a7336e441d4069db2e97a18f08b8b8584eda8e1dda63d4d97c0b"
+        },
+        {
+          "id": "7B-NOVA-22",
+          "sha256": "a12e3e6bdcc3a106cfb1298012af9bf1114744c6762cea297cf0145bc54ca35b"
+        },
+        {
+          "id": "7B-NOVA-23",
+          "sha256": "13c856cbd5fb53c82b26bb6f78e736762a580b0e27739d75bd7019c7cbbf3af9"
+        },
+        {
+          "id": "7B-NOVA-24",
+          "sha256": "6cf9856a6637bf401b7d33c8cc19f343d44102409bff6b41b99126239ceeaeba"
+        },
+        {
+          "id": "7B-NOVA-25",
+          "sha256": "5c484f3e6843e9642f44fe074437585e38dcbf2b3c12f08860cae857bc0c0d82"
+        },
+        {
+          "id": "7B-NOVA-26",
+          "sha256": "f9e36d0cb3a3795c22ce902bcb4660156d88bc327fd6a0fed907015db4fcd0a2"
+        },
+        {
+          "id": "7B-NOVA-27",
+          "sha256": "96036c180a71ddedfecbf3b06ec7f1a0cc7453741704dcd3d2db32f681ac92e4"
+        },
+        {
+          "id": "7B-NOVA-28",
+          "sha256": "1942415c71146b56a798413170e0fb0e0ef6992fdfd974453604a0a2d4828d3b"
+        },
+        {
+          "id": "7B-NOVA-29",
+          "sha256": "5c715f231338e4126c9dfb99bd9c02383e9e378aaa6234044daaaf9f0021fd4b"
+        },
+        {
+          "id": "7B-NOVA-30",
+          "sha256": "19f321547b9fb0dc3e379e74cfb555970879b473d86aa79b906856c61e27fa0f"
+        }
+      ]
+    },
+    {
+      "gym": "bruma",
+      "questions": [
+        {
+          "id": "7B-BRUMA-01",
+          "sha256": "4b737aad74f84e16f5ba1bd14abefc6e2d7a84863235c2f39edba05bc087da39"
+        },
+        {
+          "id": "7B-BRUMA-02",
+          "sha256": "3e1909fe943c58f2e5a254bb374a55af3466598e3fff5d196b9bce819a88513b"
+        },
+        {
+          "id": "7B-BRUMA-03",
+          "sha256": "623d3dab91da9a9d61db4e55cb4775ae09faee35956af9e0e631eea0bdb12869"
+        },
+        {
+          "id": "7B-BRUMA-04",
+          "sha256": "f088fa2adbd42f2481fd69eaee55419791f288bf586c1cf21c4fda8629fa7805"
+        },
+        {
+          "id": "7B-BRUMA-05",
+          "sha256": "938d9ae8346240308ebeafa98b26964dc2756ddc06c860d54293f7a832d8e252"
+        },
+        {
+          "id": "7B-BRUMA-06",
+          "sha256": "57e3c1dc8890aeba1abfca5d078fdd9da2f01791fbc2f1224339d713b533f9d3"
+        },
+        {
+          "id": "7B-BRUMA-07",
+          "sha256": "e214d60cd183f8f456f510cfbb648169694952a3b7425125d1b004cb39cfbff5"
+        },
+        {
+          "id": "7B-BRUMA-08",
+          "sha256": "f8db7a9e79d91db9ecbe20e379f5315390ab820593b07dac9168433d03fd7e2e"
+        },
+        {
+          "id": "7B-BRUMA-09",
+          "sha256": "ad095b9b598a11d18c941818b62ac6a55f3da30f52964fd41081a3e9a803650a"
+        },
+        {
+          "id": "7B-BRUMA-10",
+          "sha256": "07363af1e4a121e776a5676bc114f0c7dcad02cc8dacfcbaed275cc602d04c1d"
+        },
+        {
+          "id": "7B-BRUMA-11",
+          "sha256": "7f6e6b0674bf7261b57c1aa673bf911cbdf5267947d9e55db90cb04fe5f32fff"
+        },
+        {
+          "id": "7B-BRUMA-12",
+          "sha256": "4acf4384e915245e5774a554b6bab03ea20f2e47e434d80c21400d9701c05be6"
+        },
+        {
+          "id": "7B-BRUMA-13",
+          "sha256": "efdbc5a24072e03758352ce70dccb16d4a7b60f7d77cddcce8f31f90494ef77f"
+        },
+        {
+          "id": "7B-BRUMA-14",
+          "sha256": "a166995794e7942e26b29c99edb2409f3a6f7c2caed7a51c8f64c4e4c6fec08c"
+        },
+        {
+          "id": "7B-BRUMA-15",
+          "sha256": "f463fa1117865865a43312fd5cab76e8c10146ca35c039395f77417736271f36"
+        },
+        {
+          "id": "7B-BRUMA-16",
+          "sha256": "b29b30d1a96bc76948d779d4a4d1e8eb980d925c01d4fd9ce6f4def21edf197c"
+        },
+        {
+          "id": "7B-BRUMA-17",
+          "sha256": "1b4d5ce97cddc2be4fec7cce0eeec8a512b5d7bf1190d0903fbf91abd00dba91"
+        },
+        {
+          "id": "7B-BRUMA-18",
+          "sha256": "62de848cf295ab01099be4d1d9a651442cc45abebdee93316e99b7b0465fa2a1"
+        },
+        {
+          "id": "7B-BRUMA-19",
+          "sha256": "ed757416bf2a69d939ee6b11f6855d944d0c1ebfb0b35e2a90427a8f46800821"
+        },
+        {
+          "id": "7B-BRUMA-20",
+          "sha256": "6710975fd2a4c8414ca6bd469174841a3234bcf2fc723fa203dd5455c6a36d4e"
+        },
+        {
+          "id": "7B-BRUMA-21",
+          "sha256": "ff47aa059d3d89cbd0311f70e5a6127d6eb6071c3d074c9d5b688a0e180a84d0"
+        },
+        {
+          "id": "7B-BRUMA-22",
+          "sha256": "c2ff9b682b3455d5fb82b69cd1483c46c59e4a2f41340fcc14ab9309e98bfb35"
+        },
+        {
+          "id": "7B-BRUMA-23",
+          "sha256": "f4d5e020d837c262f3effc1741d5face288cfdcd7c94baa8d244d5c49978b7a2"
+        },
+        {
+          "id": "7B-BRUMA-24",
+          "sha256": "387ee46bcf5ce3af980c770437599076d5c4202d5be19fcd4b40605706b220c4"
+        },
+        {
+          "id": "7B-BRUMA-25",
+          "sha256": "f4d90a51d85bfd2487df82bb3556f824c375bd08099c625cad13de0c3bc259da"
+        },
+        {
+          "id": "7B-BRUMA-26",
+          "sha256": "19fa93271c2c0544734e7459361306866d15d18c82e17872122aa0783a13e627"
+        },
+        {
+          "id": "7B-BRUMA-27",
+          "sha256": "06f1faad220c1c8a350b2b22c98e27665e75115036c577ca894346e2085ed2c7"
+        },
+        {
+          "id": "7B-BRUMA-28",
+          "sha256": "f257e728e2c55d0964f0174bc88446e004e9097d2a15e0bc76b86d03e8663f0d"
+        },
+        {
+          "id": "7B-BRUMA-29",
+          "sha256": "898ec9fa26477f24de995b79c549b22005d9696555e73904a4cced3055e31aeb"
+        },
+        {
+          "id": "7B-BRUMA-30",
+          "sha256": "8c4552dcc6083df62c315e19acd7e2b36e7b1556748889ba99bb940b54553ff9"
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "id": "7B-BRUMA-30",
+      "original": {
+        "id": "7B-BRUMA-30",
+        "stem": "Un compañero sostiene: «la vacuna contra el VPH es solo para mujeres». Respecto de esta afirmación, es correcto señalar que:",
+        "options": [
+          "Solo I y II",
+          "Solo I y III",
+          "Solo I y IV",
+          "Solo II y IV",
+          "Solo III y IV"
+        ],
+        "correct": "Solo I y III",
+        "statements": [
+          "es incorrecta, porque también se aplica a varones.",
+          "es correcta, porque el VPH solo afecta a mujeres.",
+          "el VPH afecta a personas de cualquier sexo.",
+          "la vacuna se coloca una sola vez en la vida."
+        ],
+        "explain": "Son falsos el II y el IV: el VPH afecta a cualquier persona y el esquema contempla más de una dosis."
+      },
+      "reason": "El Excel describía como vigente un esquema escolar de varias dosis. MINSAL informa dosis única nonavalente en 4.º básico durante 2026. Se reemplaza el numeral IV por una afirmación inequívocamente falsa y se actualiza la explicación; se conserva la clave B (I y III).",
+      "sourceURL": "https://saludresponde.minsal.cl/vacuna-escolar-contra-el-vph/"
+    }
+  ]
+}

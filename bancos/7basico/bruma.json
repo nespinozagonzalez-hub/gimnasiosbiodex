@@ -1,0 +1,713 @@
+{
+  "gym": "bruma",
+  "leagueId": "7basico",
+  "version": 1,
+  "status": "published",
+  "title": "Autocuidado y prevención",
+  "source": {
+    "file": "Liga_Ciencias_7Basico.xlsx",
+    "sheet": "Gimnasio 5"
+  },
+  "questions": [
+    {
+      "id": "7B-BRUMA-01",
+      "topic": "Autocuidado",
+      "stem": "El autocuidado corresponde al conjunto de acciones que:",
+      "options": [
+        "reducen el gasto de la casa.",
+        "protegen la propia salud.",
+        "aumentan la fuerza muscular.",
+        "mejoran las notas del colegio."
+      ],
+      "answer": 1,
+      "explain": "El autocuidado reúne las decisiones y hábitos con que cada persona cuida su salud.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-02",
+      "topic": "Higiene",
+      "stem": "Durante la pubertad aumenta la transpiración, por lo que se recomienda:",
+      "options": [
+        "mantener la higiene diaria.",
+        "evitar la actividad física.",
+        "dejar de usar ropa limpia.",
+        "bañarse una vez al mes."
+      ],
+      "answer": 0,
+      "explain": "En la pubertad las glándulas sudoríparas se activan y la higiene diaria se vuelve importante.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-03",
+      "topic": "Hábitos saludables",
+      "stem": "¿Cuál de los siguientes es un hábito que favorece la salud en la adolescencia?",
+      "options": [
+        "Consumir bebidas energéticas.",
+        "Dormir las horas suficientes.",
+        "Saltarse todas las comidas.",
+        "Pasar el día sin moverse."
+      ],
+      "answer": 1,
+      "explain": "El sueño suficiente, la alimentación equilibrada y la actividad física sostienen la salud.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-04",
+      "topic": "ITS",
+      "stem": "Las infecciones de transmisión sexual, o ITS, son aquellas que:",
+      "options": [
+        "aparecen por comer alimentos fríos.",
+        "se heredan siempre de los padres.",
+        "se transmiten por contacto sexual.",
+        "se contagian por el aire al toser."
+      ],
+      "answer": 2,
+      "explain": "Las ITS se transmiten principalmente por contacto sexual sin protección.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-05",
+      "topic": "VIH",
+      "stem": "El VIH es un virus que afecta principalmente:",
+      "options": [
+        "al sistema digestivo.",
+        "al sistema óseo.",
+        "al sistema urinario.",
+        "al sistema inmune."
+      ],
+      "answer": 3,
+      "explain": "El VIH ataca a los linfocitos, debilitando las defensas del organismo.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-06",
+      "topic": "Sida",
+      "stem": "El sida corresponde a:",
+      "options": [
+        "una alergia muy frecuente.",
+        "un hongo de la piel.",
+        "la etapa avanzada del VIH.",
+        "un tipo de vacuna moderna."
+      ],
+      "answer": 2,
+      "explain": "El sida es la fase avanzada de la infección por VIH, cuando las defensas ya están muy dañadas.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-07",
+      "topic": "Herpes",
+      "stem": "El herpes genital es una ITS producida por:",
+      "options": [
+        "un parásito.",
+        "un virus.",
+        "una bacteria.",
+        "un hongo."
+      ],
+      "answer": 1,
+      "explain": "El herpes genital es causado por un virus y puede provocar lesiones en la zona genital.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-08",
+      "topic": "VPH",
+      "stem": "Existe una vacuna que previene la infección por:",
+      "options": [
+        "el virus del papiloma humano.",
+        "el virus del herpes genital.",
+        "el virus de la inmunodeficiencia.",
+        "la bacteria de la sífilis."
+      ],
+      "answer": 0,
+      "explain": "La vacuna contra el VPH se aplica en el colegio y previene varios tipos de cáncer.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-09",
+      "topic": "Prevención",
+      "stem": "El único método que previene a la vez un embarazo y varias ITS es:",
+      "options": [
+        "la píldora diaria.",
+        "el implante.",
+        "el dispositivo intrauterino.",
+        "el preservativo."
+      ],
+      "answer": 3,
+      "explain": "El preservativo es el único método que actúa como barrera frente a las ITS y al embarazo.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-10",
+      "topic": "Transmisión",
+      "stem": "¿Cuál de las siguientes situaciones NO transmite el VIH?",
+      "options": [
+        "Compartir un vaso con agua.",
+        "Compartir agujas usadas.",
+        "Tener relaciones sin protección.",
+        "Recibir sangre contaminada."
+      ],
+      "answer": 0,
+      "explain": "El VIH no se transmite por saludar, abrazar ni compartir utensilios o alimentos.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-11",
+      "topic": "Diagnóstico",
+      "stem": "Para saber si una persona tiene VIH se debe:",
+      "options": [
+        "medir su temperatura corporal.",
+        "esperar a que aparezca el sida.",
+        "realizar un examen de sangre.",
+        "observar el color de su piel."
+      ],
+      "answer": 2,
+      "explain": "El examen de sangre es la única forma de saber si una persona vive con VIH.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-12",
+      "topic": "Dónde consultar",
+      "stem": "Ante una duda sobre salud sexual, lo adecuado es consultar:",
+      "options": [
+        "en un centro de salud.",
+        "solo en redes sociales.",
+        "con nadie, por vergüenza.",
+        "en un foro anónimo."
+      ],
+      "answer": 0,
+      "explain": "En el CESFAM o con un profesional de salud se obtiene información confiable y confidencial.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-BRUMA-13",
+      "topic": "Actuar ante un síntoma",
+      "stem": "Una persona nota molestias en la zona genital después de una relación sexual. Lo correcto es:",
+      "options": [
+        "no contarle nunca a nadie.",
+        "consultar a un profesional.",
+        "esperar a que pase por sí solo.",
+        "buscar un remedio en internet."
+      ],
+      "answer": 1,
+      "explain": "Ante cualquier síntoma lo adecuado es consultar: un diagnóstico temprano facilita el tratamiento.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-14",
+      "topic": "Tratamiento",
+      "stem": "Respecto del tratamiento actual del VIH, es correcto señalar que:",
+      "options": [
+        "elimina el virus en una semana.",
+        "solo sirve en personas mayores.",
+        "no existe ningún tratamiento.",
+        "permite controlar la infección."
+      ],
+      "answer": 3,
+      "explain": "Los tratamientos antirretrovirales controlan el virus y permiten una buena calidad de vida.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-15",
+      "topic": "Prevención",
+      "stem": "Un afiche de prevención de ITS debería recomendar principalmente:",
+      "options": [
+        "el uso correcto de preservativo.",
+        "tomar mucha agua cada día.",
+        "evitar el contacto con animales.",
+        "lavarse las manos al comer."
+      ],
+      "answer": 0,
+      "explain": "El uso correcto y constante del preservativo es la principal medida de prevención de las ITS.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-16",
+      "topic": "Métodos",
+      "stem": "Una diferencia entre el preservativo y la píldora anticonceptiva es que la píldora:",
+      "options": [
+        "protege más frente a las ITS.",
+        "se usa solo una vez al año.",
+        "reemplaza al examen de sangre.",
+        "no protege frente a las ITS."
+      ],
+      "answer": 3,
+      "explain": "La píldora previene el embarazo, pero no protege frente a las infecciones de transmisión sexual.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-17",
+      "topic": "Decisiones",
+      "stem": "Si un grupo de amigos presiona a alguien para hacer algo que no quiere, lo adecuado es:",
+      "options": [
+        "hacerlo y arrepentirse después.",
+        "cambiar de curso al día siguiente.",
+        "sostener la propia decisión.",
+        "ceder para no quedar fuera."
+      ],
+      "answer": 2,
+      "explain": "Cada persona tiene derecho a decidir sobre su propio cuerpo y a sostener su decisión.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-18",
+      "topic": "Respeto",
+      "stem": "En toda relación afectiva, un elemento indispensable es:",
+      "options": [
+        "el silencio permanente.",
+        "el respeto mutuo.",
+        "la competencia constante.",
+        "el control del otro."
+      ],
+      "answer": 1,
+      "explain": "El respeto mutuo y el cuidado del otro son la base de cualquier vínculo afectivo sano.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-19",
+      "topic": "Consumo de alcohol",
+      "stem": "El consumo de alcohol en la adolescencia resulta riesgoso porque:",
+      "options": [
+        "afecta la toma de decisiones.",
+        "mejora la memoria a largo plazo.",
+        "fortalece el sistema inmune.",
+        "reemplaza las horas de sueño."
+      ],
+      "answer": 0,
+      "explain": "El alcohol altera el juicio y lleva a decisiones que después se lamentan.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-20",
+      "topic": "Información confiable",
+      "stem": "Al buscar información sobre salud sexual en internet, conviene preferir:",
+      "options": [
+        "comentarios de desconocidos.",
+        "videos con muchas visitas.",
+        "mensajes reenviados por chat.",
+        "sitios de servicios de salud."
+      ],
+      "answer": 3,
+      "explain": "Los sitios oficiales de salud entregan información verificada, a diferencia de un chat o un foro.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-BRUMA-21",
+      "topic": "Autocuidado",
+      "stem": "Respecto de los hábitos de autocuidado en la adolescencia, es correcto afirmar que:",
+      "options": [
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 2,
+      "explain": "El III es falso: la actividad física es parte fundamental del cuidado de la salud en esta etapa.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "la higiene diaria se vuelve más importante.",
+        "dormir bien influye en la salud.",
+        "la actividad física es innecesaria a esta edad.",
+        "la alimentación equilibrada ayuda al desarrollo."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-22",
+      "topic": "VIH",
+      "stem": "Respecto del VIH, es correcto afirmar que:",
+      "options": [
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV"
+      ],
+      "answer": 4,
+      "explain": "El II es falso: el VIH no se transmite por abrazos, saludos ni por compartir utensilios.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "es un virus que debilita el sistema inmune.",
+        "se transmite al abrazar a una persona.",
+        "se detecta mediante un examen de sangre.",
+        "existe tratamiento que controla la infección."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-23",
+      "topic": "Prevención de ITS",
+      "stem": "Respecto de la prevención de las infecciones de transmisión sexual, es correcto afirmar que:",
+      "options": [
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el I y el IV: la higiene posterior no protege y la píldora solo previene el embarazo.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "basta con lavarse después de la relación.",
+        "el preservativo actúa como barrera.",
+        "la información confiable ayuda a decidir.",
+        "la píldora anticonceptiva previene las ITS."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-24",
+      "topic": "Decisiones responsables",
+      "stem": "Respecto de las decisiones sobre la propia sexualidad, es correcto afirmar que:",
+      "options": [
+        "Solo I y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El IV es falso: ceder a la presión del grupo no es una decisión libre ni responsable.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "cada persona decide sobre su cuerpo.",
+        "el respeto mutuo es indispensable.",
+        "se pueden consultar dudas con un adulto de confianza.",
+        "ceder a la presión del grupo es lo esperable."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-25",
+      "topic": "Analizar un caso",
+      "stem": "Una persona se entera de que su pareja tiene una ITS y no presenta ningún síntoma. Respecto de esta situación, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo III y IV",
+        "Solo I, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "Las cuatro son correctas: varias ITS avanzan sin síntomas y por eso el examen es necesario.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "puede tener la infección sin síntomas.",
+        "debería consultar a un profesional de salud.",
+        "corresponde realizarse los exámenes indicados.",
+        "varias ITS avanzan sin dar molestias."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-26",
+      "topic": "Comparar métodos",
+      "stem": "Se comparan el preservativo y el implante anticonceptivo. Respecto de ambos, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 2,
+      "explain": "El II es falso: el implante previene el embarazo, pero no protege frente al VIH ni a otras ITS.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "los dos ayudan a prevenir un embarazo.",
+        "el implante protege frente al VIH.",
+        "solo el preservativo previene las ITS.",
+        "la elección se consulta con un profesional."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-27",
+      "topic": "Evaluar una campaña",
+      "stem": "Un curso prepara una campaña de prevención de ITS para el colegio. Respecto de los mensajes que debería incluir, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: compartir alimentos o utensilios no transmite el VIH.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el VIH se transmite al compartir el almuerzo.",
+        "el preservativo es la principal barrera.",
+        "existen exámenes que permiten un diagnóstico.",
+        "el centro de salud entrega orientación."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-28",
+      "topic": "Reconocer un mito",
+      "stem": "Circula en redes el mensaje: «si alguien se ve sano, no puede tener una ITS». Respecto de este mensaje, es correcto señalar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 2,
+      "explain": "Son falsos el II y el III: difundir ese mensaje aumenta el riesgo, porque muchas ITS no se ven.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es un mito, porque muchas ITS no dan síntomas.",
+        "el mensaje es verdadero y conviene difundirlo.",
+        "quien se ve sano no necesita examinarse.",
+        "la única forma de saberlo es un examen."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-29",
+      "topic": "Buscar ayuda",
+      "stem": "Un adolescente tiene dudas sobre un cambio en su cuerpo y le da vergüenza preguntar. Respecto de esta situación, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: quedarse con la duda impide resolver algo que suele tener una explicación simple.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "quedarse con la duda es la mejor opción.",
+        "consultar a un profesional es lo adecuado.",
+        "la atención en salud es confidencial.",
+        "conviene recurrir a un adulto de confianza."
+      ]
+    },
+    {
+      "id": "7B-BRUMA-30",
+      "topic": "Evaluar una afirmación",
+      "stem": "Un compañero sostiene: «la vacuna contra el VPH es solo para mujeres». Respecto de esta afirmación, es correcto señalar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 1,
+      "explain": "Son falsos el II y el IV: el VPH afecta a personas de cualquier sexo y su vacuna no protege contra todas las ITS. En Chile, la vacunación escolar nonavalente contra el VPH se administra en dosis única en 4.º básico.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 5",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque también se aplica a varones.",
+        "es correcta, porque el VPH solo afecta a mujeres.",
+        "el VPH afecta a personas de cualquier sexo.",
+        "la vacuna contra el VPH protege contra todas las ITS."
+      ]
+    }
+  ]
+}

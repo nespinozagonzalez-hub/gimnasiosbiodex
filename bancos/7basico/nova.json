@@ -1,0 +1,713 @@
+{
+  "gym": "nova",
+  "leagueId": "7basico",
+  "version": 1,
+  "status": "published",
+  "title": "Pubertad y reproducción",
+  "source": {
+    "file": "Liga_Ciencias_7Basico.xlsx",
+    "sheet": "Gimnasio 4"
+  },
+  "questions": [
+    {
+      "id": "7B-NOVA-01",
+      "topic": "Pubertad",
+      "stem": "La pubertad corresponde a la etapa en que:",
+      "options": [
+        "se completa el crecimiento óseo.",
+        "aparecen los primeros dientes.",
+        "se detiene el desarrollo físico.",
+        "el cuerpo madura sexualmente."
+      ],
+      "answer": 3,
+      "explain": "En la pubertad el cuerpo madura y se vuelve capaz de reproducirse.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 4,
+        "number": 1,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-02",
+      "topic": "Hormonas",
+      "stem": "Los cambios de la pubertad son dirigidos principalmente por:",
+      "options": [
+        "los anticuerpos.",
+        "las hormonas sexuales.",
+        "los glóbulos rojos.",
+        "las enzimas digestivas."
+      ],
+      "answer": 1,
+      "explain": "Las hormonas sexuales, como los estrógenos y la testosterona, dirigen los cambios de la pubertad.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 5,
+        "number": 2,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-03",
+      "topic": "Hormonas",
+      "stem": "La principal hormona sexual masculina es:",
+      "options": [
+        "la testosterona.",
+        "el estrógeno ovárico.",
+        "la insulina.",
+        "la adrenalina."
+      ],
+      "answer": 0,
+      "explain": "La testosterona se produce en los testículos y dirige los cambios masculinos.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 6,
+        "number": 3,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-04",
+      "topic": "Hormonas",
+      "stem": "Las principales hormonas sexuales femeninas son:",
+      "options": [
+        "las insulinas.",
+        "las proteasas.",
+        "los estrógenos.",
+        "las adrenalinas."
+      ],
+      "answer": 2,
+      "explain": "Los estrógenos y la progesterona se producen en los ovarios y dirigen los cambios femeninos.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 7,
+        "number": 4,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-05",
+      "topic": "Caracteres secundarios",
+      "stem": "¿Cuál de los siguientes es un carácter sexual secundario?",
+      "options": [
+        "El crecimiento de las uñas.",
+        "La aparición de vello axilar.",
+        "La formación de los huesos.",
+        "El aumento de glóbulos rojos."
+      ],
+      "answer": 1,
+      "explain": "Los caracteres sexuales secundarios aparecen en la pubertad, como el vello y el cambio de voz.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 8,
+        "number": 5,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-06",
+      "topic": "Menarquia",
+      "stem": "La primera menstruación de una persona se denomina:",
+      "options": [
+        "menopausia.",
+        "ovulación.",
+        "gestación.",
+        "menarquia."
+      ],
+      "answer": 3,
+      "explain": "La menarquia es la primera menstruación e indica que los ovarios ya están funcionando.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 9,
+        "number": 6,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-07",
+      "topic": "Ovarios",
+      "stem": "La función principal de los ovarios es:",
+      "options": [
+        "transportar la orina al exterior.",
+        "almacenar los espermatozoides.",
+        "producir óvulos y hormonas.",
+        "recibir al bebé en gestación."
+      ],
+      "answer": 2,
+      "explain": "Los ovarios producen los óvulos y también las hormonas sexuales femeninas.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 10,
+        "number": 7,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-08",
+      "topic": "Útero",
+      "stem": "El órgano en que se desarrolla el bebé durante el embarazo es:",
+      "options": [
+        "la uretra.",
+        "el útero.",
+        "el ovario.",
+        "la vagina."
+      ],
+      "answer": 1,
+      "explain": "El útero aloja y nutre al embrión durante todo el embarazo.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 11,
+        "number": 8,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-09",
+      "topic": "Trompas uterinas",
+      "stem": "Las trompas uterinas u oviductos cumplen la función de:",
+      "options": [
+        "producir las hormonas femeninas.",
+        "expulsar la orina hacia afuera.",
+        "fabricar los espermatozoides.",
+        "comunicar el ovario y el útero."
+      ],
+      "answer": 3,
+      "explain": "La trompa uterina conduce al óvulo desde el ovario hacia el útero y allí ocurre la fecundación.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 12,
+        "number": 9,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-10",
+      "topic": "Testículos",
+      "stem": "La función principal de los testículos es:",
+      "options": [
+        "transportar la sangre al pene.",
+        "fabricar los óvulos maduros.",
+        "producir espermatozoides.",
+        "almacenar la orina del cuerpo."
+      ],
+      "answer": 2,
+      "explain": "Los testículos producen espermatozoides y también la hormona testosterona.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 13,
+        "number": 10,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-11",
+      "topic": "Vía espermática",
+      "stem": "Los espermatozoides salen del testículo y son conducidos por:",
+      "options": [
+        "el conducto deferente.",
+        "la trompa uterina.",
+        "el conducto ovárico.",
+        "la vena principal del abdomen."
+      ],
+      "answer": 0,
+      "explain": "El conducto deferente transporta los espermatozoides desde el epidídimo hacia la uretra.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 14,
+        "number": 11,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-12",
+      "topic": "Ciclo menstrual",
+      "stem": "La duración promedio del ciclo menstrual es de aproximadamente:",
+      "options": [
+        "90 días.",
+        "365 días.",
+        "28 días.",
+        "7 días."
+      ],
+      "answer": 2,
+      "explain": "El ciclo menstrual dura en promedio 28 días, aunque varía entre una persona y otra.",
+      "seconds": 45,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 15,
+        "number": 12,
+        "round": "Ronda 1 · Entrada"
+      }
+    },
+    {
+      "id": "7B-NOVA-13",
+      "topic": "Ovulación",
+      "stem": "La ovulación corresponde al momento en que:",
+      "options": [
+        "el útero expulsa su revestimiento.",
+        "el testículo produce testosterona.",
+        "el embrión se implanta en el útero.",
+        "el ovario libera un óvulo."
+      ],
+      "answer": 3,
+      "explain": "En la ovulación el ovario libera un óvulo maduro hacia la trompa uterina.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 16,
+        "number": 13,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-14",
+      "topic": "Menstruación",
+      "stem": "La menstruación se produce porque:",
+      "options": [
+        "los testículos liberan sus hormonas.",
+        "se desprende el tejido del útero.",
+        "el ovario deja de producir óvulos.",
+        "el embrión se implanta en el útero."
+      ],
+      "answer": 1,
+      "explain": "Si no hubo embarazo, el endometrio se desprende y se elimina: eso es la menstruación.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 17,
+        "number": 14,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-15",
+      "topic": "Fecundación",
+      "stem": "La fecundación es la unión de:",
+      "options": [
+        "dos espermatozoides maduros.",
+        "un óvulo y una hormona.",
+        "un óvulo y un espermatozoide.",
+        "dos óvulos de un mismo ovario."
+      ],
+      "answer": 2,
+      "explain": "En la fecundación se unen el óvulo y el espermatozoide, y se forma el cigoto.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 18,
+        "number": 15,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-16",
+      "topic": "Lugar",
+      "stem": "La fecundación ocurre habitualmente en:",
+      "options": [
+        "la trompa uterina.",
+        "el ovario.",
+        "la vagina.",
+        "el conducto testicular."
+      ],
+      "answer": 0,
+      "explain": "El encuentro entre óvulo y espermatozoide ocurre normalmente en la trompa uterina.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 19,
+        "number": 16,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-17",
+      "topic": "Cigoto",
+      "stem": "A la primera célula que se forma tras la fecundación se le llama:",
+      "options": [
+        "gameto.",
+        "embrión.",
+        "feto.",
+        "cigoto."
+      ],
+      "answer": 3,
+      "explain": "El cigoto es la primera célula del nuevo individuo y a partir de ella se forma el embrión.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 20,
+        "number": 17,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-18",
+      "topic": "Implantación",
+      "stem": "La implantación corresponde al momento en que el embrión:",
+      "options": [
+        "se fija en la pared del útero.",
+        "sale del cuerpo de la madre al nacer.",
+        "se divide por primera vez.",
+        "recibe su primer nombre."
+      ],
+      "answer": 0,
+      "explain": "En la implantación el embrión se fija en el endometrio y comienza el embarazo.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 21,
+        "number": 18,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-19",
+      "topic": "Embarazo",
+      "stem": "El embarazo humano dura aproximadamente:",
+      "options": [
+        "60 semanas.",
+        "10 semanas.",
+        "40 semanas.",
+        "20 semanas."
+      ],
+      "answer": 2,
+      "explain": "El embarazo dura alrededor de 40 semanas, es decir, unos nueve meses.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 22,
+        "number": 19,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-20",
+      "topic": "Sexualidad",
+      "stem": "Al hablar de sexualidad, además de lo biológico se consideran aspectos:",
+      "options": [
+        "térmicos y eléctricos.",
+        "afectivos y sociales.",
+        "digestivos y óseos.",
+        "minerales y químicos."
+      ],
+      "answer": 1,
+      "explain": "La sexualidad incluye dimensiones biológicas, afectivas y sociales a lo largo de la vida.",
+      "seconds": 60,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 23,
+        "number": 20,
+        "round": "Ronda 2 · Combate"
+      }
+    },
+    {
+      "id": "7B-NOVA-21",
+      "topic": "Cambios de la pubertad",
+      "stem": "Respecto de los cambios que ocurren durante la pubertad, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: los cambios de la pubertad ocurren a distinta edad y ritmo en cada persona.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 24,
+        "number": 21,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "son iguales en todas las personas y a la misma edad.",
+        "son dirigidos por las hormonas sexuales.",
+        "incluyen cambios físicos y emocionales.",
+        "marcan el paso hacia la madurez sexual."
+      ]
+    },
+    {
+      "id": "7B-NOVA-22",
+      "topic": "Sistema reproductor femenino",
+      "stem": "Respecto de los órganos del sistema reproductor femenino, es correcto afirmar que:",
+      "options": [
+        "Solo I y II",
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el III y el IV: las hormonas se producen en los ovarios y los espermatozoides, en los testículos.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 25,
+        "number": 22,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "los ovarios producen los óvulos.",
+        "el útero aloja al embrión durante el embarazo.",
+        "la vagina produce las hormonas femeninas.",
+        "las trompas fabrican los espermatozoides."
+      ]
+    },
+    {
+      "id": "7B-NOVA-23",
+      "topic": "Sistema reproductor masculino",
+      "stem": "Respecto de los órganos del sistema reproductor masculino, es correcto afirmar que:",
+      "options": [
+        "Solo II y III",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El IV es falso: los óvulos se producen únicamente en los ovarios.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 26,
+        "number": 23,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "los testículos producen espermatozoides.",
+        "los testículos producen testosterona.",
+        "el conducto deferente transporta espermatozoides.",
+        "la próstata produce los óvulos."
+      ]
+    },
+    {
+      "id": "7B-NOVA-24",
+      "topic": "Ciclo menstrual",
+      "stem": "Respecto del ciclo menstrual, es correcto afirmar que:",
+      "options": [
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el II y el IV: la menstruación inicia el ciclo y su duración varía entre personas.",
+      "seconds": 75,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 27,
+        "number": 24,
+        "round": "Ronda 2 · Combate"
+      },
+      "statements": [
+        "dura en promedio unos 28 días.",
+        "la menstruación ocurre al final del ciclo sin embarazo.",
+        "durante la ovulación se libera un óvulo.",
+        "su duración es idéntica en todas las personas."
+      ]
+    },
+    {
+      "id": "7B-NOVA-25",
+      "topic": "Analizar un caso",
+      "stem": "Dos compañeros de la misma edad notan que uno ya cambió la voz y creció mucho, y el otro aún no. Respecto de esta situación, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 3,
+      "explain": "El I es falso: las diferencias en el ritmo de desarrollo son completamente normales.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 28,
+        "number": 25,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "uno de ellos tiene un problema de salud.",
+        "la pubertad comienza a distinta edad en cada persona.",
+        "ambos cambios son dirigidos por hormonas.",
+        "el ritmo de desarrollo es propio de cada uno."
+      ]
+    },
+    {
+      "id": "7B-NOVA-26",
+      "topic": "Seguir un recorrido",
+      "stem": "Un óvulo liberado por el ovario es fecundado y el nuevo individuo comienza a desarrollarse. Respecto de ese recorrido, es correcto afirmar que:",
+      "options": [
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo I, II y III",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "Las cuatro son correctas: tras la fecundación en la trompa, el cigoto se implanta y se desarrolla en el útero.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 29,
+        "number": 26,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la fecundación ocurre en la trompa uterina.",
+        "de la fecundación resulta un cigoto.",
+        "el embrión se implanta en el útero.",
+        "el útero aloja el desarrollo del embrión."
+      ]
+    },
+    {
+      "id": "7B-NOVA-27",
+      "topic": "Interpretar un ciclo",
+      "stem": "En un calendario del ciclo menstrual de 28 días, la ovulación se marca alrededor del día 14. Respecto de este registro, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 2,
+      "explain": "El II es falso: el día de la ovulación varía según la persona y según el ciclo.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 30,
+        "number": 27,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "la ovulación ocurre hacia la mitad del ciclo.",
+        "la ovulación cae el mismo día en todas las personas.",
+        "el día 1 corresponde al inicio de la menstruación.",
+        "ese día el ovario libera un óvulo."
+      ]
+    },
+    {
+      "id": "7B-NOVA-28",
+      "topic": "Comparar gametos",
+      "stem": "Se comparan el óvulo y el espermatozoide como células reproductoras. Respecto de ambos, es correcto afirmar que:",
+      "options": [
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV",
+        "I, II, III y IV"
+      ],
+      "answer": 1,
+      "explain": "El III es falso: el óvulo es mucho más grande que el espermatozoide.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 31,
+        "number": 28,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "el espermatozoide se produce en el testículo.",
+        "el óvulo se produce en el ovario.",
+        "el óvulo es más pequeño que el espermatozoide.",
+        "ambos se unen durante la fecundación."
+      ]
+    },
+    {
+      "id": "7B-NOVA-29",
+      "topic": "Reconocer un error",
+      "stem": "Una compañera afirma: «la menstruación significa que la persona está enferma». Respecto de esta afirmación, es correcto señalar que:",
+      "options": [
+        "Solo I y III",
+        "Solo I y IV",
+        "Solo II y III",
+        "Solo II y IV",
+        "Solo III y IV"
+      ],
+      "answer": 0,
+      "explain": "Son falsos el II y el IV: la menstruación es un proceso natural y siempre se puede consultar sobre ella.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 32,
+        "number": 29,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "es incorrecta, porque es un proceso normal.",
+        "es correcta, porque se trata de una enfermedad.",
+        "indica que no hubo embarazo en ese ciclo.",
+        "por tratarse de algo íntimo, no se debe consultar."
+      ]
+    },
+    {
+      "id": "7B-NOVA-30",
+      "topic": "Dimensiones de la sexualidad",
+      "stem": "En una clase se discute qué incluye la sexualidad humana. Respecto de este tema, es correcto afirmar que:",
+      "options": [
+        "Solo III y IV",
+        "Solo I, II y III",
+        "Solo I, II y IV",
+        "Solo I, III y IV",
+        "Solo II, III y IV"
+      ],
+      "answer": 4,
+      "explain": "El I es falso: la sexualidad no se reduce a lo biológico, también es afectiva y social.",
+      "seconds": 90,
+      "placeholder": false,
+      "source": {
+        "sheet": "Gimnasio 4",
+        "row": 33,
+        "number": 30,
+        "round": "Ronda 3 · Jefe de gimnasio"
+      },
+      "statements": [
+        "abarca solo los aspectos biológicos.",
+        "incluye los vínculos afectivos.",
+        "considera el respeto por uno mismo y por el otro.",
+        "se expresa a lo largo de toda la vida."
+      ]
+    }
+  ]
+}

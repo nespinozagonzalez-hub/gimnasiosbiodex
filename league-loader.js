@@ -1,18 +1,19 @@
 (async()=>{
  'use strict';
+ const C=window.BioDexCourse;if(!C?.available)return;
  const slug=new URLSearchParams(location.search).get('gym');
  const gym=window.BioDexGyms.get(slug);
  const error=message=>{document.getElementById('loginError').textContent=message;document.getElementById('loginButton').disabled=true;document.getElementById('demoButton').disabled=true;};
  if(!gym){error('Elige uno de los cinco gimnasios en «La liga».');return;}
  try{
   const response=await fetch(gym.bankUrl,{cache:'no-store'});if(!response.ok)throw Error('No se pudo abrir el banco del gimnasio.');
-  const bank=await response.json(),check=window.BioDexLeague.validateBank(bank,slug);
+  const bank=await response.json(),check=window.BioDexLeague.validateBank(bank,slug,C.id);
   if(!check.valid)throw Error(check.errors.join(' '));
   const preview=new URLSearchParams(location.search).get('preview')==='1';
   const times=bank.questions.map(q=>q.seconds??gym.questionSeconds);
   const timeLabel=Math.min(...times)+'–'+Math.max(...times)+' s por pregunta';
   window.BioDexMission={...gym,bank,preview,timeLabel};
-  document.title='BioDex · '+gym.title;
+  document.title='BioDex · '+C.label+' · '+gym.title;
   document.body.dataset.gym=slug;
   document.documentElement.style.setProperty('--gym-background',`url("${gym.background}")`);
   document.documentElement.style.setProperty('--gym-portrait',`url("${gym.portrait}")`);
@@ -20,7 +21,7 @@
   document.querySelector('.welcome-copy h1').textContent=gym.title;
   document.querySelector('.welcome-copy .intro').textContent=gym.summary;
   document.querySelector('.welcome-copy > .eyebrow').textContent=gym.sector.toUpperCase();
-  document.querySelector('.mission-topline > span').textContent='LIGA DE LOS CINCO SELLOS / '+String(gym.order).padStart(2,'0');
+  document.querySelector('.mission-topline > span').textContent=C.label.toUpperCase()+' / LIGA DE LOS CINCO SELLOS / '+String(gym.order).padStart(2,'0');
   document.querySelector('.hero-creature canvas').dataset.pixelId=gym.phases[0].id;
   document.querySelector('.hero-creature canvas').setAttribute('aria-label',gym.phases[0].name+', bioforma del líder');
   document.querySelector('.creature-caption b').textContent=gym.phases[0].name;
@@ -43,6 +44,6 @@
   for(const id of ['previewDivider','demoButton','previewNote'])document.getElementById(id).hidden=!preview;
   document.getElementById('loginForm').hidden=preview;
   document.querySelector('#infoDialog .help-note p').textContent='La colección se carga desde tu cuenta de BioDex. Al vencer, las cuatro recompensas se canjean y guardan en esa misma cuenta. Si la conexión falla, puedes reintentar cada captura. El reloj continúa al cambiar de estrategia o pestaña; al agotarse falla la acción.';
-  const script=document.createElement('script');script.src='app.js?v=7';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
+  const script=document.createElement('script');script.src='app.js?v=multi-9';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
  }catch(e){error(e.message||'No se pudo preparar el gimnasio.');}
 })();
