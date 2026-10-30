@@ -44,6 +44,6 @@
   for(const id of ['previewDivider','demoButton','previewNote'])document.getElementById(id).hidden=!preview;
   document.getElementById('loginForm').hidden=preview;
   document.querySelector('#infoDialog .help-note p').textContent='La colección se carga desde tu cuenta de BioDex. Al vencer, las cuatro recompensas se canjean y guardan en esa misma cuenta. Si la conexión falla, puedes reintentar cada captura. El reloj continúa al cambiar de estrategia o pestaña; al agotarse falla la acción.';
-  const script=document.createElement('script');script.src='app.js?v=multi-9';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
+  const script=document.createElement('script');script.src='app.js?v=separate-10';script.onerror=()=>error('No se pudo preparar el combate. Recarga la página.');document.body.append(script);
  }catch(e){error(e.message||'No se pudo preparar el gimnasio.');}
 })();

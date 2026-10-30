@@ -1,9 +1,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),crypto=require('node:crypto'),fs=require('node:fs'),vm=require('node:vm');
 const R=require('../ligas.js'),base=require('../liga-config.js').GYMS,L=require('../motor/league.js'),X=require('../motor/access.js'),Q=require('../motor/questions.js'),Rewards=require('../motor/rewards.js');
 const memory=()=>{const data=new Map();return {data,getItem:k=>data.get(k)||null,setItem:(k,v)=>data.set(k,v)};};
-test('el enlace anterior sigue abriendo 2.º medio y una liga desconocida nunca cae en otro curso',()=>{
+test('las entradas tienen carpetas distintas y una liga fijada no cambia con un parámetro',()=>{
  assert.equal(R.resolve('').id,'2medio');assert.equal(R.resolve('?gym=aurora').id,'2medio');assert.equal(R.resolve('?liga=7basico').id,'7basico');assert.equal(R.resolve('?liga=6basico').available,false);assert.equal(R.resolve('?liga=unknown'),null);assert.equal(R.resolve('?liga='),null);assert.throws(()=>R.gyms(base,'6basico'));
- assert.equal(R.url('2medio'),'index.html');assert.equal(R.url('2medio','combate.html',{gym:'aurora'}),'combate.html?gym=aurora');assert.equal(R.url('7basico'),'index.html?liga=7basico');assert.equal(R.resolve('?'+R.url('7basico','combate.html',{gym:'aurora',preview:1}).split('?')[1]).id,'7basico');assert.throws(()=>R.url('unknown'));assert.throws(()=>R.url('7basico','https://external.invalid'));
+ assert.equal(R.url('2medio'),'segundo-medio/');assert.equal(R.url('2medio','combate.html',{gym:'aurora'}),'segundo-medio/combate.html?gym=aurora');assert.equal(R.url('7basico'),'septimo-basico/');assert.equal(R.url('7basico','combate.html',{gym:'aurora',preview:1,liga:'2medio'}),'septimo-basico/combate.html?gym=aurora&preview=1');assert.equal(R.resolve('?liga=2medio','7basico').id,'7basico');assert.equal(R.resolve('?liga=7basico','2medio').id,'2medio');assert.equal(R.resolve('?liga=2medio','no-existe'),null);assert.throws(()=>R.url('unknown'));assert.throws(()=>R.url('7basico','https://external.invalid'));
 });
 test('las dos ligas usan el mismo combate, paisajes y premios con bancos y códigos propios',()=>{
  const before=JSON.stringify(base),second=R.gyms(base,'2medio'),seventh=R.gyms(base,'7basico');
@@ -33,17 +33,32 @@ test('una victoria de séptimo admite solo su banco y nunca entrega premios con 
  const wrong=Rewards.create({account,gym,bank:require('../bancos/liga/aurora.json'),won:true,demo:false});await assert.rejects(wrong.claim());assert.equal(calls.length,0);
  const correct=Rewards.create({account,gym,bank,won:true,demo:false});await correct.claim();assert.equal(calls.length,4);assert.equal(Object.values(correct.snapshot()).every(s=>s.status==='claimed'),true);
 });
-function context(search){
- const nav={innerHTML:''},eyebrow={textContent:''},main={innerHTML:''};const links=[
-  {href:'index.html',inNav:false},{href:'revision.html',inNav:false},{href:'index.html',inNav:true},{href:'index.html?liga=7basico',inNav:true},{href:'https://nespinozagonzalez-hub.github.io/biodex/',inNav:false}
- ].map(item=>({...item,getAttribute(){return this.href;},closest(){return this.inNav?nav:null;}}));
- const document={body:{dataset:{}},title:'',querySelector(selector){return selector==='main'?main:selector==='.league-hero>.eyebrow'?eyebrow:null;},querySelectorAll(selector){return selector==='[data-league-nav]'?[nav]:selector==='a[href]'?links:[];}};
- const window={BioDexCourses:R,BioDexGyms:{GYMS:base}},c={window,document,location:{search,pathname:'/gimnasiosbiodex/index.html'},URLSearchParams};vm.runInNewContext(fs.readFileSync(require.resolve('../course-context.js'),'utf8'),c);return{window,document,links,nav,main};
+function context(search='',fixedId='7basico',page='index.html',hash=''){
+ const eyebrow={textContent:''},main={innerHTML:''};const links=['index.html','revision.html','revision-tablet.html','combate.html?gym=aurora','./','https://nespinozagonzalez-hub.github.io/biodex/','#main'].map(href=>({href,getAttribute(){return this.href;}}));
+ const document={documentElement:{dataset:fixedId===null?{}:{league:fixedId}},body:{dataset:{}},title:'',querySelector(selector){return selector==='main'?main:selector==='.league-hero>.eyebrow'?eyebrow:null;},querySelectorAll(selector){return selector==='a[href]'?links:[];}};
+ let redirect=null,cleaned=null;const pathname='/gimnasiosbiodex/'+(fixedId===null?'':R.get(fixedId).path+'/')+page;
+ const window={BioDexCourses:R,BioDexGyms:{GYMS:base}},c={window,document,location:{search,pathname,hash,replace:url=>redirect=url},history:{replaceState:(_,__,url)=>cleaned=url},URLSearchParams};vm.runInNewContext(fs.readFileSync(require.resolve('../course-context.js'),'utf8'),c);return{window,document,links,main,get redirect(){return redirect;},get cleaned(){return cleaned;}};
 }
-test('el selector mantiene enlaces a ambos cursos y los enlaces de trabajo conservan la liga seleccionada',()=>{
- const c=context('?liga=7basico');assert.equal(c.window.BioDexCourse.id,'7basico');assert.equal(c.links[0].href,'index.html?liga=7basico');assert.equal(c.links[1].href,'revision.html?liga=7basico');assert.equal(c.links[2].href,'index.html');assert.equal(c.links[3].href,'index.html?liga=7basico');assert.equal(c.links[4].href,'https://nespinozagonzalez-hub.github.io/biodex/');assert.match(c.nav.innerHTML,/aria-current="page"/);assert.match(c.document.title,/7.º básico/);
+test('los enlaces de combate, regreso y preparación permanecen dentro de cada liga, sin selector',()=>{
+ for(const id of ['2medio','7basico']){
+  const c=context('?liga='+ (id==='2medio'?'7basico':'2medio'),id),prefix=R.get(id).path+'/';assert.equal(c.window.BioDexCourse.id,id);assert.equal(c.window.BioDexCourse.available,true);assert.equal(c.redirect,null);assert.equal(c.links[0].href,prefix);assert.equal(c.links[1].href,prefix+'revision.html');assert.equal(c.links[2].href,prefix+'revision-tablet.html');assert.equal(c.links[3].href,prefix+'combate.html?gym=aurora');assert.equal(c.links[4].href,prefix);assert.equal(c.links[5].href,'https://nespinozagonzalez-hub.github.io/biodex/');assert.equal(c.cleaned,'/gimnasiosbiodex/'+prefix+'index.html');assert.equal(c.document.body.dataset.league,id);
+ }
+ const battle=context('?gym=nexo&preview=1','7basico','combate.html');assert.equal(battle.links[6].href,'septimo-basico/combate.html?gym=nexo&preview=1#main');
+});
+test('los enlaces ya compartidos redirigen al mismo curso sin cargar cuentas ni bancos antes del cambio',()=>{
+ for(const [query,id] of [['','2medio'],['?liga=2medio','2medio'],['?liga=7basico','7basico'],['?liga=6basico','6basico']]){
+  const c=context(query,null);assert.equal(c.redirect,R.url(id));assert.equal(c.window.BioDexCourse.available,false);assert.equal(c.window.BioDexGyms.GYMS.length,0);
+ }
+ const combat=context('?liga=7basico&gym=bruma&preview=1',null,'combate.html','#main');assert.equal(combat.redirect,'septimo-basico/combate.html?gym=bruma&preview=1#main');assert.equal(context('?liga=otro',null).redirect,null);
 });
 test('6.º y las ligas inexistentes muestran una espera o salida clara, sin cargar preguntas ni cuentas',()=>{
- for(const query of ['?liga=6basico','?liga=no-existe']){const c=context(query);assert.equal(c.window.BioDexCourse.available,false);assert.equal(c.window.BioDexGyms.GYMS.length,0);assert.ok(c.main.innerHTML.includes('Volver a 2.º medio'));}
- assert.match(context('?liga=6basico').main.innerHTML,/se habilitará al incorporar sus preguntas/);
+ for(const c of [context('','6basico'),context('?liga=no-existe',null)]){assert.equal(c.window.BioDexCourse.available,false);assert.equal(c.window.BioDexGyms.GYMS.length,0);assert.ok(c.main.innerHTML.includes('Volver a mi BioDex'));assert.ok(!c.main.innerHTML.includes('segundo-medio'));assert.ok(!c.main.innerHTML.includes('septimo-basico'));}
+ assert.match(context('','6basico').main.innerHTML,/se habilitará al incorporar sus preguntas/);
+});
+test('las doce entradas publicadas están sincronizadas, fijan su curso y resuelven todos sus recursos',()=>{
+ const {build,pages}=require('../scripts/build-league-entries.cjs'),path=require('node:path'),root=path.resolve(__dirname,'..');assert.doesNotThrow(()=>build(true));
+ for(const course of R.COURSES)for(const page of pages){
+  const source=fs.readFileSync(path.join(root,course.path,page),'utf8');assert.ok(source.includes('data-league="'+course.id+'"'));assert.ok(source.includes('<base href="../">'));assert.ok(!/league-switcher|data-league-nav|ELIGE TU LIGA/.test(source));
+  for(const [,ref] of source.matchAll(/(?:src|href)="([^"]+)"/g)){if(/^(https?:|#|data:)/.test(ref)||ref==='../')continue;const file=ref.split(/[?#]/)[0];if(file)assert.ok(fs.existsSync(path.resolve(root,file)),course.path+'/'+page+' necesita '+file);}
+ }
 });

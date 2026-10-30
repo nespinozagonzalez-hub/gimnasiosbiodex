@@ -4,17 +4,19 @@ Liga de los cinco sellos para los cursos de Nicolás Espinoza. Las batallas y su
 
 ## Ligas por curso
 
-El repositorio comparte el motor, las ilustraciones, los líderes, la sesión BioDex y las cuatro recompensas por victoria. Cada curso tiene su propio banco, sus códigos de entrada y su registro local de activaciones y sellos. Cambiar de liga conserva la colección de la cuenta, y una captura ya obtenida se reconoce como duplicada.
+Cada curso tiene una entrada independiente, sin selector ni enlaces a otros cursos. El repositorio comparte el motor, las ilustraciones, los líderes, la sesión BioDex y las cuatro recompensas por victoria. Cada liga tiene su propio banco, sus códigos de entrada y su registro local de activaciones y sellos. La colección pertenece a la misma cuenta, y una captura ya obtenida se reconoce como duplicada.
 
 | Curso | Entrada | Banco | Estado |
 | --- | --- | --- | --- |
-| 2.º medio | `index.html` (también la raíz del sitio) | `bancos/liga/` | Publicado, 150 preguntas |
-| 7.º básico | `index.html?liga=7basico` | `bancos/7basico/` | Publicado, 150 preguntas |
-| 6.º básico | `index.html?liga=6basico` | Pendiente | Próximamente, sin preguntas ni combate |
+| 2.º medio | `segundo-medio/` | `bancos/liga/` | Publicado, 150 preguntas |
+| 7.º básico | `septimo-basico/` | `bancos/7basico/` | Publicado, 150 preguntas |
+| 6.º básico | `sexto-basico/` | Pendiente | Próximamente, sin preguntas ni combate |
 
-El enlace de 2.º medio, sus cinco archivos de preguntas y sus códigos `LIGA-*` se conservan. Los guardados existentes siguen usando las claves anteriores. La liga de 7.º utiliza códigos `LIGA7-*` y claves locales separadas, incluso si el nombre de cuenta es el mismo. Los enlaces de combate, resultado, edición y revisión de pantalla conservan el curso seleccionado. Un curso inexistente o pendiente nunca utiliza preguntas de otra liga.
+Los enlaces antiguos de la raíz y los que usan `?liga=...` redirigen a la carpeta correspondiente, conservando gimnasio y preparación docente. Los cinco archivos de preguntas de 2.º medio, sus códigos `LIGA-*` y sus guardados mantienen el formato anterior. La liga de 7.º utiliza códigos `LIGA7-*` y claves locales separadas, incluso si el nombre de cuenta es el mismo. Los enlaces de combate, resultado, edición y revisión de pantalla permanecen en su curso. Cambiar el parámetro `liga` de una página de curso no cambia su contenido. Un curso inexistente o pendiente nunca utiliza preguntas de otra liga.
 
-`ligas.js` registra los cursos; `course-context.js` configura la página y el selector. Para sumar 6.º se importa su Excel en una carpeta propia, se completan temas y códigos del registro y se marca esa liga como disponible. El motor y los recursos gráficos no se duplican.
+`ligas.js` registra los cursos y sus carpetas; `course-context.js` configura la página con el curso fijado en su HTML. `node scripts/build-league-entries.cjs` genera las cuatro páginas de cada curso a partir de las plantillas de la raíz. Ejecutar ese comando después de cambiar una plantilla; `--check` comprueba que estén sincronizadas. El motor y los recursos gráficos no se duplican. Para sumar 6.º se importa su Excel en un banco propio, se completan temas y códigos del registro, se marca esa liga como disponible y se regeneran sus páginas.
+
+Las rutas separadas evitan cambiar de curso desde la interfaz, pero no restringen la visita de quien conozca otra dirección. Las cuentas no tienen una matrícula de curso validada por el servidor; los códigos de gimnasio siguen siendo accesos compartidos de aula en un sitio público.
 
 ### Códigos de 7.º básico
 
@@ -32,10 +34,10 @@ La importación se registra en `reference/septimo-import.json`. Incluye una corr
 
 ## Entradas
 
-- `index.html`: liga de los cinco gimnasios.
-- `combate.html?gym=aurora`, `prisma`, `nexo`, `nova` o `bruma`: gimnasio independiente.
-- `revision.html`: mesa de preparación de preguntas y recompensas.
-- `revision-tablet.html`: revisión en tablet horizontal, vertical y PC.
+- `segundo-medio/` y `septimo-basico/`: entradas independientes de estudiantes.
+- `combate.html?gym=aurora`, `prisma`, `nexo`, `nova` o `bruma`, dentro de cada carpeta: gimnasio de ese curso.
+- `revision.html`, dentro de cada carpeta: mesa de preparación de preguntas y recompensas.
+- `revision-tablet.html`, dentro de cada carpeta: revisión en tablet horizontal, vertical y PC.
 - `ensayo.html`: prototipo original del Umbral.
 
 ## Conexión con la colección
